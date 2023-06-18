@@ -1,0 +1,324 @@
+/* Styles pour le header */
+#Header_Container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #242526;
+    height: 80px;
+    width: 100%;
+}
+
+#Header_Nav {
+    display: flex;
+    justify-content: center;
+}
+
+#Header_Nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+#Header_Nav ul li {
+    font-size: 20px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#Header_Nav ul li:hover {
+    transform: scale(1.2);
+}
+
+#Header_Nav ul li:last-child {
+    margin-right: 0;
+}
+
+#Header_Nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: "Arial Rounded", sans-serif;
+}
+
+#Header_Nav ul li a:hover {
+    color: #2c61f2;
+}
+
+#Header_Nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Arial Rounded", sans-serif;
+}
+
+#social_menu {
+    position: fixed;
+    top: 50%;
+    right: -100px;
+    /* Définit le menu à l'extérieur du bord droit de la page */
+    transform: translateY(-50%);
+    z-index: 9999;
+    /* Assure que le menu s'affiche au-dessus du contenu */
+    /* Ajoutez d'autres styles pour le positionnement et l'apparence du menu */
+}
+
+#social_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#social_menu li {
+    padding: 5px;
+    background-color: #2b2b2b;
+    border-radius: 50%;
+    width: 40px;
+    /* Ajustez la largeur du lien pour augmenter l'espace cliquable */
+    height: 40px;
+    /* Ajustez la hauteur du lien pour augmenter l'espace cliquable */
+}
+
+#social_menu li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social_menu img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    pointer-events: none;
+}
+
+/* Styles supplémentaires */
+/* Ajoute tes styles personnalisés ici */
+
+main {
+    margin: 0 auto;
+}
+
+
+
+#layer_LastNewsSlider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    padding-top: 80px;
+}
+
+#layer_LastNewsSlider img {
+    height: 475px;
+    width: 280.5px;
+    border-radius: 2.5%;
+}
+
+.LastNewsSlider {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.LastNewsSlider img {
+    transition: transform 0.3s ease;
+}
+
+.LastNewsSlider:hover img {
+    transform: scale(1.10);
+}
+
+#LastNewsSlider_border1 {
+    border-bottom: solid 2.5px #2c61f2;
+    opacity: 0.8;
+}
+
+#LastNewsSlider_border2 {
+    border-bottom: solid 2.5px #f28f2c;
+    opacity: 0.8;
+}
+
+#LastNewsSlider_border3 {
+    border-bottom: solid 2.5px #54f22c;
+    opacity: 0.8;
+}
+
+#LastNewsSlider_border4 {
+    border-bottom: solid 2.5px #f22c2f;
+    opacity: 0.8;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.text {
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.text:hover {
+    text-decoration: underline;
+    transform: scale(1.04);
+
+}
+
+.text span {
+    float: right;
+    clear: both;
+    /* Autres styles pour le span */
+}
+
+#Container_LastNews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add this to vertically center the content */
+    height: 100px;
+    /* Increase the height as needed */
+}
+
+#LastNews_Title {
+    color: #ffffff;
+    border-bottom: solid 2px red;
+    width: 80%;
+    text-align: right;
+}
+
+#LastNews_Title h2 {
+    display: inline;
+    background-color: red;
+    border-radius: 12%;
+    padding: 0.2em 0.5em;
+}
+
+#LastNews_Content {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    margin-top: 80px;
+
+}
+#LastNews_Content img {
+    width: 30%;
+    border-radius: 1.3%;
+    opacity: 0.8;
+    transition: transform 0.3s ease-in-out;
+    
+}
+#LastNews_Content p {
+    margin-left: 20px;
+    color: rgb(223, 221, 221);
+
+}
+#LastNews_Content img:hover {
+    opacity: 1;
+    transform: scale(1.04);
+
+}
+.LastNews_Border {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    border-bottom: solid 2.5px #a49f9f;
+    opacity: 0.3;
+    margin: auto;
+
+}
+
+/* Styles généraux du footer */
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Styles généraux du footer */
+footer {
+    background-color: #242526;
+    /* Couleur de fond du footer */
+    padding: 20px;
+    color: #ffffff;
+    /* Couleur du texte dans le footer */
+    font-size: 14px;
+}
+
+/* Styles des colonnes */
+
+/* Styles généraux du footer */
+footer {
+    background-color: #242526;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 500px;
+    /* Ajout d'une marge supérieure pour espacer le footer du contenu précédent */
+}
+
+/* Styles des colonnes */
+#footer_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer_left,
+#footer_right {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Styles des liens */
+#footer_left ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer_left ul li {
+    margin-bottom: 5px;
+}
+
+#footer_left ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer_left ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styles des contacts */
+#footer_right p {
+    margin-bottom: 5px;
+}
+
+/* Styles du bas du footer */
+#footer_bottom {
+    margin-top: 20px;
+    text-align: center;
+    color: #999999;
+}
