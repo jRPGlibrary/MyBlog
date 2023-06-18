@@ -33,9 +33,8 @@ window.onload = function () {
     "LeBloggeurFou";
   document.querySelector("#LastNewsSlider_border4 .authorName").innerHTML =
     "LeBloggeurFou";
-   document.querySelector("#LastNews_Content .authorName").innerHTML =
+  document.querySelector("#LastNews_Content .authorName").innerHTML =
     "LeBloggeurFou";
-    
 };
 
 // Récupérez la section du menu
