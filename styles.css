@@ -1,20 +1,15 @@
-body {   
+body {
     background-color: #18191a;
 }
+
 /* Styles pour le header */
 #Header_Container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     background-color: #242526;
     height: 80px;
     width: 100%;
-}
-
-#Header_Nav {
-    display: flex;
-    justify-content: center;
 }
 
 #Header_Nav ul {
@@ -37,7 +32,8 @@ body {
     margin-right: 0;
 }
 
-#Header_Nav ul li a {
+#Header_Nav ul li a,
+#Header_Nav a {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -48,21 +44,12 @@ body {
     color: #2c61f2;
 }
 
-#Header_Nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-family: "Arial Rounded", sans-serif;
-}
-
 #social_menu {
     position: fixed;
     top: 50%;
     right: -100px;
-    /* Définit le menu à l'extérieur du bord droit de la page */
     transform: translateY(-50%);
     z-index: 9999;
-    /* Assure que le menu s'affiche au-dessus du contenu */
-    /* Ajoutez d'autres styles pour le positionnement et l'apparence du menu */
 }
 
 #social_menu ul {
@@ -80,9 +67,7 @@ body {
     background-color: #2b2b2b;
     border-radius: 50%;
     width: 40px;
-    /* Ajustez la largeur du lien pour augmenter l'espace cliquable */
     height: 40px;
-    /* Ajustez la hauteur du lien pour augmenter l'espace cliquable */
 }
 
 #social_menu li a {
@@ -102,7 +87,7 @@ body {
 }
 
 /* Styles supplémentaires */
-/* Ajoute tes styles personnalisés ici */
+/* Ajoutez vos styles personnalisés ici */
 
 #layer_LastNewsSlider {
     display: flex;
@@ -133,26 +118,6 @@ body {
     transform: scale(1.10);
 }
 
-#LastNewsSlider_border1 {
-    border-bottom: solid 2.5px #2c61f2;
-    opacity: 0.8;
-}
-
-#LastNewsSlider_border2 {
-    border-bottom: solid 2.5px #f28f2c;
-    opacity: 0.8;
-}
-
-#LastNewsSlider_border3 {
-    border-bottom: solid 2.5px #54f22c;
-    opacity: 0.8;
-}
-
-#LastNewsSlider_border4 {
-    border-bottom: solid 2.5px #f22c2f;
-    opacity: 0.8;
-}
-
 .caption {
     position: absolute;
     bottom: 0;
@@ -173,36 +138,25 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-
 .text:hover {
     text-decoration: underline;
     transform: scale(1.04);
-
 }
 
 .text span {
     float: right;
     clear: both;
-    /* Autres styles pour le span */
 }
 
 .Container_Border {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Add this to vertically center the content */
     height: 100px;
-    /* Increase the height as needed */
 }
 
-#LastNews_Title {
-    color: #ffffff;
-    border-bottom: solid 2px red;
-    width: 80%;
-    text-align: right;
-    margin-top: 100px;
-}
-#LastNews_Title:hove {
+#LastNews_Title,
+#LastNews_Title:hover {
     color: #ffffff;
     border-bottom: solid 2px red;
     width: 80%;
@@ -210,9 +164,15 @@ body {
     margin-top: 100px;
 }
 
-#LastNews_Title h2 {
+#LastNews_Title h2{
     display: inline;
     background-color: red;
+    border-radius: 10%;
+    padding: 0.2em 0.5em;
+}
+#LastPreviews_Title h2 {
+    display: inline;
+    background-color: rgb(30, 0, 255);
     border-radius: 10%;
     padding: 0.2em 0.5em;
 }
@@ -225,14 +185,6 @@ body {
     margin-top: 100px;
 }
 
-
-#LastPreviews_Title h2 {
-    display: inline;
-    background-color: rgb(16, 26, 223);
-    border-radius: 10%;
-    padding: 0.2em 0.5em;
-}
-
 #LastNews_Content {
     margin: auto;
     padding: 0;
@@ -240,32 +192,27 @@ body {
     width: 80%;
     overflow: hidden;
     margin-top: 80px;
-
 }
+
 #LastNews_Content img {
     width: 30%;
     border-radius: 1.3%;
     opacity: 0.8;
     transition: transform 0.3s ease-in-out;
-    
 }
+
 #LastNews_Content p {
     margin-left: 30px;
-    color: rgb(223, 221, 221);
+    color: #dfdddd;
     width: 45%;
-
 }
+
 #LastNews_Content img:hover {
     opacity: 1;
     transform: scale(1.04);
+}
 
-}
-.readMoreLink {
-    display: flex;
-    align-items: flex-end;
-    text-decoration: none;
-}
-.readMoreLink a{
+.readMoreLink a {
     text-decoration: none;
 }
 
@@ -277,29 +224,7 @@ body {
     border-bottom: solid 2.5px #a49f9f;
     opacity: 0.3;
     margin: auto;
-
 }
-
-
-/* Styles généraux du footer */
-footer {
-  background-color: #f9f9f9;
-  padding: 20px;
-  color: #666;
-  font-size: 14px;
-}
-
-/* Styles généraux du footer */
-footer {
-    background-color: #242526;
-    /* Couleur de fond du footer */
-    padding: 20px;
-    color: #ffffff;
-    /* Couleur du texte dans le footer */
-    font-size: 14px;
-}
-
-/* Styles des colonnes */
 
 /* Styles généraux du footer */
 footer {
@@ -308,7 +233,6 @@ footer {
     color: #ffffff;
     font-size: 14px;
     margin-top: 500px;
-    /* Ajout d'une marge supérieure pour espacer le footer du contenu précédent */
 }
 
 /* Styles des colonnes */
