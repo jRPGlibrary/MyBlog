@@ -104,12 +104,6 @@ body {
 /* Styles supplémentaires */
 /* Ajoute tes styles personnalisés ici */
 
-main {
-    margin: 0 auto;
-}
-
-
-
 #layer_LastNewsSlider {
     display: flex;
     flex-direction: row;
@@ -192,7 +186,7 @@ main {
     /* Autres styles pour le span */
 }
 
-#Container_LastNews {
+.Container_Border {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,12 +200,36 @@ main {
     border-bottom: solid 2px red;
     width: 80%;
     text-align: right;
+    margin-top: 100px;
+}
+#LastNews_Title:hove {
+    color: #ffffff;
+    border-bottom: solid 2px red;
+    width: 80%;
+    text-align: right;
+    margin-top: 100px;
 }
 
 #LastNews_Title h2 {
     display: inline;
     background-color: red;
-    border-radius: 12%;
+    border-radius: 10%;
+    padding: 0.2em 0.5em;
+}
+
+#LastPreviews_Title {
+    color: #ffffff;
+    border-bottom: solid 2px rgb(30, 0, 255);
+    width: 80%;
+    text-align: left;
+    margin-top: 100px;
+}
+
+
+#LastPreviews_Title h2 {
+    display: inline;
+    background-color: rgb(16, 26, 223);
+    border-radius: 10%;
     padding: 0.2em 0.5em;
 }
 
@@ -232,8 +250,9 @@ main {
     
 }
 #LastNews_Content p {
-    margin-left: 20px;
+    margin-left: 30px;
     color: rgb(223, 221, 221);
+    width: 45%;
 
 }
 #LastNews_Content img:hover {
@@ -241,6 +260,15 @@ main {
     transform: scale(1.04);
 
 }
+.readMoreLink {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+.readMoreLink a{
+    text-decoration: none;
+}
+
 .LastNews_Border {
     display: flex;
     align-content: center;
