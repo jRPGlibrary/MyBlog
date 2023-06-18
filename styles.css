@@ -1,3 +1,6 @@
+body {   
+    background-color: #18191a;
+}
 /* Styles pour le header */
 #Header_Container {
     display: flex;
@@ -248,6 +251,7 @@ main {
     margin: auto;
 
 }
+
 
 /* Styles généraux du footer */
 footer {

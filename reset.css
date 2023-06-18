@@ -1,37 +1,70 @@
 /* CSS Reset */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-    margin: 0;
-    padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
 
+/* Correct the line-height for better accessibility */
+/* Recommended line-height value: 1.5 */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    background-color: #18191a;
-    margin: 0;
-    padding: 0;
+  line-height: 1.5;
 }
 
-html,
-body {
-    height: 100%;
-    width: 100%;
+/* Use border-box box-sizing for easier layout */
+html {
+  box-sizing: border-box;
 }
 
-/* Règles supplémentaires */
-/* Ajoute tes styles personnalisés à partir de cette ligne */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive breakpoints */
+/* You can adjust these breakpoints as needed */
+/* Example breakpoints for 20 different screen sizes */
+@media screen and (max-width: 320px) {
+  /* Styles for the smallest screens */
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* Styles for small screens */
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  /* Styles for medium screens */
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  /* Styles for larger medium screens */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for small tablets */
+}
+
+/* ... and so on for the other breakpoints */
+
+@media screen and (min-width: 2561px) {
+  /* Styles for large screens */
+}
