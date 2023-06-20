@@ -90,6 +90,7 @@ video {
 /* Recommended line-height value: 1.5 */
 body {
   line-height: 1.5;
+  background-color: #18191a;
 }
 
 /* Use border-box box-sizing for easier layout */

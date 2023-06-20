@@ -25,14 +25,14 @@ window.onload = function () {
     daysSincePost4 + " jours";
 
   // Update the author names
-  document.querySelector("#LastNewsSlider_border1 .authorName").innerHTML =
-    "LeBloggeurFou";
-  document.querySelector("#LastNewsSlider_border2 .authorName").innerHTML =
-    "LeBloggeurFou";
-  document.querySelector("#LastNewsSlider_border3 .authorName").innerHTML =
-    "LeBloggeurFou";
-  document.querySelector("#LastNewsSlider_border4 .authorName").innerHTML =
-    "LeBloggeurFou";
+  document.querySelector("#NewsHeader_Border1 .authorName").innerHTML =
+    "jRPG_Library";
+  document.querySelector("#NewsHeader_Border2 .authorName").innerHTML =
+    "jRPG_Library";
+  document.querySelector("#NewsHeader_Border3 .authorName").innerHTML =
+    "jRPG_Library";
+  document.querySelector("#NewsHeader_Border4 .authorName").innerHTML =
+    "jRPG_Library";
   document.querySelector("#LastNews_Content .authorName").innerHTML =
     "LeBloggeurFou";
 };
