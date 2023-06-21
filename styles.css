@@ -42,9 +42,6 @@
 
 
 
-
-
-
 #social_menu {
     position: fixed;
     top: 50%;
@@ -106,7 +103,7 @@
 #NewsHeader_Container img {
     height: 475px;
     width: 280.5px;
-    border-radius: 2.5%;
+    border-radius: 1%;
 }
 
 .NewsHeaderCards {
@@ -117,6 +114,8 @@
 
 .NewsHeaderCards img {
     transition: transform 0.3s ease;
+    object-fit: cover;
+    /* Ajout de la propriété object-fit */
 }
 
 .NewsHeaderCards:hover img {
@@ -152,10 +151,6 @@
 }
 
 
-
-
-
-
 .Container_Border {
     display: flex;
     justify-content: center;
@@ -171,6 +166,7 @@
     text-align: right;
     margin-top: 100px;
 }
+
 
 #LastNews_Title h2{
     display: inline;
@@ -232,6 +228,62 @@
     border-bottom: solid 2.5px #a49f9f;
     opacity: 0.3;
     margin: auto;
+}
+
+
+/* Styles pour les petits écrans */
+@media screen and (max-width: 767px) {
+
+    #LastNews_Title,
+    #LastNews_Title:hover {
+        text-align: right;
+        margin-top: 50px;
+    }
+
+    #LastPreviews_Title {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #LastNews_Content {
+        width: 100%;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    #LastNews_Content img {
+        width: 100%;
+
+    }
+
+    #LastNews_Content p {
+        margin-left: 0;
+        width: 100%;
+        font-size: x-large;
+    }
+
+    .readMoreLink a {
+    
+        font-size: x-large;
+        margin-top: 20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: end;
+        text-decoration: none;
+    }
+
+    .LastNews_Border {
+        width: 80%;
+    }
+}
+#LastPreviews_Title {
+    width: 80%;
+    text-align: left;
+}
+.text {
+    text-align: center;
+    font-size: 10px;
 }
 
 /* Styles généraux du footer */

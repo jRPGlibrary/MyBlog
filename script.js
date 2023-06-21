@@ -34,7 +34,7 @@ window.onload = function () {
   document.querySelector("#NewsHeader_Border4 .authorName").innerHTML =
     "jRPG_Library";
   document.querySelector("#LastNews_Content .authorName").innerHTML =
-    "LeBloggeurFou";
+    "jRPG_Library";
 };
 
 // Récupérez la section du menu
