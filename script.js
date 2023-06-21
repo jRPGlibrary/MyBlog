@@ -63,3 +63,10 @@ document.addEventListener("mousemove", (e) => {
     hideMenu(); // Masquez le menu lorsque la souris n'est pas proche du bord droit
   }
 });
+
+
+
+
+document.querySelector(".menu-burger").addEventListener("click", function () {
+  document.querySelector("#Header_Nav ul").classList.toggle("show");
+});
