@@ -64,9 +64,6 @@ document.addEventListener("mousemove", (e) => {
   }
 });
 
-
-
-
 document.querySelector(".menu-burger").addEventListener("click", function () {
   document.querySelector("#Header_Nav ul").classList.toggle("show");
 });
