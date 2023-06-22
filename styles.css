@@ -127,7 +127,6 @@
 
 #NewsHeader_Container {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     height: auto;
     width: 100%;
@@ -182,6 +181,7 @@
     float: right;
     clear: both;
 }
+
 
 .readMoreLink {
     display: flex;
