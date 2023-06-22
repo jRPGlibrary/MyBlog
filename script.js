@@ -74,16 +74,3 @@ new Twitch.Embed("Twitch_Embed", {
   height: 480,
   channel: "jRPG_Library",
 });
-
-
-$(document).ready(function () {
-  $(".NewsHeaderCards").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  });
-});
