@@ -84,6 +84,8 @@ video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
+  text-decoration: none;
+  color: white;
 }
 
 /* Correct the line-height for better accessibility */

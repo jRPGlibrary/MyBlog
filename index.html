@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre de ton site</title>
+    <title>jRPGlibrary</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="/Logo.png" type="image/x-icon">
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
 </head>
+
+
 
 <body>
 
     <header id="Header_Container">
-        <?php include 'social.php'; ?>
         <section id="social_menu">
             <ul>
                 <li><a href="https://www.facebook.com/JrpgLibrary/"><img src="./facebook-icone copie.png"
@@ -23,22 +25,6 @@
                 </li>
             </ul>
         </section>
-        <nav id="Header_Nav">
-            <div class="menu-burger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="menu-list">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#Actus">Actus</a></li>
-                <li><a href="#Avant-Premières">Avant-Premières</a></li>
-                <li><a href="#Tests">Tests</a></li>
-                <li><a href="#Partenariats">Partenariats</a></li>
-                <li><a href="#Contacts">Contacts</a></li>
-            </ul>
-        </nav>
-        <?php include 'navbar.php'; ?>
         <nav id="Header_Nav">
             <div class="menu-burger">
                 <div class="bar"></div>
@@ -134,7 +120,7 @@
                 <a class="readMoreLink" href="#">Lire la suite</a>
 
             </div>
-            <span class="LastNews_Border">p</span>
+            <span class="LastNews_Border"></span>
 
             <div id="LastNews_Content">
                 <!-- Place your news content here -->
@@ -148,7 +134,7 @@
                 <a class="readMoreLink" href="#">Lire la suite</a>
 
             </div>
-            <span class="LastNews_Border">p</span>
+            <span class="LastNews_Border"></span>
 
             <div id="LastNews_Content">
                 <!-- Place your news content here -->
@@ -161,7 +147,7 @@
                 <a class="readMoreLink" href="#">Lire la suite</a>
 
             </div>
-            <span class="LastNews_Border">p</span>
+            <span class="LastNews_Border"></span>
 
 
             <div id="LastNews_Content">
@@ -175,7 +161,7 @@
                 <a class="readMoreLink" href="#">Lire la suite</a>
 
             </div>
-            <span class="LastNews_Border">p</span>
+            <span class="LastNews_Border"></span>
 
             <div id="LastNews_Content">
                 <!-- Place your news content here -->
@@ -188,7 +174,7 @@
                 <a class="readMoreLink" href="#">Lire la suite</a>
 
             </div>
-            <span class="LastNews_Border">p</span>
+            <span class="LastNews_Border"></span>
 
             <div id="LastNews_Content">
                 <!-- Place your news content here -->
@@ -201,7 +187,7 @@
                 <a class="readMoreLink" href="#">Lire la suite</a>
 
             </div>
-            <span class="LastNews_Border">p</span>
+            <span class="LastNews_Border"></span>
 
             <div id="LastNews_Content">
                 <!-- Place your news content here -->
@@ -222,9 +208,12 @@
                 <h2>Avant-Premières</h2>
             </div>
         </section>
-    </main>
 
-    <?php include 'footer.php'; ?>
+        <section id="Twitch_Container">
+            <div id="Twitch_Embed"></div>
+
+        </section>
+    </main>
     <footer>
         <div id="footer_content">
             <div id="footer_left">

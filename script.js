@@ -67,3 +67,23 @@ document.addEventListener("mousemove", (e) => {
 document.querySelector(".menu-burger").addEventListener("click", function () {
   document.querySelector("#Header_Nav ul").classList.toggle("show");
 });
+
+
+new Twitch.Embed("Twitch_Embed", {
+  width: 1100,
+  height: 480,
+  channel: "jRPG_Library",
+});
+
+
+$(document).ready(function () {
+  $(".NewsHeaderCards").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
+});

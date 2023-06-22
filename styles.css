@@ -80,8 +80,6 @@
     }
 }
 
-
-
 #social_menu {
     position: fixed;
     top: 50%;
@@ -124,10 +122,6 @@
     pointer-events: none;
 }
 
-
-
-
-
 /* Styles supplémentaires */
 /* Ajoutez vos styles personnalisés ici */
 
@@ -155,7 +149,6 @@
 .NewsHeaderCards img {
     transition: transform 0.3s ease;
     object-fit: cover;
-    /* Ajout de la propriété object-fit */
 }
 
 .NewsHeaderCards:hover img {
@@ -190,6 +183,10 @@
     clear: both;
 }
 
+.readMoreLink {
+    display: flex;
+    align-items: end;
+}
 
 .Container_Border {
     display: flex;
@@ -207,18 +204,19 @@
     margin-top: 100px;
 }
 
-
-#LastNews_Title h2{
+#LastNews_Title h2,
+#LastPreviews_Title h2 {
     display: inline;
-    background-color: red;
     border-radius: 10%;
     padding: 0.2em 0.5em;
 }
+
+#LastNews_Title h2 {
+    background-color: red;
+}
+
 #LastPreviews_Title h2 {
-    display: inline;
     background-color: rgb(30, 0, 255);
-    border-radius: 10%;
-    padding: 0.2em 0.5em;
 }
 
 #LastPreviews_Title {
@@ -226,7 +224,6 @@
     border-bottom: solid 2px rgb(30, 0, 255);
     width: 80%;
     text-align: left;
-    margin-top: 100px;
 }
 
 #LastNews_Content {
@@ -256,10 +253,6 @@
     transform: scale(1.04);
 }
 
-.readMoreLink a {
-    text-decoration: none;
-}
-
 .LastNews_Border {
     display: flex;
     align-content: center;
@@ -269,7 +262,6 @@
     opacity: 0.3;
     margin: auto;
 }
-
 
 /* Styles pour les petits écrans */
 @media screen and (max-width: 767px) {
@@ -294,7 +286,6 @@
 
     #LastNews_Content img {
         width: 100%;
-
     }
 
     #LastNews_Content p {
@@ -304,7 +295,6 @@
     }
 
     .readMoreLink a {
-    
         font-size: x-large;
         margin-top: 20px;
         margin-right: 20px;
@@ -317,13 +307,21 @@
         width: 80%;
     }
 }
-#LastPreviews_Title {
+
+/* Twitch Container */
+#Twitch_Container {
+    display: flex;
     width: 80%;
-    text-align: left;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding-bottom: 30px;
 }
-.text {
-    text-align: center;
-    font-size: 10px;
+
+#Twitch_Embed {
+    display: flex;
+    width: 100%;
 }
 
 /* Styles généraux du footer */
