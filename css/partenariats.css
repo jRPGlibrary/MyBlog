@@ -1,0 +1,22 @@
+#Partenariats_Container {
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.Partenariats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.Partenariats_Block {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.Partenariats_Block img {
+    width: 100%;
+    height: auto;
+}
