@@ -1,0 +1,52 @@
+/* Styles généraux du footer */
+footer {
+    background-color: #242526;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 500px;
+}
+
+/* Styles des colonnes */
+#footer_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer_left,
+#footer_right {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Styles des liens */
+#footer_left ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer_left ul li {
+    margin-bottom: 5px;
+}
+
+#footer_left ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer_left ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styles des contacts */
+#footer_right p {
+    margin-bottom: 5px;
+}
+
+/* Styles du bas du footer */
+#footer_bottom {
+    margin-top: 20px;
+    text-align: center;
+    color: #999999;
+}
