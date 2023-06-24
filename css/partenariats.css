@@ -14,9 +14,10 @@
 .Partenariats_Block {
     width: 220px;
     margin-bottom: 20px;
+    margin-left: 50px;
 }
 
 .Partenariats_Block img {
-    width: 100%;
+    width: 70%;
     height: auto;
 }
