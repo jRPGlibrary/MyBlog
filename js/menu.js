@@ -18,7 +18,7 @@ document.addEventListener("mousemove", (e) => {
   const windowWidth = window.innerWidth;
 
   // Vérifier si la souris est proche du bord droit de la fenêtre
-  if (mouseX >= windowWidth - 10) {
+  if (mouseX >= windowWidth - 50) {
     showMenu(); // Afficher le menu lorsque la souris est proche du bord droit
   } else {
     hideMenu(); // Masquer le menu lorsque la souris n'est pas proche du bord droit
