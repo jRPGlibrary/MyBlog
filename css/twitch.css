@@ -1,18 +1,21 @@
 #Twitch_Container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    padding-top: 20px;
+    height: 0;
+    /* Set the height to 0 to allow the iframe to expand */
+    padding-top: 56.25%;
+    /* Maintain a 16:9 aspect ratio (9/16 * 100) */
+    position: relative;
+    /* Add a relative position to contain the iframe */
 }
 
 #Twitch_Container iframe {
+    position: absolute;
+    /* Position the iframe within the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
-}
-
-@media (max-width: 768px) {
-    #Twitch_Container iframe {
-        width: 100%;
-    }
 }

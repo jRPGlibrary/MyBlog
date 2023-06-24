@@ -1,7 +1,8 @@
 new Twitch.Embed("Twitch_Embed", {
-  width: 1100,
-  height: 480,
+  width: "100%",
+  height: "100%",
   channel: "jRPG_Library",
   autoplay: true,
   theme: "dark",
+  layout: "video",
 });

@@ -4,7 +4,6 @@ footer {
     padding: 20px;
     color: #ffffff;
     font-size: 14px;
-    margin-top: 500px;
 }
 
 /* Styles des colonnes */
@@ -13,34 +12,47 @@ footer {
     flex-wrap: wrap;
 }
 
-#footer_left,
-#footer_right {
-    width: 50%;
+.footer_column {
     padding: 10px;
     box-sizing: border-box;
 }
 
+#footer_left {
+    width: 33.33%;
+    /* Adjust the width of the first column as needed */
+}
+
+#footer_right {
+    width: 33.33%;
+    /* Adjust the width of the second column as needed */
+}
+
+#footer_twitch {
+    width: 33.33%;
+    /* Adjust the width of the third column as needed */
+}
+
 /* Styles des liens */
-#footer_left ul {
+.footer_column ul {
     list-style: none;
     padding: 0;
 }
 
-#footer_left ul li {
+.footer_column ul li {
     margin-bottom: 5px;
 }
 
-#footer_left ul li a {
+.footer_column ul li a {
     color: #ffffff;
     text-decoration: none;
 }
 
-#footer_left ul li a:hover {
+.footer_column ul li a:hover {
     text-decoration: underline;
 }
 
 /* Styles des contacts */
-#footer_right p {
+.footer_column p {
     margin-bottom: 5px;
 }
 
@@ -49,4 +61,10 @@ footer {
     margin-top: 20px;
     text-align: center;
     color: #999999;
+}
+
+@media (max-width: 768px) {
+    .footer_column {
+        width: 100%;
+    }
 }
