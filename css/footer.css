@@ -64,7 +64,23 @@ footer {
 }
 
 @media (max-width: 768px) {
+    #footer_content {
+        display: flex;
+        flex-direction: column;
+        /* Modifier la direction du flex en colonne */
+    }
+
     .footer_column {
-        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 80%;
+        /* Ajustement pour que toutes les colonnes aient une largeur de 80% */
+        margin: 0 auto;
+        /* Centre les colonnes horizontalement */
+    }
+
+    #footer_twitch {
+        width: 33.33%;
+        /* Adjust the width of the third column as needed */
     }
 }

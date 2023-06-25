@@ -137,45 +137,66 @@
 
 /* Styles for small screens */
 @media screen and (max-width: 767px) {
+ 
+#NewsHeader_Container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .NewsHeaderCards {
+        scroll-snap-align: start;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
 
     #LastNews_Title,
     #LastNews_Title:hover {
-        text-align: right;
-        margin-top: 50px;
+        text-align: center;
+        margin-top: auto;
     }
 
     #LastPreviews_Title {
-        width: 100%;
         text-align: center;
-        margin-top: 50px;
+        margin-top: auto;
     }
 
     #LastNews_Content {
-        width: 100%;
         margin-top: 50px;
         flex-direction: column;
     }
 
     #LastNews_Content img {
         width: 100%;
+        margin-bottom: 30px;
     }
 
     #LastNews_Content p {
         margin-left: 0;
         width: 100%;
-        font-size: x-large;
+        font-size: 20px;
     }
 
+    .readMoreLink {
+    
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+ }
+
+
     .readMoreLink a {
-        font-size: x-large;
-        margin-top: 20px;
-        margin-right: 20px;
-        display: flex;
-        justify-content: end;
+
         text-decoration: none;
     }
 
     .LastNews_Border {
-        width: 80%;
+        width: 60%;
+        margin-top: 20px;
     }
 }
