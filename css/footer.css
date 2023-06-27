@@ -9,26 +9,27 @@ footer {
 /* Styles des colonnes */
 #footer_content {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .footer_column {
+    font-size: 20px;
     padding: 10px;
     box-sizing: border-box;
 }
 
 #footer_left {
-    width: 33.33%;
+    width:50%;
     /* Adjust the width of the first column as needed */
 }
 
 #footer_right {
-    width: 33.33%;
+    width: 50%;
     /* Adjust the width of the second column as needed */
 }
 
 #footer_twitch {
-    width: 33.33%;
+    display: block;
+    width: 100%;
     /* Adjust the width of the third column as needed */
 }
 
