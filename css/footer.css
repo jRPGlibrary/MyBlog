@@ -1,9 +1,10 @@
 /* Styles généraux du footer */
 footer {
     background-color: #242526;
-    padding: 20px;
+    padding: 2em 2em 1em 2em;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 18px;
+    margin-top: 180px;
 }
 
 /* Styles des colonnes */
@@ -12,7 +13,6 @@ footer {
 }
 
 .footer_column {
-    font-size: 20px;
     padding: 10px;
     box-sizing: border-box;
 }
