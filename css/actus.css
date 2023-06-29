@@ -5,12 +5,10 @@
     height: 100px;
 }
 
-
 #Actus_Container {
     height: auto;
     width: 100%;
 }
-
 
 #Actus_Title {
     color: #ffffff;
@@ -24,17 +22,14 @@
     display: inline;
     border-top-right-radius: 15%;
     padding: 0.2em 0.5em;
-}
-
-#Actus_Title h2 {
     background-color: red;
 }
-
 
 #Actus_Content {
     margin: auto;
     padding: 0;
     display: flex;
+    flex-direction: column;
     width: 80%;
     overflow: hidden;
     margin-top: 80px;
@@ -48,9 +43,9 @@
 }
 
 #Actus_Content p {
-    margin-left: 30px;
+    margin-left: 0;
     color: #dfdddd;
-    width: 45%;
+    width: 100%;
 }
 
 #Actus_Content img:hover {
@@ -65,19 +60,18 @@
     border-bottom: solid 2.5px #a49f9f;
     opacity: 0.3;
     margin: 50px auto;
-
-
 }
 
 .readMoreLink {
     display: flex;
-    align-items: end;
+    justify-content: flex-end;
     font-size: 18px;
 }
 
 .readMoreLink:hover {
     text-decoration: underline;
 }
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -95,62 +89,33 @@
     color: red;
 }
 
-
 .pagination .active {
     font-weight: bold;
     color: red;
 }
 
-
-
-
-
-
-
-
 @media screen and (max-width: 767px) {
-
-
-    #Actus_Title{
+    #Actus_Title {
         text-align: center;
         margin-top: auto;
     }
 
+    #Actus_Title h2 {
+        display: block;
+        border-top-right-radius: 0;
+    }
 
     #Actus_Content {
         margin-top: 50px;
-        flex-direction: column;
     }
 
     #Actus_Content img {
         width: 100%;
-        margin-bottom: 30px;
-    }
-
-    #Actus_Content p {
-        margin-left: 0;
-        width: 100%;
-        font-size: 20px;
-    }
-
-    .readMoreLink {
-
-        display: flex;
-        justify-content: end;
-        width: 100%;
-        font-size: 20px;
-        margin-top: 20px;
-        text-decoration: none;
-    }
-
-
-    .readMoreLink a {
-
-        text-decoration: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .Actus_Border {
-        width: 60%;
-        margin-top: 20px;
+        width: 90%;
     }
 }

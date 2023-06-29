@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   var currentPage = 1;
-  var totalPages = 10; // Nombre total de pages
+  var totalPages = 50; // Nombre total de pages
   var displayPages = 10; // Nombre de pages à afficher dans la pagination
 
   var previousButton = document.getElementById("previous");
