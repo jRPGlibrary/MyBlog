@@ -1,5 +1,8 @@
     <footer>
         <div id="footer_content">
+            <div id="Twitch_Container">
+                <div id="Twitch_Embed"></div>
+            </div>
             <div class="footer_column" id="footer_left">
                 <h3>Liens utiles</h3>
                 <ul>
@@ -16,9 +19,6 @@
                 <p>Email: loremipsum@lorem.ipsum</p>
             </div>
             <div class="footer_column" id="footer_twitch">
-                <div id="Twitch_Container">
-                    <div id="Twitch_Embed"></div>
-                </div>
             </div>
         </div>
         <div id="footer_bottom">

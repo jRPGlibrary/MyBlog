@@ -174,17 +174,18 @@
     #LastNews_Content {
         margin-top: 50px;
         flex-direction: column;
+        max-width: 90%;
     }
 
     #LastNews_Content img {
         width: 100%;
         margin-bottom: 30px;
+        opacity: 1;
     }
 
     #LastNews_Content p {
-        margin-left: 0;
+        margin: auto;
         width: 100%;
-        font-size: 20px;
     }
 
     .readMoreLink {

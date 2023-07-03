@@ -18,7 +18,7 @@ footer {
 }
 
 #footer_left {
-    width:50%;
+    width: 50%;
     /* Adjust the width of the first column as needed */
 }
 
@@ -81,7 +81,25 @@ footer {
     }
 
     #footer_twitch {
-        width: 33.33%;
+        display: contents;
+        width: 105%;
+
+        padding-bottom: 20px;
         /* Adjust the width of the third column as needed */
     }
 }
+
+    #footer_left {
+        width: 50%;
+        text-align: center;
+        margin-top: 50px;
+        /* Adjust the width of the first column as needed */
+    }
+
+    #footer_right {
+        width: 50%;
+        text-align: center;
+        margin-top: 20px;
+        
+        /* Adjust the width of the second column as needed */
+    }
