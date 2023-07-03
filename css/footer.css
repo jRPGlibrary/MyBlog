@@ -10,6 +10,8 @@ footer {
 /* Styles des colonnes */
 #footer_content {
     display: flex;
+    
+
 }
 
 .footer_column {
