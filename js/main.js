@@ -35,3 +35,20 @@ window.onload = function() {
   document.querySelector("#LastNews_Content .authorName").innerHTML =
     "jRPG_Library";
 };
+
+
+    // Sélectionne tous les éléments ayant l'id "Actus_Content"
+    var publications = Array.from(document.querySelectorAll("#Actus_Content"));
+
+    // Trie les publications en utilisant la propriété "date" si tu l'as ajoutée, sinon utilise l'ordre d'apparition dans le HTML
+    publications.sort(function(a, b) {
+      var dateA = new Date(a.getAttribute("data-date")); // Remplace "data-date" par le nom de l'attribut contenant la date de publication
+      var dateB = new Date(b.getAttribute("data-date")); // Remplace "data-date" par le nom de l'attribut contenant la date de publication
+      return dateB - dateA;
+    });
+
+    // Parcours les publications triées et les ajoute au DOM
+    var actusContainer = document.getElementById("Actus_Container"); // Remplace "Actus_Container" par l'ID du conteneur où tu souhaites afficher les publications
+    publications.forEach(function(publication) {
+      actusContainer.appendChild(publication);
+    });

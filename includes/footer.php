@@ -1,27 +1,26 @@
-    <footer>
-        <div id="footer_content">
-            <div id="Twitch_Container">
-                <div id="Twitch_Embed"></div>
-            </div>
-            <div class="footer_column" id="footer_left">
-                <h3>Liens utiles</h3>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="actus.htmll">Actus</a></li>
-                    <li><a href="#Avant-Premières">Avant-Premières</a></li>
-                    <li><a href="#Tests">Tests</a></li>
-                    <li><a href="partenariats.html">Partenariats</a></li>
-                    <li><a href="#Contacts">Contacts</a></li>
-                </ul>
-            </div>
-            <div class="footer_column" id="footer_right">
-                <h3>Contacts</h3>
-                <p>Email: loremipsum@lorem.ipsum</p>
-            </div>
-            <div class="footer_column" id="footer_twitch">
-            </div>
-        </div>
-        <div id="footer_bottom">
-            <p>&copy; 2023 jRPGLibrary. Tous droits réservés.</p>
-        </div>
-    </footer>
+<footer id="Footer_Container">
+    <div class="column">
+        <!-- Ajoutez ici les liens vers vos autres pages -->
+        <ul>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <!-- Ajoutez ici le lecteur Twitch -->
+        <div id="Twitch_Embed"></div>
+    </div>
+    <div class="column">
+        <!-- Ajoutez ici vos réseaux sociaux et votre adresse e-mail -->
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>votre@mail.com</p>
+    </div>
+    <div>
+        <p>&copy; 2023 jRPGLibrary. Tous droits réservés.</p>
+    </div>
+</footer>
