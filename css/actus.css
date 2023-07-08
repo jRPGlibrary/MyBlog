@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100px;
+    
 }
 
 #Actus_Container {
@@ -25,29 +26,28 @@
     background-color: red;
 }
 
-#Actus_Content {
+.Actus_Content {
     margin: auto;
     padding: 0;
     display: flex;
     width: 80%;
-    overflow: hidden;
     margin-top: 80px;
 }
 
-#Actus_Content img {
+.Actus_Content img {
     width: 30%;
     border-radius: 1.3%;
     opacity: 0.8;
     transition: transform 0.3s ease-in-out;
 }
 
-#Actus_Content p {
+.Actus_Content p {
     margin-left: 30px;
     color: #dfdddd;
     width: 45%;
 }
 
-#Actus_Content img:hover {
+.Actus_Content img:hover {
     opacity: 1;
     transform: scale(1.05);
 }
@@ -55,10 +55,10 @@
 .Actus_Border {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 60%;
     border-bottom: solid 2.5px #a49f9f;
     opacity: 0.3;
-    margin: 50px auto;
+    margin: 40px auto;
 }
 
 .readMoreLink {
@@ -70,32 +70,13 @@
     text-decoration: underline;
 }
 
-.pagination {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
-}
 
-.pagination button {
-    padding: 5px 10px;
-    font-size: 15px;
-    border-radius: 10%;
-}
-
-.pagination button:hover {
-    color: red;
-}
-
-.pagination .active {
-    font-weight: bold;
-    color: red;
-}
-
+/* Media queries for screens up to 767px */
 @media screen and (max-width: 767px) {
     #Actus_Title {
         text-align: center;
-        margin-top: auto;
+        margin-top: 50px;
+        /* Correction : la valeur "auto" est supprimée */
     }
 
     #Actus_Title h2 {
@@ -103,17 +84,42 @@
         border-top-right-radius: 0;
     }
 
-    #Actus_Content {
-        margin-top: 50px;
+    .Actus_Content {
+        margin-top: 30px;
+        flex-direction: column;
+        /* Correction : changer la direction de flexbox à "column" */
+        align-items: center;
+        /* Correction : centrer les éléments horizontalement */
     }
 
-    #Actus_Content img {
+    .Actus_Content img {
         width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 10px 0 20px 0;
+        opacity: 1;
+        /* Correction : marges ajoutées en haut et en bas */
+    }
+
+    .Actus_Content img:hover {
+        transform: none;
+    }
+
+    .Actus_Content p {
+        margin-left: 0;
+        /* Correction : supprimer la marge gauche */
+        width: 100%;
+        /* Correction : étendre la largeur à 100% */
     }
 
     .Actus_Border {
         width: 90%;
     }
+
+    .readMoreLink {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
 }

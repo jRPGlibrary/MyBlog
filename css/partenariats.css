@@ -1,13 +1,12 @@
 #Partenariats_Container {
     width: 80%;
-    margin: auto;
-    margin-top: 150px;
+    margin: 120px auto ;
 }
 
 .Partenariats {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
 }
 
