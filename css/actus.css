@@ -4,14 +4,16 @@
     justify-content: center;
     align-items: center;
     height: 100px;
-    
+
 }
+
 #Actus_BannerTitle {
     color: #ffffff;
     border-bottom: solid 2px red;
     width: 80%;
     text-align: right;
 }
+
 #Actus_BannerTitle h2 {
     display: inline;
     border-top-right-radius: 15%;
@@ -22,23 +24,27 @@
 /* Actus Container (la base du bloc ) */
 #Actus_Container {
     display: flex;
-    flex-direction: column-reverse; /* Le display en collumn-reverse permet d'afficher les news de la plus récente
+    flex-direction: column-reverse;
+    /* Le display en collumn-reverse permet d'afficher les news de la plus récente
                                     à la plus ancienne */
 
     width: 100%;
     height: auto;
 
-    margin: auto; /* Permet d'alligner le contenu correctement au niveau des marges par rapport au width */
+    margin: auto;
+    /* Permet d'alligner le contenu correctement au niveau des marges par rapport au width */
 
 }
 
 /* Infos Container (la base du bloc ) */
 
 .Infos_Container {
-    display: flex; /* Display Flex pour collé les élements les uns à coté des autres */
+    display: flex;
+    /* Display Flex pour collé les élements les uns à coté des autres */
     margin: 50px auto 50px auto;
     width: 80%;
     height: auto;
+
 }
 
 /* Tout ce qui touche au bloc image et l'image en elle même */
@@ -81,7 +87,7 @@
     text-align: end;
 }
 
-.Infos_ReadMore a{
+.Infos_ReadMore a {
     transition: 0.5s ease-in-out;
 }
 
@@ -99,4 +105,65 @@
     border-bottom: solid 2.5px #a49f9f;
     opacity: 0.3;
     margin: 25px auto;
+}
+
+@media (max-width: 768px) {
+    .Infos_Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Infos_ActusImage {
+        width: 430px;
+        height: 250px;
+        border-radius: 0 20px 0 0;
+    
+    }
+
+    .Infos_ActusImage img {
+
+        margin-bottom: 20px;
+    }
+
+    .Infos_ActusTexte {
+        margin: 30px 0 0 0;
+    }
+
+    .Infos_Border {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .Infos_ActusImage img {
+        width: 580px;
+        height: 350px;
+    }
+
+    .Infos_ActusTexte {
+        margin-left: 50px;
+    }
+
+    .Infos_Border {
+        width: 90%;
+    }
+
+    .Infos_Author {
+        font-size: 14px;
+    }
+
+    .Infos_Title {
+        font-size: 27px;
+    }
+
+    .Infos_Description {
+        font-size: 17px;
+    }
+
+    .Infos_ReadMore {
+        font-size: 18px;
+    }
 }

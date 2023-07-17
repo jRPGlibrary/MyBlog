@@ -30,6 +30,16 @@
 
 }
 
+.email {
+    font-style: italic;
+    text-decoration: underline;
+    transition: 0.5s ease-in-out;
+}
+
+.email:hover {
+    color: rgb(255, 83, 83);
+}
+
 @media screen and (max-width: 768px) {
 
     #Footer_Container .column {

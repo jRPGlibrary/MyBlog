@@ -56,7 +56,6 @@ function add_actu(actu) {
                 <div class="Infos_ReadMore">
                     <a href=${actu["page"]}>Lire la suite</a>
                 </div>
-					${actu["date"]}
             </div>
         </div>
         <div class="Infos_Border"></div>`
