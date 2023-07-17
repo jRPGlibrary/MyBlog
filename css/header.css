@@ -56,9 +56,10 @@
 
 @media (max-width: 768px) {
     #Header_Container {
-        flex-direction: column;
+        display: flex;
         height: auto;
         padding: 20px;
+        justify-content: flex-start;
     }
 
     #Header_Nav ul {
@@ -70,6 +71,9 @@
 
     #Header_Nav ul.show {
         display: flex;
+        /* width: 100%; */
+        align-items: flex-start;
+        height: 100vh;
     }
 
     #Header_Nav ul li {

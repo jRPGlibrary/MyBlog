@@ -37,9 +37,9 @@ function duree(date) {
 }
 
 function add_actu(actu) {
-  document.getElementById("Actus_Container").insertAdjacentHTML(
-    "afterbegin",
-    `<div class="Infos_Container">
+    document.getElementById("Actus_Container").insertAdjacentHTML(
+      "beforeend",
+      `<div class="Infos_Container">
             <div class="Infos_ActusImage">
                 <!-- Ici l'image de l'actu -->
                 <img src=${actu["image"]} alt="Image ${actu["name"]}">
@@ -47,7 +47,10 @@ function add_actu(actu) {
 
             <!-- Ici l'ensemble du bloc Actus -->
             <div class="Infos_ActusTexte">
-                <div class="Infos_Author">Nom de l'autheur: ${actu["author"]}</div>
+                <div class="Infos_Author">Nom de l'autheur: ${actu["author"]}
+                <div class="Infos_Date">${duree(actu["date"])}</div>
+                </div>
+				
                 <a href=${actu["page"]}>
                     <div class="Infos_Title">${actu["title"]}</div>
                 </a>
@@ -56,21 +59,20 @@ function add_actu(actu) {
                 <div class="Infos_ReadMore">
                     <a href=${actu["page"]}>Lire la suite</a>
                 </div>
-					${actu["date"]}
             </div>
         </div>
         <div class="Infos_Border"></div>`
-  );
+    );
 }
 
 function page_actu(actus_liste) {
-  var debut = actus_liste.length - 1 - nb_actus_page * index_page;
+  var debut = index_page*nb_actus_page;
   if (debut + 1 < nb_actus_page) {
-    for (var i = debut; i >= 0; i--) {
+    for (var i = debut; i < actus_liste.length; i++) {
       add_actu(actus_liste[i]);
     }
   } else if (debut + 1 >= nb_actus_page) {
-    for (var i = debut; i >= debut - nb_actus_page; i--) {
+    for (var i = debut; i < debut + nb_actus_page; i++) {
       add_actu(actus_liste[i]);
     }
   } else {
@@ -79,5 +81,3 @@ function page_actu(actus_liste) {
 }
 
 page_actu(actus_liste);
-console.log(duree(actus_liste[0]["date"]));
-console.log(duree(actus_liste[1]["date"]));
