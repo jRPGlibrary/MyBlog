@@ -1,56 +1,28 @@
-#Footer_Container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #242526;
-    padding: 2em 2em 1em 2em;
-    text-decoration: none;
-}
+@media screen and (max-width: 320px) {
 
-#Footer_Container ul {
-    list-style-type: none;
-    /* Supprime les puces des listes */
-    padding-left: 0;
-    /* Supprime le retrait à gauche des listes */
-}
+    #Footer_Container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #242526;
+        padding: 2em 2em 1em 2em;
+        text-decoration: none;
+    }
 
+    .email {
+        font-style: italic;
+        text-decoration: underline;
+        transition: 0.5s ease-in-out;
+    }
 
-#Footer_Container .column {
-    width: 30%;
-    margin-bottom: 20px;
-}
+    .email:hover {
+        color: rgb(255, 83, 83);
+    }
 
-#Footer_Container .column:first-child,
-#Footer_Container .column:last-child {
-    width: 20%;
-}
-
-#Footer_Container p {
-    margin-bottom: 0;
-
-}
-
-.email {
-    font-style: italic;
-    text-decoration: underline;
-    transition: 0.5s ease-in-out;
-}
-
-.email:hover {
-    color: rgb(255, 83, 83);
-}
-
-@media screen and (max-width: 768px) {
-
-    #Footer_Container .column {
+    .copyright {
+        font-size: 0.8em;
+        display: flex;
         width: 100%;
-        /* Modifier la largeur à 100% pour les petits écrans */
-        margin-bottom: 20px;
+        justify-content: center;
     }
-
-    #Footer_Container .column:first-child {
-        order: -1;
-        /* Changez l'ordre pour mettre le lecteur Twitch en premier */
-    }
-
 }
