@@ -113,7 +113,7 @@
     margin: 25px auto;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
     .Infos_Container {
         display: flex;
         flex-direction: column;
@@ -127,8 +127,8 @@
     }
 
     .Infos_ActusImage img {
-        width: 330px;
-        height: 200px;
+        width: 300px;
+        height: 180px;
         margin-bottom: 20px;
     }
 
