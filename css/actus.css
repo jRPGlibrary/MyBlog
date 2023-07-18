@@ -113,7 +113,7 @@
     margin: 25px auto;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 360px) {
     .Infos_Container {
         display: flex;
         flex-direction: column;
@@ -121,14 +121,14 @@
     }
 
     .Infos_ActusImage {
-        width: 430px;
-        height: 250px;
+
         border-radius: 0 20px 0 0;
-    
+
     }
 
     .Infos_ActusImage img {
-
+        width: 330px;
+        height: 200px;
         margin-bottom: 20px;
     }
 
