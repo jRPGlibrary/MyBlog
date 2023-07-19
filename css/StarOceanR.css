@@ -1,7 +1,6 @@
 /* Star Ocean Container (la base du bloc ) */
 #StarOceanR_Container {
     display: flex;
-    justify-content: center;
     width: 100%;
     height: 2000px;
     margin: auto;

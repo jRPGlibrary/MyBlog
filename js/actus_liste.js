@@ -6,7 +6,8 @@ var actus_liste = [
     name: "Born of Bread",
     author: "jRPGlibrary",
     date: new Date(2023, 6, 16, 22, 30),
-    title: "Le nouveau PAPER MARIO LIKE nommé BORN OF BREAD ! Que sais t'on dessus ? !",
+    title:
+      "Le nouveau PAPER MARIO LIKE nommé BORN OF BREAD ! Que sais t'on dessus ? !",
     infos: "",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1555140/header.jpg?t=1689001755",
@@ -34,7 +35,7 @@ var actus_liste = [
     infos:
       "Nouveautés, combats en temps réel, bande-son sublime et personnages attachants t'attendent ! Si tu es fan de la série ou curieux de ce RPG légendaire de la Playstation 1.",
     image:
-      "https://m.media-amazon.com/images/I/81Lg6N6OwYL._AC_UF1000,1000_QL80_.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/2238900/capsule_616x353.jpg?t=1689064446",
     page: "./pages/2023/Actus/Star_Ocean_Second_Story_R.html",
   },
 ];

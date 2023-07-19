@@ -12,25 +12,25 @@ function duree(date) {
   var mois = Math.floor(jours / 30);
   var annees = Math.floor(jours / 365);
   if (annees == 1) {
-    return "Il y a 1 an";
+    return "Depuis 1 an";
   } else if (annees > 1) {
-    return "Il y a " + annees + " ans";
+    return "Depuis " + annees + " ans";
   } else if (mois > 0) {
-    return "Il y a " + mois + " mois";
+    return "Depuis " + mois + " mois";
   } else if (semaines == 1) {
-    return "Il y a 1 semaine";
+    return "Depuis 1 semaine";
   } else if (semaines > 1) {
-    return "Il y a " + semaines + " semaines";
+    return "Depuis " + semaines + " semaines";
   } else if (jours == 1) {
-    return "Hier";
+    return "Depuis";
   } else if (jours > 1) {
-    return "Il y a " + jours + " jours";
+    return "Depuis " + jours + " jours";
   } else if (heures == 1) {
-    return "Il y a 1 heure";
+    return "Depuis 1 heure";
   } else if (heures > 1) {
-    return "Il y a " + heures + " heures";
+    return "Depuis " + heures + " heures";
   } else if (minutes > 1) {
-    return "Il y a " + minutes + " minutes";
+    return "Depuis " + minutes + " minutes";
   } else {
     return "Maintenant";
   }
@@ -47,7 +47,7 @@ function add_actu(actu) {
 
             <!-- Ici l'ensemble du bloc Actus -->
             <div class="Infos_ActusTexte">
-                <div class="Infos_Author">Nom de l'autheur: ${actu["author"]}
+                <div class="Infos_Author">Posté par : ${actu["author"]}
                 <div class="Infos_Date">${duree(actu["date"])}</div>
                 </div>
 				
