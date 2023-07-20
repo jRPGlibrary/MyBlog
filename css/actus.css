@@ -125,14 +125,19 @@
         border-radius: 0 20px 0 0;
 
     }
+
     .Infos_Plateformes {
 
         display: flex;
         width: 100%;
     }
 
-    .Cadre_Switch {
+    .Cadre_Divers {
+        height: 22px;
+        text-align: center;
+        margin-left: 5px;
         background-color: red;
+        width: 200px;
     }
 
     .Infos_ActusImage img {
@@ -150,12 +155,13 @@
         line-height: 1;
         margin-top: 30px;
         transition: 0.5s ease-in-out;
-        }
+    }
 
     .Infos_ReadMore {
         margin-top: 20px;
         text-align: end;
-}
+    }
+
     .Infos_Border {
         width: 100%;
         margin-top: 20px;

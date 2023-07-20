@@ -6,7 +6,7 @@ var actus_liste = [
     name: "Born of Bread",
     author: "jRPGlibrary",
     date: new Date(2023, 6, 16, 22, 30),
-    plateformes: ["Switch", "PS5", "PC", "Xbox Series"],
+    plateformes: ["Switch", "PS5", "PC", "Xbox"],
     title:
       "Le nouveau PAPER MARIO LIKE nommé BORN OF BREAD ! Que sais t'on dessus ? !",
     infos: "",
