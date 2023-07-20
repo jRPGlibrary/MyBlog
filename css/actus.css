@@ -125,6 +125,15 @@
         border-radius: 0 20px 0 0;
 
     }
+    .Infos_Plateformes {
+
+        display: flex;
+        width: 100%;
+    }
+
+    .Cadre_Switch {
+        background-color: red;
+    }
 
     .Infos_ActusImage img {
         width: 300px;

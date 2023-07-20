@@ -6,6 +6,7 @@ var actus_liste = [
     name: "Born of Bread",
     author: "jRPGlibrary",
     date: new Date(2023, 6, 16, 22, 30),
+    plateformes: ["Switch", "PS5", "PC", "Xbox Series"],
     title:
       "Le nouveau PAPER MARIO LIKE nommé BORN OF BREAD ! Que sais t'on dessus ? !",
     infos: "",
@@ -18,6 +19,7 @@ var actus_liste = [
     name: "Dragon Quest Treasures",
     author: "jRPGlibrary",
     date: new Date(2023, 6, 14, 20, 0),
+    plateformes: ["Switch", "PC"],
     title: "DRAGON QUEST TREASURES sort de vos console pour rejoindre STEAM !",
     infos:
       "Dragon Quest Treasures, un action-RPG sorti précédemment sur Nintendo Switch en 2022, est un nouveau joyau qui s'ajoute au palmares de l'exellente saga qui est Dragon Quest. Pour rappel, cette série enchanteresse existe depuis 1986, et depuis lors, elle brille de tout son éclat du côté du Soleil Levant",
@@ -30,12 +32,13 @@ var actus_liste = [
     name: "STAR OCEAN : THE SECOND STORY R",
     author: "jRPGlibrary",
     date: new Date(2023, 6, 13, 20, 0),
+    plateformes: ["Switch", "PS5", "PS4", "PC"],
     title:
       "STAR OCEAN: THE SECOND STORY R, L'aventure de Claude et Rena bientôt disponible en 2.5HD sur NEXTGEN.",
     infos:
       "Nouveautés, combats en temps réel, bande-son sublime et personnages attachants t'attendent ! Si tu es fan de la série ou curieux de ce RPG légendaire de la Playstation 1.",
     image:
-      "https://cdn.akamai.steamstatic.com/steam/apps/2238900/capsule_616x353.jpg?t=1689064446",
+      "https://m.media-amazon.com/images/I/81Lg6N6OwYL._AC_UF1000,1000_QL80_.jpg",
     page: "./pages/2023/Actus/Star_Ocean_Second_Story_R.html",
   },
 ];

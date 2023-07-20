@@ -1,6 +1,7 @@
 var nb_actus_page = 10;
 var index_page = 0;
-var max_index_page = Math.floor(actus_liste.length / nb_actus_page);
+var max_index_page = Math.ceil(actus_liste.length / nb_actus_page)-1;
+var liste_class_plateformes=["Switch"]
 
 function duree(date) {
   var now = new Date();
@@ -22,7 +23,7 @@ function duree(date) {
   } else if (semaines > 1) {
     return "Depuis " + semaines + " semaines";
   } else if (jours == 1) {
-    return "Depuis";
+    return "Hier";
   } else if (jours > 1) {
     return "Depuis " + jours + " jours";
   } else if (heures == 1) {
@@ -36,6 +37,19 @@ function duree(date) {
   }
 }
 
+function plateformes(liste_plateformes,liste_class_plateformes) {
+	var html_plateformes="";
+	for (i=0;i<liste_plateformes.length;i++) {
+		if (liste_plateformes[i] in liste_class_plateformes) {
+			var html_plateformes=html_plateformes+'<div class="Cadre_'+liste_plateformes[i].replace(" ","_")+'">'+liste_plateformes[i]+'</div>';
+		}
+		else {
+			var html_plateformes=html_plateformes+'<div class="Cadre_Divers">'+liste_plateformes[i]+'</div>';
+		}
+	}
+	return html_plateformes
+}
+
 function add_actu(actu) {
     document.getElementById("Actus_Container").insertAdjacentHTML(
       "beforeend",
@@ -44,13 +58,12 @@ function add_actu(actu) {
                 <!-- Ici l'image de l'actu -->
                 <img src=${actu["image"]} alt="Image ${actu["name"]}">
             </div>
-
             <!-- Ici l'ensemble du bloc Actus -->
+			<div class="Infos_Plateformes">${plateformes(actu["plateformes"],liste_class_plateformes)}</div>
             <div class="Infos_ActusTexte">
                 <div class="Infos_Author">Posté par : ${actu["author"]}
                 <div class="Infos_Date">${duree(actu["date"])}</div>
                 </div>
-				
                 <a href=${actu["page"]}>
                     <div class="Infos_Title">${actu["title"]}</div>
                 </a>
@@ -65,14 +78,14 @@ function add_actu(actu) {
     );
 }
 
-function page_actu(actus_liste) {
+function page_actu(actus_liste,nb_actus_pages,index_page) {
   var debut = index_page*nb_actus_page;
-  if (debut + 1 < nb_actus_page) {
-    for (var i = debut; i < actus_liste.length; i++) {
+  if (debut + nb_actus_page < actus_liste.length) {
+    for (var i = debut; i <= (debut + nb_actus_page - 1) ; i++) {
       add_actu(actus_liste[i]);
     }
-  } else if (debut + 1 >= nb_actus_page) {
-    for (var i = debut; i < debut + nb_actus_page; i++) {
+  } else if (debut + nb_actus_page >= actus_liste.length) {
+    for (var i = debut; i <= actus_liste.length-1; i++) {
       add_actu(actus_liste[i]);
     }
   } else {
@@ -80,4 +93,12 @@ function page_actu(actus_liste) {
   }
 }
 
-page_actu(actus_liste);
+function change_page (index_page,max_index_page,nb_actus_page) {
+	if (index_page>max_index_page) {
+		var index_page=max_index_page;
+	}
+	document.getElementById("Actus_Container").innerHTML="";
+	page_actu(actus_liste,nb_actus_page,index_page);
+}
+
+page_actu(actus_liste,nb_actus_page,index_page);
