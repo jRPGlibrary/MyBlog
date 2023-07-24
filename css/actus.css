@@ -42,7 +42,7 @@
     display: flex;
     /* Display Flex pour collé les élements les uns à coté des autres */
     margin: 50px auto 50px auto;
-    width: 80%;
+    width: 100%;
     height: auto;
 
 }
@@ -60,7 +60,7 @@
 .Infos_ActusTexte {
     display: grid;
     margin-left: 50px;
-    width: 100%;
+    width: 80%;
 }
 
 .Infos_Author {
