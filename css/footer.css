@@ -9,6 +9,19 @@
         text-decoration: none;
     }
 
+    #back_to_top {
+        position: fixed;
+        bottom: -5px;
+        right: 0;
+        z-index: 9999;
+        padding: 5px;
+    }
+
+    #back_to_top img {
+        Width: 25px;
+        Height: auto;
+    }
+
     .email {
         font-style: italic;
         text-decoration: underline;

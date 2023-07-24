@@ -1,7 +1,6 @@
-var nb_actus_page = 10;
-var index_page = 0;
-var max_index_page = Math.ceil(actus_liste.length / nb_actus_page)-1;
-var liste_class_plateformes=["Switch"]
+const nb_actus_page = 10;
+const max_index_page = Math.ceil(actus_liste.length / nb_actus_page)-1;
+var index_page = parseInt(document.getElementById("Actus_Container").dataset.indexPage);
 
 function duree(date) {
   var now = new Date();
@@ -37,17 +36,25 @@ function duree(date) {
   }
 }
 
-function plateformes(liste_plateformes,liste_class_plateformes) {
+function marque_plateforme(plateforme) {
+	const nintendo_plateformes=["NES","GB","SNES","GBC","N64","GBA","GC","DS","Wii","3DS","Wii U","Switch"];
+	const sony_plateformes=["PS1","PS2","PS3","PS4","PS5","PSP","PS Vita"];
+	const microsoft_plateformes=["Xbox","Xbox 360","Xbox One","Xbox Series"];
+	const sega_plateformes=["MS","Mega Drive","Game Gear","Saturn","Dreamcast"];
+	if (plateforme=="PC") {return "PC"}
+	else if (nintendo_plateformes.includes(plateforme)) {return "Nintendo"}
+	else if (sony_plateformes.includes(plateforme)) {return "Sony"}
+	else if (microsoft_plateformes.includes(plateforme)) {return "Microsoft"}
+	else if (sega_plateformes.includes(plateforme)) {return "Sega"}
+	else {return "Divers"}
+}
+
+function plateformes(liste_plateformes) {
 	var html_plateformes="";
 	for (i=0;i<liste_plateformes.length;i++) {
-		if (liste_plateformes[i] in liste_class_plateformes) {
-			var html_plateformes=html_plateformes+'<div class="Cadre_'+liste_plateformes[i].replace(" ","_")+'">'+liste_plateformes[i]+'</div>';
-		}
-		else {
-			var html_plateformes=html_plateformes+'<div class="Cadre_Divers">'+liste_plateformes[i]+'</div>';
-		}
+		var html_plateformes=html_plateformes+'<li class="Cadre_'+marque_plateforme(liste_plateformes[i])+'">'+liste_plateformes[i]+'</li>';
 	}
-	return html_plateformes
+	return html_plateformes;
 }
 
 function add_actu(actu) {
@@ -59,7 +66,7 @@ function add_actu(actu) {
                 <img src=${actu["image"]} alt="Image ${actu["name"]}">
             </div>
             <!-- Ici l'ensemble du bloc Actus -->
-			<div class="Infos_Plateformes">${plateformes(actu["plateformes"],liste_class_plateformes)}</div>
+			<ul class="Infos_Plateformes">${plateformes(actu["plateformes"])}</ul>
             <div class="Infos_ActusTexte">
                 <div class="Infos_Author">Posté par : ${actu["author"]}
                 <div class="Infos_Date">${duree(actu["date"])}</div>
@@ -80,25 +87,58 @@ function add_actu(actu) {
 
 function page_actu(actus_liste,nb_actus_pages,index_page) {
   var debut = index_page*nb_actus_page;
-  if (debut + nb_actus_page < actus_liste.length) {
-    for (var i = debut; i <= (debut + nb_actus_page - 1) ; i++) {
-      add_actu(actus_liste[i]);
-    }
-  } else if (debut + nb_actus_page >= actus_liste.length) {
-    for (var i = debut; i <= actus_liste.length-1; i++) {
-      add_actu(actus_liste[i]);
-    }
-  } else {
-    return;
+  for (var i = debut; (i <= (debut + nb_actus_page - 1) & i <= actus_liste.length-1); i++) {
+    add_actu(actus_liste[i]);
   }
+  pagination(Math.ceil(actus_liste.length / nb_actus_page)-1);
 }
 
-function change_page (index_page,max_index_page,nb_actus_page) {
+function change_page (index_page,max_index_page,nb_actus_page,actus_liste) {
 	if (index_page>max_index_page) {
 		var index_page=max_index_page;
 	}
 	document.getElementById("Actus_Container").innerHTML="";
+	document.getElementById("Pagination_Container").innerHTML="";
+	document.getElementById("Actus_Container").dataset.indexPage=index_page;
 	page_actu(actus_liste,nb_actus_page,index_page);
 }
 
-page_actu(actus_liste,nb_actus_page,index_page);
+function pagination (max_index_page,nb_actus_page) {
+	var index_page = parseInt(document.getElementById("Actus_Container").dataset.indexPage);
+	const max_index_gap = 3;
+	const pagination_container = document.getElementById("Pagination_Container");
+	if (index_page>0) {
+		pagination_container.insertAdjacentHTML("beforeend",
+		`<button id='bgnBtn' onclick=change_page(0,max_index_page,nb_actus_page,actus_liste)>&lt;&lt;</button>
+		<button id='prevBtn' onclick=change_page(${index_page-1},max_index_page,nb_actus_page,actus_liste)>&lt;</button>`)
+		if (index_page-max_index_gap>0) {
+			pagination_container.insertAdjacentHTML("beforeend",
+			"<button id='ellipsisPrevBtn'>...</button>")
+		}
+		for (i=max_index_gap; i>0; i--) {
+			if (index_page-i>=0) {
+				pagination_container.insertAdjacentHTML("beforeend",
+				"<button id='i-"+i+"Btn' onclick=change_page("+(index_page-i)+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1-i).toString()+"</button>")
+			}
+		}
+	}
+	if (max_index_page>0) {
+		pagination_container.insertAdjacentHTML("beforeend",
+		"<button id='iBtn' onclick=change_page("+index_page+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1).toString()+"</button>");
+	}
+	if (index_page<max_index_page) {
+		for (var i = 1; (i<=max_index_gap & max_index_page>=(index_page+i)); i++) {
+			pagination_container.insertAdjacentHTML("beforeend",
+			"<button id='i+"+i+"Btn' onclick=change_page("+(index_page+i)+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1+i).toString()+"</button>")
+		}
+		if (index_page+max_index_gap<max_index_page) {
+			pagination_container.insertAdjacentHTML("beforeend",
+			"<button id='ellipsisNextBtn'>...</button>")
+		}
+		pagination_container.insertAdjacentHTML("beforeend",
+		`<button id='nextBtn' onclick=change_page(${index_page+1},max_index_page,nb_actus_page,actus_liste)>&gt;</button>
+		<button id='endBtn' onclick=change_page(${max_index_page},max_index_page,nb_actus_page,actus_liste)>&gt;&gt;</button>`)
+	}
+}
+
+change_page(index_page,max_index_page,nb_actus_page,actus_liste);

@@ -127,17 +127,47 @@
     }
 
     .Infos_Plateformes {
-
-        display: flex;
-        width: 100%;
+		list-style-type: none;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		font-weight: 700
     }
 
-    .Cadre_Divers {
-        height: 22px;
+    .Infos_Plateformes li {
+		font-size: .75rem;
         text-align: center;
-        margin-left: 5px;
-        background-color: red;
-        width: 200px;
+        margin-right: 8px;
+		margin-bottom: 8px;
+		padding: 5px 15px;
+        border-radius: 0 10px 0 0;
+    }
+
+	.Cadre_Divers {
+        background-color: grey;
+    }
+
+	.Cadre_PC {
+        background-color: black;
+    }
+	
+	.Cadre_Nintendo {
+        background-color: #E4000F;
+    }
+
+	.Cadre_Sega {
+        background-color: #17569B;
+    }
+	
+	.Cadre_Sony {
+        background-color: #00439C;
+    }
+	
+	.Cadre_Microsoft {
+        background-color: #0E7A0D;
     }
 
     .Infos_ActusImage img {
@@ -166,6 +196,14 @@
         width: 100%;
         margin-top: 20px;
     }
+	
+	#Pagination_Container {
+		display: flex;
+	}
+
+	#iBtn {
+		font-weight: bold;
+	}
 
 }
 
