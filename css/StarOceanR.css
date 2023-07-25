@@ -1,12 +1,13 @@
 /* Star Ocean Container (la base du bloc ) */
 #StarOceanR_Container {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
 }
 
 #StarOceanR_Infos {
-    width: 80%;
+    width: 90%;
     margin: auto;
 
 }
