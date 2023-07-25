@@ -39,6 +39,6 @@ var actus_liste = [
       "Le 2 novembre 2023 marquera le retour d'un classique du RPG japonais, Star Ocean: The Second Story, sous une nouvelle forme : Star Ocean: The Second Story R. Développé par tri-Ace et édité par Square Enix...",
     image:
       "http://res.cloudinary.com/dfy0zd3p6/image/upload/c_scale,w_3840/photo_42795009",
-    page: "./pages/2023/Actus/Star_Ocean_Second_Story_R.html",
+    page: "/Star_Ocean_Second_Story_R.html",
   },
 ];
