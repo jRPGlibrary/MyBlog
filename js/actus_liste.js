@@ -34,11 +34,11 @@ var actus_liste = [
     date: new Date(2023, 6, 13, 20, 0),
     plateformes: ["Switch", "PS5", "PS4", "PC"],
     title:
-      "STAR OCEAN: THE SECOND STORY R, L'aventure de Claude et Rena bientôt disponible en 2.5HD sur NEXTGEN.",
+      "STAR OCEAN: THE SECOND STORY R - Le retour d'un classique du RPG en 2.5D, de retour sur NEXTGEN",
     infos:
-      "Nouveautés, combats en temps réel, bande-son sublime et personnages attachants t'attendent ! Si tu es fan de la série ou curieux de ce RPG légendaire de la Playstation 1.",
+      "Le 2 novembre 2023 marquera le retour d'un classique du RPG japonais, Star Ocean: The Second Story, sous une nouvelle forme : Star Ocean: The Second Story R. Développé par tri-Ace et édité par Square Enix...",
     image:
-      "https://m.media-amazon.com/images/I/81Lg6N6OwYL._AC_UF1000,1000_QL80_.jpg",
+      "http://res.cloudinary.com/dfy0zd3p6/image/upload/c_scale,w_3840/photo_42795009",
     page: "./pages/2023/Actus/Star_Ocean_Second_Story_R.html",
   },
 ];

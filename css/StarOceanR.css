@@ -2,6 +2,23 @@
 #StarOceanR_Container {
     display: flex;
     width: 100%;
-    height: 2000px;
-    margin: auto;
+    height: auto;
 }
+
+#StarOceanR_Infos {
+    width: 80%;
+    margin: auto;
+
+}
+#StarOceanR_Infos img{
+    display: flex;
+    width: 100%;
+    margin-top: 2em;
+}
+
+#StarOceanR_Infos p {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+
