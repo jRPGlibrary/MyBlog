@@ -1,3 +1,5 @@
+@media screen and (min-width: 320px) {
+
 /* Star Ocean Container (la base du bloc ) */
 #StarOceanR_Container {
     display: flex;
@@ -23,4 +25,4 @@
     margin-bottom: 1.5em;
 }
 
-
+}
