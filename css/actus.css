@@ -174,12 +174,9 @@
         width: 300px;
         height: 180px;
         margin-bottom: 20px;
-        transition: transform 0.3s ease;
     }
 
-    .Infos_ActusImage img:hover {
-        transform: scale(1.08);
-    }
+
     .Infos_ActusTexte {
         margin: 30px 0 0 0;
     }
