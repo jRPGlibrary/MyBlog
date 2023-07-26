@@ -63,7 +63,7 @@ function add_actu(actu) {
       `<div class="Infos_Container">
             <div class="Infos_ActusImage">
                 <!-- Ici l'image de l'actu -->
-                <img src=${actu["image"]} alt="Image ${actu["name"]}">
+                <a href=${actu["page"]}><img src=${actu["image"]} alt="Image ${actu["name"]}"></a>
             </div>
             <!-- Ici l'ensemble du bloc Actus -->
 			<ul class="Infos_Plateformes">${plateformes(actu["plateformes"])}</ul>

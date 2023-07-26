@@ -28,3 +28,30 @@ document.addEventListener("mousemove", (e) => {
 document.querySelector(".menu-burger").addEventListener("click", function () {
   document.querySelector("#Header_Nav ul").classList.toggle("show");
 });
+
+function applyDarkMode() {
+	document.documentElement.style.setProperty("--current-mode", "dark");
+	document.documentElement.style.setProperty("--background", "#18191a");
+	document.documentElement.style.setProperty("--header-color", "#242526");
+	document.documentElement.style.setProperty("--footer-color", "#242526");
+	document.documentElement.style.setProperty("--text-color", "white");
+	document.documentElement.style.setProperty("--header-footer-border", "0");
+}
+
+function applyLightMode() {
+	document.documentElement.style.setProperty("--current-mode", "light");
+	document.documentElement.style.setProperty("--background", "#f0f0f0");
+	document.documentElement.style.setProperty("--header-color", "#f0f0f0");
+	document.documentElement.style.setProperty("--footer-color", "#f0f0f0");
+	document.documentElement.style.setProperty("--text-color", "black");
+	document.documentElement.style.setProperty("--header-footer-border", "3px");
+}
+
+const mode_toggle=document.getElementById("mode_toggle")
+mode_toggle.addEventListener("change", () => {
+  if (mode_toggle.checked) {
+    applyLightMode();
+  } else {
+    applyDarkMode();
+  }
+});

@@ -120,12 +120,6 @@
         align-items: center;
     }
 
-    .Infos_ActusImage {
-
-        border-radius: 0 20px 0 0;
-
-    }
-
     .Infos_Plateformes {
 		list-style-type: none;
 		display: -ms-flexbox;
@@ -144,6 +138,7 @@
 		margin-bottom: 8px;
 		padding: 5px 15px;
         border-radius: 0 10px 0 0;
+		color: white;
     }
 
 	.Cadre_Divers {
@@ -170,12 +165,21 @@
         background-color: #0E7A0D;
     }
 
+	.Infos_ActusImage {
+        overflow: hidden;
+        border-radius: 0 20px 0 0;
+    }
+
     .Infos_ActusImage img {
         width: 300px;
         height: 180px;
         margin-bottom: 20px;
+        transition: transform 0.3s ease;
     }
 
+    .Infos_ActusImage img:hover {
+        transform: scale(1.08);
+    }
     .Infos_ActusTexte {
         margin: 30px 0 0 0;
     }
