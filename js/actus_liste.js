@@ -2,6 +2,18 @@
 
 var actus_liste = [
   {
+    id: 4,
+    name: "Sea Of Stars",
+    author: "jRPGlibrary",
+    date: new Date(2023, 7, 26, 12, 0),
+    plateformes: ["Switch", "PS5", "PC", "Xbox Series"],
+    title: "SEA OF STARS : Un voyage nostalgique dans l'âge d'or des RPG",
+    infos: "",
+    image:
+      "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2020/03/sea-of-stars-keyart-w-logo.jpg",
+    page: "#",
+  },
+  {
     id: 3,
     name: "Born of Bread",
     author: "jRPGlibrary",
@@ -12,7 +24,7 @@ var actus_liste = [
     infos: "",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1555140/header.jpg?t=1689001755",
-    page: "pages/nom_page_article.html",
+    page: "#",
   },
   {
     id: 2,
@@ -25,7 +37,7 @@ var actus_liste = [
       "Dragon Quest Treasures, un action-RPG sorti précédemment sur Nintendo Switch en 2022, est un nouveau joyau qui s'ajoute au palmares de l'exellente saga qui est Dragon Quest. Pour rappel, cette série enchanteresse existe depuis 1986, et depuis lors, elle brille de tout son éclat du côté du Soleil Levant",
     image:
       "https://fyre.cdn.sewest.net/dq-treasures/63078c3a750476a5d87ff78f/bitmap-2x-prqmv3dOQ.jpg",
-    page: "pages/nom_page_article.html",
+    page: "#",
   },
   {
     id: 1,
