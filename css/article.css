@@ -29,4 +29,8 @@
     font-style: italic;
     color: red;
 }
+.Article_Span {
+    font-style: italic;
+    font-weight: bold;
+}
 }
