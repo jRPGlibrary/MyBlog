@@ -1,16 +1,15 @@
 const nb_actus_page = 10;
 const max_index_page = Math.ceil(actus_liste.length / nb_actus_page)-1;
-var index_page = parseInt(document.getElementById("Actus_Container").dataset.indexPage);
 
 function duree(date) {
-  var now = new Date();
-  var difference = now.getTime() - date.getTime();
-  var minutes = Math.floor(difference / (1000 * 60));
-  var heures = Math.floor(minutes / 60);
-  var jours = Math.floor(heures / 24);
-  var semaines = Math.floor(jours / 7);
-  var mois = Math.floor(jours / 30);
-  var annees = Math.floor(jours / 365);
+  const now = new Date();
+  const difference = now.getTime() - date.getTime();
+  const minutes = Math.floor(difference / (1000 * 60));
+  const heures = Math.floor(minutes / 60);
+  const jours = Math.floor(heures / 24);
+  const semaines = Math.floor(jours / 7);
+  const mois = Math.floor(jours / 30);
+  const annees = Math.floor(jours / 365);
   if (annees == 1) {
     return "Depuis 1 an";
   } else if (annees > 1) {
@@ -50,9 +49,9 @@ function marque_plateforme(plateforme) {
 }
 
 function plateformes(liste_plateformes) {
-	var html_plateformes="";
+	let html_plateformes="";
 	for (i=0;i<liste_plateformes.length;i++) {
-		var html_plateformes=html_plateformes+'<li class="Cadre_'+marque_plateforme(liste_plateformes[i])+'">'+liste_plateformes[i]+'</li>';
+		html_plateformes=html_plateformes+'<li class="Cadre_'+marque_plateforme(liste_plateformes[i])+'">'+liste_plateformes[i]+'</li>';
 	}
 	return html_plateformes;
 }
@@ -86,8 +85,8 @@ function add_actu(actu) {
 }
 
 function page_actu(actus_liste,nb_actus_pages,index_page) {
-  var debut = index_page*nb_actus_page;
-  for (var i = debut; (i <= (debut + nb_actus_page - 1) & i <= actus_liste.length-1); i++) {
+  const debut = index_page*nb_actus_page;
+  for (let i = debut; (i <= (debut + nb_actus_page - 1) & i <= actus_liste.length-1); i++) {
     add_actu(actus_liste[i]);
   }
   pagination(Math.ceil(actus_liste.length / nb_actus_page)-1);
@@ -95,7 +94,7 @@ function page_actu(actus_liste,nb_actus_pages,index_page) {
 
 function change_page (index_page,max_index_page,nb_actus_page,actus_liste) {
 	if (index_page>max_index_page) {
-		var index_page=max_index_page;
+		index_page=max_index_page;
 	}
 	document.getElementById("Actus_Container").innerHTML="";
 	document.getElementById("Pagination_Container").innerHTML="";
@@ -104,7 +103,7 @@ function change_page (index_page,max_index_page,nb_actus_page,actus_liste) {
 }
 
 function pagination (max_index_page,nb_actus_page) {
-	var index_page = parseInt(document.getElementById("Actus_Container").dataset.indexPage);
+	const index_page = parseInt(document.getElementById("Actus_Container").dataset.indexPage);
 	const max_index_gap = 3;
 	const pagination_container = document.getElementById("Pagination_Container");
 	if (index_page>0) {
@@ -115,7 +114,7 @@ function pagination (max_index_page,nb_actus_page) {
 			pagination_container.insertAdjacentHTML("beforeend",
 			"<button id='ellipsisPrevBtn'>...</button>")
 		}
-		for (i=max_index_gap; i>0; i--) {
+		for (let i=max_index_gap; i>0; i--) {
 			if (index_page-i>=0) {
 				pagination_container.insertAdjacentHTML("beforeend",
 				"<button id='i-"+i+"Btn' onclick=change_page("+(index_page-i)+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1-i).toString()+"</button>")
@@ -127,7 +126,7 @@ function pagination (max_index_page,nb_actus_page) {
 		"<button id='iBtn' onclick=change_page("+index_page+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1).toString()+"</button>");
 	}
 	if (index_page<max_index_page) {
-		for (var i = 1; (i<=max_index_gap & max_index_page>=(index_page+i)); i++) {
+		for (let i = 1; (i<=max_index_gap & max_index_page>=(index_page+i)); i++) {
 			pagination_container.insertAdjacentHTML("beforeend",
 			"<button id='i+"+i+"Btn' onclick=change_page("+(index_page+i)+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1+i).toString()+"</button>")
 		}
@@ -140,5 +139,3 @@ function pagination (max_index_page,nb_actus_page) {
 		<button id='endBtn' onclick=change_page(${max_index_page},max_index_page,nb_actus_page,actus_liste)>&gt;&gt;</button>`)
 	}
 }
-
-change_page(index_page,max_index_page,nb_actus_page,actus_liste);

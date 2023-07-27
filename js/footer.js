@@ -1,5 +1,5 @@
 window.addEventListener('scroll', function() {
-  var backToTopButton = document.getElementById("back_to_top");
+  const backToTopButton = document.getElementById("back_to_top");
   // Check the scroll position
   if (window.pageYOffset > 200) { // Show backToTopButton after 200px of scrolling down
     backToTopButton.style.display = "block";

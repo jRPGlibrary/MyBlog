@@ -1,6 +1,6 @@
 /*Les dates doivent être exprimés sous la forme "new Date(annee, mois (de 0 à 11 !), jour, heure, minute)"*/
 
-var actus_liste = [
+const actus_liste = [
   {
     id: 4,
     name: "Sea Of Stars",
