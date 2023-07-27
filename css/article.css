@@ -1,0 +1,32 @@
+@media screen and (min-width: 320px) {
+
+/* Article_Container (la base du bloc ) */
+.Article_Container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.Article_Infos {
+    width: 90%;
+    margin: auto;
+
+}
+.Article_Infos img{
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.Article_Infos p {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+
+.Article_Infos p a {
+    text-decoration: underline;
+    font-style: italic;
+    color: red;
+}
+}

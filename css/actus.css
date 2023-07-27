@@ -1,0 +1,241 @@
+/* Banner Actus */
+#Actus_Banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+
+#Actus_BannerTitle {
+    color: #ffffff;
+    border-bottom: solid 2px red;
+    width: 80%;
+    text-align: right;
+}
+
+#Actus_BannerTitle h2 {
+    display: inline;
+    border-top-right-radius: 15%;
+    padding: 0.2em 0.5em;
+    background-color: red;
+}
+
+/* Actus Container (la base du bloc ) */
+#Actus_Container {
+    display: flex;
+    flex-direction: column;
+    /* Le display en collumn-reverse permet d'afficher les news de la plus récente
+                                    à la plus ancienne */
+
+    width: 100%;
+    height: auto;
+
+    margin: auto;
+    /* Permet d'alligner le contenu correctement au niveau des marges par rapport au width */
+
+}
+
+/* Infos Container (la base du bloc ) */
+
+.Infos_Container {
+    display: flex;
+    /* Display Flex pour collé les élements les uns à coté des autres */
+    margin: 50px auto 50px auto;
+    width: 100%;
+    height: auto;
+
+}
+
+/* Tout ce qui touche au bloc image et l'image en elle même */
+
+.Infos_ActusImage img {
+    width: 430px;
+    height: 250px;
+    border-radius: 0 20px 0 0;
+
+}
+
+/* Tout ce qui touche au bloc infos texte et les textes à l'intérieur */
+.Infos_ActusTexte {
+    display: grid;
+    margin-left: 50px;
+    width: 80%;
+}
+
+.Infos_Author {
+    font-size: 12.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Infos_Date {
+    font-size: 12.5px;
+}
+
+
+.Infos_Title {
+    font-size: 25px;
+    line-height: 1;
+    margin-top: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+.Infos_Title:hover {
+    color: rgb(255, 83, 83);
+}
+
+.Infos_Description {
+    margin-top: 30px;
+}
+
+.Infos_ReadMore {
+    text-align: end;
+}
+
+.Infos_ReadMore a {
+    transition: 0.5s ease-in-out;
+}
+
+.Infos_ReadMore a:hover {
+    color: rgb(255, 83, 83);
+}
+
+
+/* La séparation entre chaques news */
+
+.Infos_Border {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    border-bottom: solid 2.5px #a49f9f;
+    opacity: 0.3;
+    margin: 25px auto;
+}
+
+@media screen and (min-width: 320px) {
+    .Infos_Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Infos_Plateformes {
+		list-style-type: none;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		font-weight: 700
+    }
+
+    .Infos_Plateformes li {
+		font-size: .75rem;
+        text-align: center;
+        margin-right: 8px;
+		margin-bottom: 8px;
+		padding: 5px 15px;
+        border-radius: 0 10px 0 0;
+		color: white;
+    }
+
+	.Cadre_Divers {
+        background-color: grey;
+    }
+
+	.Cadre_PC {
+        background-color: black;
+    }
+	
+	.Cadre_Nintendo {
+        background-color: #E4000F;
+    }
+
+	.Cadre_Sega {
+        background-color: #17569B;
+    }
+	
+	.Cadre_Sony {
+        background-color: #00439C;
+    }
+	
+	.Cadre_Microsoft {
+        background-color: #0E7A0D;
+    }
+
+	.Infos_ActusImage {
+        overflow: hidden;
+        border-radius: 0 20px 0 0;
+    }
+
+    .Infos_ActusImage img {
+        width: 300px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+
+    .Infos_ActusTexte {
+        margin: 30px 0 0 0;
+    }
+
+    .Infos_Title {
+        font-size: 25px;
+        line-height: 1;
+        margin-top: 30px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .Infos_ReadMore {
+        margin-top: 20px;
+        text-align: end;
+    }
+
+    .Infos_Border {
+        width: 100%;
+        margin-top: 20px;
+    }
+	
+	#Pagination_Container {
+		display: flex;
+	}
+
+	#iBtn {
+		font-weight: bold;
+	}
+
+}
+
+
+@media (min-width: 1400px) {
+    .Infos_ActusImage img {
+        width: 580px;
+        height: 350px;
+    }
+
+    .Infos_ActusTexte {
+        margin-left: 50px;
+    }
+
+    .Infos_Border {
+        width: 90%;
+    }
+
+    .Infos_Author {
+        font-size: 14px;
+    }
+
+    .Infos_Title {
+        font-size: 27px;
+    }
+
+    .Infos_Description {
+        font-size: 17px;
+    }
+
+    .Infos_ReadMore {
+        font-size: 18px;
+    }
+}
