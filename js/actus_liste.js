@@ -5,14 +5,14 @@ const actus_liste = [
     id: 4,
     name: "Sea Of Stars",
     author: "jRPGlibrary",
-    date: new Date(2023, 7, 26, 12, 0),
+    date: new Date(2023, 7, 26, 0, 0),
     plateformes: ["Switch", "PS5", "PC", "Xbox Series"],
     title: "SEA OF STARS : Un voyage nostalgique dans l'âge d'or des RPG",
     infos:
       "Sea of Stars nous plonge dans un univers riche et détaillé, où deux Enfants du Solstice, Valere et Zale, se lancent dans une quête épique....",
     image:
       "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2020/03/sea-of-stars-keyart-w-logo.jpg",
-    page: "#",
+    page: "pages/2023/Actus/2_Sea_Of_Stars.html",
   },
   {
     id: 3,
@@ -20,7 +20,8 @@ const actus_liste = [
     author: "jRPGlibrary",
     date: new Date(2023, 6, 16, 22, 30),
     plateformes: ["Switch", "PS5", "PC", "Xbox Series"],
-    title: "BORN OF BREAD - Un voyage culinaire dans un monde rempli de saveur inspiré de MARIO RPG? !",
+    title:
+      "BORN OF BREAD - Un voyage culinaire dans un monde rempli de saveur inspiré de MARIO RPG? !",
     infos:
       "Préparez-vous à entrer dans un monde où le pain règne en maître ! Born Of Bread, un nouveau RPG développé par WildArts, est prêt à faire son entrée sur la scène du jeu vidéo....",
     image:
