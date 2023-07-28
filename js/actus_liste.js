@@ -8,7 +8,8 @@ const actus_liste = [
     date: new Date(2023, 7, 26, 12, 0),
     plateformes: ["Switch", "PS5", "PC", "Xbox Series"],
     title: "SEA OF STARS : Un voyage nostalgique dans l'âge d'or des RPG",
-    infos: "",
+    infos:
+      "Sea of Stars nous plonge dans un univers riche et détaillé, où deux Enfants du Solstice, Valere et Zale, se lancent dans une quête épique....",
     image:
       "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2020/03/sea-of-stars-keyart-w-logo.jpg",
     page: "#",
@@ -19,9 +20,9 @@ const actus_liste = [
     author: "jRPGlibrary",
     date: new Date(2023, 6, 16, 22, 30),
     plateformes: ["Switch", "PS5", "PC", "Xbox Series"],
-    title:
-      "Le nouveau PAPER MARIO LIKE nommé BORN OF BREAD ! Que sais t'on dessus ? !",
-    infos: "",
+    title: "BORN OF BREAD - Un voyage culinaire dans un monde rempli de saveur inspiré de MARIO RPG? !",
+    infos:
+      "Préparez-vous à entrer dans un monde où le pain règne en maître ! Born Of Bread, un nouveau RPG développé par WildArts, est prêt à faire son entrée sur la scène du jeu vidéo....",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1555140/header.jpg?t=1689001755",
     page: "#",
@@ -48,7 +49,7 @@ const actus_liste = [
     title:
       "STAR OCEAN: THE SECOND STORY R - Le retour d'un classique du RPG en 2.5D, de retour sur NEXTGEN",
     infos:
-      "Le 2 novembre 2023 marquera le retour d'un classique du RPG japonais, Star Ocean: The Second Story, sous une nouvelle forme : Star Ocean: The Second Story R. Développé par tri-Ace et édité par Square Enix...",
+      "L'histoire suit les aventures de Claude C. Kenny, un officier de la Fédération Pangalactique, et Rena Lanford, une jeune femme de la planète Expel...",
     image:
       "http://res.cloudinary.com/dfy0zd3p6/image/upload/c_scale,w_3840/photo_42795009",
     page: "pages/2023/Actus/1_Star_Ocean_Second_Story_R.html",
