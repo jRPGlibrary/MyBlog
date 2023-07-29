@@ -5,7 +5,7 @@ const actus_liste = [
     id: 4,
     name: "Sea Of Stars",
     author: "jRPGlibrary",
-    date: new Date(2023, 7, 26, 0, 0),
+    date: new Date(2023, 7, 26, 22, 30),
     plateformes: ["Switch", "PS5", "PC", "Xbox Series"],
     title: "SEA OF STARS : Un voyage nostalgique dans l'âge d'or des RPG",
     infos:
