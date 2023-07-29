@@ -50,8 +50,8 @@
 /* Tout ce qui touche au bloc image et l'image en elle même */
 
 .Infos_ActusImage img {
-    width: 430px;
-    height: 250px;
+    width: 300px;
+    height: 180px;
     border-radius: 0 20px 0 0;
 
 }
@@ -168,12 +168,6 @@
 	.Infos_ActusImage {
         overflow: hidden;
         border-radius: 0 20px 0 0;
-    }
-
-    .Infos_ActusImage img {
-        width: 300px;
-        height: 180px;
-        margin-bottom: 20px;
     }
 
 
