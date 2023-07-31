@@ -65,7 +65,7 @@ function add_actu(actu) {
                 <a href=${actu["page"]}><img src=${actu["image"]} alt="Image ${actu["name"]}"></a>
             </div>
             <!-- Ici l'ensemble du bloc Actus -->
-			<br><ul class="Infos_Plateformes">${plateformes(actu["plateformes"])}</ul>
+			<ul class="Infos_Plateformes">${plateformes(actu["plateformes"])}</ul>
             <div class="Infos_ActusTexte">
                 <div class="Infos_Author">Posté par : ${actu["author"]}
                 <div class="Infos_Date">${duree(actu["date"])}</div>
