@@ -186,12 +186,10 @@ iframe {
     }
 
     #back_to_top {
-        display: none;
         position: fixed;
-        bottom: -5px;
-        right: 2%;
+        bottom: 0;
+        right: 50%;
         z-index: 9999;
-        padding: 5px;
     }
 
     #back_to_top img {
