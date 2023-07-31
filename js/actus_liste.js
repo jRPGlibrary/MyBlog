@@ -7,7 +7,7 @@ const actus_liste = [
     author: "jRPGlibrary",
     date: new Date(2023, 6, 31, 16, 0),
     plateformes: ["PS4", "PS5"],
-    title: "LOST SOUL ASIDES : un bijou démarer solo, un jeu digne de ce nom !",
+    title: "LOST SOUL ASIDE : un bijou chinoix, concurrent a FFXVI ?!",
     infos:
       "Le projet Lost Soul Aside a été lancé par Bing Yang, qui a commencé à travailler sur le jeu en solo. Depuis, le projet a évolué pour inclure une équipe complète de...",
     image:
