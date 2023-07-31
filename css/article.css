@@ -31,7 +31,7 @@
     font-style: italic;
     font-weight: bold;
 }
-.container_image {
+.Image_Container {
 
     display: flex;
     align-items: center;
@@ -42,13 +42,6 @@
     height: 100%;
 
     overflow: hidden;
-}
-
-.container_image .image_container {
-    width: 100%;
-    height: 100%;
-    
-    overflow: hidden;
 
     border: 1.15px solid grey;
     border-radius: 15px;
@@ -56,18 +49,21 @@
     margin: 20px 0 15px 0;
 }
 
-.container_image .image_container img {
+.Image_Container img {
     box-sizing: border-box;
     object-fit: contain;
 
     width: 100%;
     height: 100%;
 
+    object-fit: cover;
+    display: block;
+
     transition: transform 0.3s ease-in-out;
 
 }
 
-.container_image .image_container:hover img {
+.Image_Container:hover img {
     transform: scale(1.1);
 }
 
