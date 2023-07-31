@@ -160,6 +160,8 @@ iframe {
 
     border: 1.15px solid grey;
     border-radius: 15px;
+
+    margin: 20px 0 15px 0;
 }
 
 .container_image .image_container img {
