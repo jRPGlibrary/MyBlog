@@ -12,7 +12,7 @@ const actus_liste = [
       "Le projet Lost Soul Aside a été lancé par Bing Yang, qui a commencé à travailler sur le jeu en solo. Depuis, le projet a évolué pour inclure une équipe complète de...",
     image:
       "https://www.jvfrance.com/wp-content/uploads/2018/03/lost-soul-aside.jpg",
-    page: "pages/2023/Actus/3_Lost_Soul_Aside.html",
+    page: "pages/2023/Actus/5_Lost_Soul_Aside.html",
   },
   {
     id: 4,
@@ -25,7 +25,7 @@ const actus_liste = [
       "Sea of Stars nous plonge dans un univers riche et détaillé, où deux Enfants du Solstice, Valere et Zale, se lancent dans une quête épique....",
     image:
       "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2020/03/sea-of-stars-keyart-w-logo.jpg",
-    page: "pages/2023/Actus/2_Sea_Of_Stars.html",
+    page: "pages/2023/Actus/4_Sea_Of_Stars.html",
   },
   {
     id: 3,
