@@ -2,6 +2,19 @@
 
 const actus_liste = [
   {
+    id: 5,
+    name: "Lost Soul Aside",
+    author: "jRPGlibrary",
+    date: new Date(2023, 6, 31, 16, 0),
+    plateformes: ["PS4", "PS5"],
+    title: "LOST SOUL ASIDES : un bijou démarer solo, un jeu digne de ce nom !",
+    infos:
+      "Le projet Lost Soul Aside a été lancé par Bing Yang, qui a commencé à travailler sur le jeu en solo. Depuis, le projet a évolué pour inclure une équipe complète de...",
+    image:
+      "https://www.jvfrance.com/wp-content/uploads/2018/03/lost-soul-aside.jpg",
+    page: "pages/2023/Actus/3_Lost_Soul_Aside.html",
+  },
+  {
     id: 4,
     name: "Sea Of Stars",
     author: "jRPGlibrary",

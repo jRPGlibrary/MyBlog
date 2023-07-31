@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--  HEADER ( REGROUPE TOUT LES CSS ) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Lost Soul Aside </title>
+
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/social_menu.css">
+    <link rel="stylesheet" href="../../../css/actus.css">
+    <link rel="stylesheet" href="../../../css/article.css">
+    <link rel="stylesheet" href="../../../css/3_Lost_Soul_Aside.css">
+    <link rel="stylesheet" href="../../../css/twitch.css">
+
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <link rel="shortcut icon" href="../../../images/Logo.png" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER COMPORTE LA BAR NAVIGATION ET LE MENU SOCIAL -->
+    <header id="Header_Container">
+        <section id="social_menu">
+            <ul>
+                <li><a href="https://www.facebook.com/JrpgLibrary/"><img src="../../../images/facebook-icone copie.png"
+                            alt="Facebook"></a></li>
+                <li><a href="https://discord.gg/u8UcUSMj"><img src="../../../images/discord-icone copie.png"
+                            alt="Discord"></a>
+                </li>
+                <li><a href="https://www.twitch.tv/jrpg_library"><img src="../../../images/twitch-icone copie.png"
+                            alt="Twitch"></a>
+                </li>
+            </ul>
+        </section>
+        <nav id="Header_Nav">
+            <div class="menu-burger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu-list">
+                <li><a href="../../../index.html">Accueil</a></li>
+                <li><a href="../../../actus.html">News</a></li>
+                <li><a href="#Previews">Previews</a></li>
+                <li><a href="#Reviews">Reviews</a></li>
+                <li><a href="../../../partenariats.html">Partenariats</a></li>
+                <li><a href="#Contacts">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="mode_toggle" />
+        <label for="mode_toggle" id="interrupteur"></label>
+
+    </header>
+
+    <section class="Article_Container" data-id=5>
+        <div class="Article_Infos">
+            <div>
+                <img src="https://www.jvfrance.com/wp-content/uploads/2018/03/lost-soul-aside.jpg"
+                    alt="Logo Lost Soul Aside">
+                <div>
+                    <ul class="Infos_Plateformes"></ul>
+
+                    <h1>
+                </div>
+    </section>
+
+
+    <!-- CONTIENT TROIS COLONNES LES LIENS , UN PLAYER TWITCH , CONTACTS -->
+    <footer id="Footer_Container">
+
+        <a id="back_to_top" href="#"><img src="../../../images/back-to-top.png" alt="Retour en haut"></a>
+
+        <div id="Twitch_Embed"></div>
+        <a class="email" href="mailto:contentcreator.jrpglibrary@gmail.com">contentcreator.jrpglibrary@gmail.com</a>
+
+        <div class="copyright">
+            <p>&copy; 2023 jRPGLibrary. Tous droits réservés.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="../../../js/actus_liste.js"></script>
+<script src="../../../js/actus.js"></script>
+<script src="../../../js/menu.js"></script>
+<script src="../../../js/footer.js"></script>
+<script src="../../../js/twitch.js"></script>
+<script>
+    const article_plateformes = document.getElementsByClassName("Infos_Plateformes")[0];
+    article_plateformes.innerHTML = plateformes(actus_liste[actus_liste.length - parseInt(document.getElementsByClassName("Article_Container")[0].dataset.id)]["plateformes"]);
+</script>
+
+</html>
