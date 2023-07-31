@@ -26,6 +26,7 @@ body {
     font-weight: bold;
     font-style: italic;
 }
+
 iframe {
     width: 100%;
 }
@@ -132,6 +133,48 @@ iframe {
 #mode_toggle:checked+#interrupteur:after {
     transform: translateX(100%);
     background-color: #fff;
+}
+
+
+.container_image {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.container_image .image_container {
+    width: 100%;
+    max-width: 320px;
+
+    height: 100%;
+    max-height: 180px;
+
+    overflow: hidden;
+
+    border: 1.15px solid grey;
+    border-radius: 15px;
+}
+
+.container_image .image_container img {
+    box-sizing: border-box;
+    object-fit: contain;
+
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.container_image .image_container:hover img {
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
