@@ -60,13 +60,12 @@
 .container_image .image_container img {
     display: block;
     box-sizing: border-box;
-    object-fit: contain;
+    object-fit: cover;
 
     width: 100%;
     height: 100%;
 
     transition: transform 0.3s ease-in-out;
-
 }
 
 .container_image .image_container:hover img {

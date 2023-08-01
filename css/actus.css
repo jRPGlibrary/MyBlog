@@ -49,11 +49,26 @@
 
 /* Tout ce qui touche au bloc image et l'image en elle même */
 
-.Infos_ActusImage img {
+.Infos_ActusImage {
+    overflow: hidden;
+    border-radius: 0 20px 0 0;
     width: 300px;
     height: 180px;
-    border-radius: 0 20px 0 0;
+}
 
+.Infos_ActusImage img {
+    display: block;
+    box-sizing: border-box;
+    object-fit: fill;
+
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.Infos_ActusImage:hover img {
+    transform: scale(1.1);
 }
 
 /* Tout ce qui touche au bloc infos texte et les textes à l'intérieur */
@@ -165,11 +180,6 @@
         background-color: #0E7A0D;
     }
 
-	.Infos_ActusImage {
-        overflow: hidden;
-        border-radius: 0 20px 0 0;
-    }
-
 
     .Infos_ActusTexte {
         margin: 30px 0 0 0;
@@ -194,10 +204,12 @@
 	
 	#Pagination_Container {
 		display: flex;
+        justify-content: center;
+        align-items: center;
 	}
 
-	#iBtn {
-		font-weight: bold;
+    #Pagination_Container #iBtn {
+        font-weight: bold;
 	}
 
 }

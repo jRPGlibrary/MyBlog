@@ -1,4 +1,4 @@
-const nb_actus_page = 10;
+const nb_actus_page = 1;
 const max_index_page = Math.ceil(actus_liste.length / nb_actus_page)-1;
 
 function duree(date) {
@@ -63,7 +63,7 @@ function add_actu(actu) {
             <div class="Infos_ActusImage">
                 <!-- Ici l'image de l'actu -->
                 <a href=${actu["page"]}><img src=${actu["image"]} alt="Image ${actu["name"]}"></a>
-            </div>
+            </div><br>
             <!-- Ici l'ensemble du bloc Actus -->
 			<ul class="Infos_Plateformes">${plateformes(actu["plateformes"])}</ul>
             <div class="Infos_ActusTexte">
@@ -100,6 +100,7 @@ function change_page (index_page,max_index_page,nb_actus_page,actus_liste) {
 	document.getElementById("Pagination_Container").innerHTML="";
 	document.getElementById("Actus_Container").dataset.indexPage=index_page;
 	page_actu(actus_liste,nb_actus_page,index_page);
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
 function pagination (max_index_page,nb_actus_page) {
@@ -109,15 +110,15 @@ function pagination (max_index_page,nb_actus_page) {
 	if (index_page>0) {
 		pagination_container.insertAdjacentHTML("beforeend",
 		`<button id='bgnBtn' onclick=change_page(0,max_index_page,nb_actus_page,actus_liste)>&lt;&lt;</button>
-		<button id='prevBtn' onclick=change_page(${index_page-1},max_index_page,nb_actus_page,actus_liste)>&lt;</button>`)
+		<button id='prevBtn' onclick=change_page(${index_page-1},max_index_page,nb_actus_page,actus_liste)>&lt;</button>`);
 		if (index_page-max_index_gap>0) {
 			pagination_container.insertAdjacentHTML("beforeend",
-			"<button id='ellipsisPrevBtn'>...</button>")
+			"<button id='ellipsisPrevBtn'>...</button>");
 		}
 		for (let i=max_index_gap; i>0; i--) {
 			if (index_page-i>=0) {
 				pagination_container.insertAdjacentHTML("beforeend",
-				"<button id='i-"+i+"Btn' onclick=change_page("+(index_page-i)+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1-i).toString()+"</button>")
+				"<button id='i-"+i+"Btn' onclick=change_page("+(index_page-i)+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1-i).toString()+"</button>");
 			}
 		}
 	}
@@ -128,14 +129,14 @@ function pagination (max_index_page,nb_actus_page) {
 	if (index_page<max_index_page) {
 		for (let i = 1; (i<=max_index_gap & max_index_page>=(index_page+i)); i++) {
 			pagination_container.insertAdjacentHTML("beforeend",
-			"<button id='i+"+i+"Btn' onclick=change_page("+(index_page+i)+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1+i).toString()+"</button>")
+			"<button id='i+"+i+"Btn' onclick=change_page("+(index_page+i)+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1+i).toString()+"</button>");
 		}
 		if (index_page+max_index_gap<max_index_page) {
 			pagination_container.insertAdjacentHTML("beforeend",
-			"<button id='ellipsisNextBtn'>...</button>")
+			"<button id='ellipsisNextBtn'>...</button>");
 		}
 		pagination_container.insertAdjacentHTML("beforeend",
 		`<button id='nextBtn' onclick=change_page(${index_page+1},max_index_page,nb_actus_page,actus_liste)>&gt;</button>
-		<button id='endBtn' onclick=change_page(${max_index_page},max_index_page,nb_actus_page,actus_liste)>&gt;&gt;</button>`)
+		<button id='endBtn' onclick=change_page(${max_index_page},max_index_page,nb_actus_page,actus_liste)>&gt;&gt;</button>`);
 	}
 }
