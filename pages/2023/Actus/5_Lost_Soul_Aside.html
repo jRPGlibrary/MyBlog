@@ -38,7 +38,7 @@
     <meta name="twitter:description"
         content="Tu as joué à Final Fantasy XVI de chez SquareEnix, comme beaucoup tu as été déçus? Donc, viens explorer ce jeu qui fait partie d'un vaste projet et qui pourrait probablement rivaliser avec Final Fantasy XVI, initié par une seule personne.">
     <meta name="twitter:image"
-        content="https://ibb.co/5BVJKRk">
+        content="https://i.ibb.co/ChFSPH6/LostSoul.jpg">
     <meta property="twitter:image:alt" 
         content="Image de Lost Soul Aside">
     <meta name="twitter:creator" content="@jRPG_Library">
@@ -223,17 +223,21 @@
 
 
     <!-- CONTIENT TROIS COLONNES LES LIENS , UN PLAYER TWITCH , CONTACTS -->
-    <footer id="Footer_Container">
-        <a id="back_to_top" href="#"><img src="/images/back-to-top.png" alt="Retour en haut"></a>
-
-
-        <div id="Twitch_Embed"></div>
-        <a class="email" href="mailto:contentcreator.jrpglibrary@gmail.com">contentcreator.jrpglibrary@gmail.com</a>
-
-        <div class="copyright">
-            <p>&copy; 2023 jRPGLibrary. Tous droits réservés.</p>
+    <footer>
+        <div class="socials">
+            <a href="https://www.twitch.tv/your_username"><img src="twitch_icon_url" alt="Twitch"></a>
+            <a href="https://discord.com/invite/your_invite_link"><img src="discord_icon_url" alt="Discord"></a>
+            <a href="https://twitter.com/your_username"><img src="twitter_icon_url" alt="Twitter"></a>
+            <a href="https://www.instagram.com/your_username"><img src="instagram_icon_url" alt="Instagram"></a>
+        </div>
+        <div id="twitch-embed"></div>
+        <div class="footer-links">
+            <a href="your_donation_link">Dons</a> |
+            <span>Copyright 2023</span> |
+            <a href="your_contact_link">Contact</a>
         </div>
     </footer>
+    
 
 
 </body>
@@ -247,5 +251,4 @@
     const article_plateformes = document.getElementsByClassName("Infos_Plateformes")[0];
     article_plateformes.innerHTML = plateformes(actus_liste[actus_liste.length - parseInt(document.getElementsByClassName("Article_Container")[0].dataset.id)]["plateformes"]);
 </script>
-
 </html>

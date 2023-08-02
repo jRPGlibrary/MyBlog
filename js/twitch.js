@@ -1,8 +1,9 @@
-new Twitch.Embed("Twitch_Embed", {
-  width: "100%",
-  height: "200px", // Ajustez la hauteur du lecteur Twitch en fonction de vos besoins
-  channel: "jRPG_Library",
-  autoplay: true,
-  theme: "dark",
-  layout: "video",
+new Twitch.Embed("twitch-embed", {
+    width: "100%",
+    height: "320px",
+    channel: "jrpg_library",
+    autoplay: "true",
+    layout: "video",
+    parent: ["streamerwebsite.com"],  // Remplacez "streamerwebsite.com" par votre propre domaine.
+
 });
