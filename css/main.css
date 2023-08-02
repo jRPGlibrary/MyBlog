@@ -137,6 +137,49 @@ iframe {
 }
 
 
+.fa_icones{
+    font-weight: 900;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    font-size: 15px;
+}
+
+.share-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 100%;
+    margin: 5px;
+}
+
+.share-button i {
+    color: #000;
+    font-size: 1.5em;
+}
+
+.share-button.facebook i {
+    color: #4267B2;
+    /* Couleur Facebook */
+}
+
+.share-button.twitter i {
+    color: #1DA1F2;
+    /* Couleur Twitter */
+}
+
+.share-button.whatsapp i {
+    color: #25D366;
+    /* Couleur WhatsApp */
+}
+
+.share-button.discord i {
+    color: #7289da;
+    /* Couleur Discord */
+}
+
+
 
 @media (max-width: 768px) {
     #Header_Container {
@@ -176,7 +219,6 @@ iframe {
 @media screen and (min-width: 320px) {
 
     #Footer_Container {
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         background-color: var(--footer-color);
