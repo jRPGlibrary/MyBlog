@@ -1,6 +1,11 @@
 const nb_actus_page = 1;
 const max_index_page = Math.ceil(actus_liste.length / nb_actus_page)-1;
 
+function getPageIndexFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return parseInt(urlParams.get('page')) || 0;
+}
+
 function duree(date) {
   const now = new Date();
   const difference = now.getTime() - date.getTime();
@@ -103,40 +108,44 @@ function change_page (index_page,max_index_page,nb_actus_page,actus_liste) {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-function pagination (max_index_page,nb_actus_page) {
+function pagination (max_index_page) {
 	const index_page = parseInt(document.getElementById("Actus_Container").dataset.indexPage);
 	const max_index_gap = 3;
 	const pagination_container = document.getElementById("Pagination_Container");
 	if (index_page>0) {
 		pagination_container.insertAdjacentHTML("beforeend",
-		`<button id='bgnBtn' onclick=change_page(0,max_index_page,nb_actus_page,actus_liste)>&lt;&lt;</button>
-		<button id='prevBtn' onclick=change_page(${index_page-1},max_index_page,nb_actus_page,actus_liste)>&lt;</button>`);
+		`<a href="?page=0" id='bgnBtn'>&lt;&lt;</a>
+		<a href="?page=${index_page-1}" id='prevBtn'>&lt;</a>`);
 		if (index_page-max_index_gap>0) {
 			pagination_container.insertAdjacentHTML("beforeend",
-			"<button id='ellipsisPrevBtn'>...</button>");
+			"<a id='ellipsisPrevBtn'>...</a>");
 		}
 		for (let i=max_index_gap; i>0; i--) {
 			if (index_page-i>=0) {
 				pagination_container.insertAdjacentHTML("beforeend",
-				"<button id='i-"+i+"Btn' onclick=change_page("+(index_page-i)+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1-i).toString()+"</button>");
+				'<a href="?page='+(index_page-i).toString()+'" id="i-'+i+'Btn">'+(index_page+1-i).toString()+'</a>');
 			}
 		}
 	}
 	if (max_index_page>0) {
 		pagination_container.insertAdjacentHTML("beforeend",
-		"<button id='iBtn' onclick=change_page("+index_page+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1).toString()+"</button>");
+		'<a href="?page='+index_page+'" id="iBtn">'+(index_page+1).toString()+'</a>');
 	}
 	if (index_page<max_index_page) {
 		for (let i = 1; (i<=max_index_gap & max_index_page>=(index_page+i)); i++) {
 			pagination_container.insertAdjacentHTML("beforeend",
-			"<button id='i+"+i+"Btn' onclick=change_page("+(index_page+i)+",max_index_page,nb_actus_page,actus_liste)>"+(index_page+1+i).toString()+"</button>");
+			'<a href="?page='+(index_page+i).toString()+'" id="i+'+i+'Btn">'+(index_page+1+i).toString()+'</a>');
 		}
 		if (index_page+max_index_gap<max_index_page) {
 			pagination_container.insertAdjacentHTML("beforeend",
-			"<button id='ellipsisNextBtn'>...</button>");
+			"<a id='ellipsisNextBtn'>...</a>");
 		}
 		pagination_container.insertAdjacentHTML("beforeend",
-		`<button id='nextBtn' onclick=change_page(${index_page+1},max_index_page,nb_actus_page,actus_liste)>&gt;</button>
-		<button id='endBtn' onclick=change_page(${max_index_page},max_index_page,nb_actus_page,actus_liste)>&gt;&gt;</button>`);
+		`<a href="?page=${index_page+1}" id='nextBtn'>&gt;</a>
+		<a href="?page=${max_index_page}" id='endBtn'>&gt;&gt;</a>`);
 	}
 }
+
+window.addEventListener('popstate', function () {
+  change_page(getPageIndexFromURL(),max_index_page,nb_actus_page,actus_liste);
+});

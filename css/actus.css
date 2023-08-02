@@ -206,10 +206,28 @@
 		display: flex;
         justify-content: center;
         align-items: center;
+        gap: 5px;
+	}
+
+	#Pagination_Container a {
+		background-color: red;
+        color: white;
+        text-align: center;
+        border-radius: 0;
+        border: none;
+        height: 2em;
+        width: 2em;
+        line-height: 2em; /*Doit être égal à height*/
+	}
+
+	#Pagination_Container a:hover {
+		background-color: var(--opposite-background);
+        color: var(--opposite-text-color);
 	}
 
     #Pagination_Container #iBtn {
-        font-weight: bold;
+        background-color: var(--opposite-background);
+        color: var(--opposite-text-color);
 	}
 
 }

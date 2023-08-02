@@ -5,6 +5,13 @@
     --footer-color: #242526;
     --text-color: white;
     --header-footer-border: 0;
+    
+    --opposite-mode: light;
+    --opposite-background: #f0f0f0;
+    --opposite-header-color: #f0f0f0;
+    --opposite-footer-color: #f0f0f0;
+    --opposite-text-color: black;
+    --opposite-header-footer-border: 3px;
 }
 
 /*MAIN*/
@@ -218,42 +225,61 @@ iframe {
 
 @media screen and (min-width: 320px) {
 
-    #Footer_Container {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        background-color: var(--footer-color);
-        padding: 2em 2em 1em 2em;
-        text-decoration: none;
-        border: solid;
-        border-width: var(--header-footer-border) 0 0 0;
-    }
-
-    #back_to_top {
-        position: fixed;
-        bottom: 0;
-        right: 50%;
-        z-index: 9999;
-    }
-
-    #back_to_top img {
-        Width: 60px;
-        Height: auto;
-    }
-
-    .email {
-        font-style: italic;
-        text-decoration: underline;
-        transition: 0.5s ease-in-out;
-    }
-
-    .email:hover {
-        color: rgb(255, 83, 83);
-    }
-
-    .copyright {
-        font-size: 0.8em;
-        display: flex;
+    footer {
         width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
+        background-color: var(--footer-color);
+        margin: 50px 0 0 0;
     }
+    
+    .socials {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        font-size: 30px;
+
+    }
+    
+    .socials img {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .twitch-player {
+        width: 80%;
+        position: relative;
+        padding-bottom: 56.25%; /* Ratio 16:9 */
+        height: 0;
+    }
+    
+    .socials a {
+        margin-right: 20px;
+    }
+
+
+    .socials a .fa-twitch {
+        color: #9146FF;
+    }
+    
+    .socials a .fa-discord {
+        color: #5865F2;
+    }
+    
+    .socials a .fa-twitter {
+        color: #1DA1F2;
+    }
+
+    .twitch-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
 }
