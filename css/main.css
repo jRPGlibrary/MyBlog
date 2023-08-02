@@ -220,18 +220,22 @@ iframe {
 
     footer {
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: var(--footer-color);
+        margin: 50px 0 0 0;
     }
     
-    .socials, .footer-links {
+    .socials {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         margin: 10px 0;
+        font-size: 30px;
+
     }
     
     .socials img {
@@ -246,6 +250,23 @@ iframe {
         height: 0;
     }
     
+    .socials a {
+        margin-right: 20px;
+    }
+
+
+    .socials a .fa-twitch {
+        color: #9146FF;
+    }
+    
+    .socials a .fa-discord {
+        color: #5865F2;
+    }
+    
+    .socials a .fa-twitter {
+        color: #1DA1F2;
+    }
+
     .twitch-player iframe {
         position: absolute;
         top: 0;

@@ -1,6 +1,6 @@
 new Twitch.Embed("twitch-embed", {
     width: "100%",
-    height: "320px",
+    height: "100%",
     channel: "jrpg_library",
     autoplay: "true",
     layout: "video",
