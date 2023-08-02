@@ -5,6 +5,13 @@
     --footer-color: #242526;
     --text-color: white;
     --header-footer-border: 0;
+    
+    --opposite-mode: light;
+    --opposite-background: #f0f0f0;
+    --opposite-header-color: #f0f0f0;
+    --opposite-footer-color: #f0f0f0;
+    --opposite-text-color: black;
+    --opposite-header-footer-border: 3px;
 }
 
 /*MAIN*/
