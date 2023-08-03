@@ -98,12 +98,10 @@ body {
 }
 
 #interrupteur {
-    position: absolute;
-    top: 4px;
-    left: 5px;
-    width: 60px;
+    right: 0px;
+    width: 19%;
     height: 30px;
-    position: relative;
+    position: absolute;
     display: block;
     background: #696969;
     border-radius: 30px;
