@@ -98,8 +98,8 @@ body {
 }
 
 #interrupteur {
-    right: 0px;
-    width: 19%;
+    right: 10px;
+    width: 70px; /* Changement ici */
     height: 30px;
     position: absolute;
     display: block;
@@ -107,7 +107,7 @@ body {
     border-radius: 30px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 #interrupteur:after {
@@ -120,7 +120,7 @@ body {
     background-color: #000;
     border-radius: 50%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
 #mode_toggle:checked+#interrupteur {
@@ -128,9 +128,10 @@ body {
 }
 
 #mode_toggle:checked+#interrupteur:after {
-    transform: translateX(100%);
+    transform: translateX(42px); /* Changement ici */
     background-color: #fff;
 }
+
 
 
 .fa_icones{
