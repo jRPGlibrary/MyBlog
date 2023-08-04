@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    margin: auto;
 }
 
 .Article_Infos {
@@ -26,7 +27,7 @@
 .Article_Infos p a {
     text-decoration: underline;
     font-style: italic;
-    color: red;
+    color: aliceblue;
 }
 .Article_Span {
     font-style: italic;
@@ -68,8 +69,9 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.container_image .image_container:hover img {
-    transform: scale(1.1);
+.info {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .responsive-youtube {
@@ -88,4 +90,5 @@
 }
 
 }
+
 
