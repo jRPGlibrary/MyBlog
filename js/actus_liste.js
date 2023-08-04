@@ -15,7 +15,7 @@ const actus_liste = [
     "description": `Tu as joué à Final Fantasy XVI de chez SquareEnix, comme beaucoup tu as été déçus? 
     Donc, viens explorer ce jeu qui fait partie d'un vaste projet et qui pourrait probablement rivaliser avec Final Fantasy XVI, initié par une seule personne.`,
     "page": "pages/2023/Actus/5_Lost_Soul_Aside.html",
-    "url": "file:///C:/Users/patfi/Documents/Site%20web/MyBlog/pages/2023/Actus/5_Lost_Soul_Aside.html"
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/5_Lost_Soul_Aside.html"
   },
   {
     "id": 4,
