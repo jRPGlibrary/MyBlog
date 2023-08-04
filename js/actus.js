@@ -1,4 +1,4 @@
-const nb_actus_page = 1;
+const nb_actus_page = 10;
 const max_index_page = Math.ceil(actus_liste.length / nb_actus_page)-1;
 
 function getPageIndexFromURL() {
