@@ -13,7 +13,7 @@ const actus_liste = [
     "image":
       "https://www.jvfrance.com/wp-content/uploads/2018/03/lost-soul-aside.jpg",
     "description": `Tu as joué à Final Fantasy XVI de chez SquareEnix, comme beaucoup tu as été déçus? 
-    Donc, viens explorer ce jeu qui fait partie d'un vaste projet et qui pourrait probablement rivaliser avec Final Fantasy XVI, initié par une seule personne.`,
+    Alors, viens explorer ce jeu qui fait partie d'un vaste projet et qui pourrait probablement rivaliser avec Final Fantasy XVI, initié par une seule personne.`,
     "page": "pages/2023/Actus/5_Lost_Soul_Aside.html",
     "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/5_Lost_Soul_Aside.html"
   },
