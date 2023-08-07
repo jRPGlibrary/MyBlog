@@ -218,6 +218,20 @@ body {
 
 @media screen and (min-width: 320px) {
 
+    #twitter-container{
+        width: 100%;
+        height: auto;
+        margin-top: 15%;
+        background-color: var(--header-color);
+    }
+
+    .twitter-timeline{
+        width: 80%;
+        margin: auto;
+    }
+    
+
+
     footer {
         width: 100%;
         height: auto;
