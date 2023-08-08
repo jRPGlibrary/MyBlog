@@ -219,18 +219,10 @@ body {
 @media screen and (min-width: 320px) {
 
     #twitter-container{
-        width: 100%;
-        height: auto;
-        margin-top: 15%;
-        background-color: var(--header-color);
+        width: 100;
+        margin-top: 50px;
+        
     }
-
-    .twitter-timeline{
-        width: 80%;
-        margin: auto;
-    }
-    
-
 
     footer {
         width: 100%;
@@ -240,7 +232,7 @@ body {
         align-items: center;
         justify-content: center;
         background-color: var(--footer-color);
-        margin: 50px 0 0 0;
+        margin: 100px 0 0 0;
     }
     
     .socials {
