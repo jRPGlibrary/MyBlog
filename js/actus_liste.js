@@ -2,6 +2,21 @@
 
 const actus_liste = [
   {
+    "id": 6,
+    "name": "Atlas Fallen",
+    "author": "jRPGlibrary",
+    "date": new Date(2023, 7, 10, 19, 50),
+    "plateformes": ["PS5", "Xbox Series","PC"],
+    "title": "ATLAS FALLEN :  Day-One , L'héritage de Deck13",
+    "infos":
+      "Développé par les maestros de Focus Entertainment et Deck 13, Atlas Fallen nous plonge dans un monde fantastique où des créatures légendaires nous...",
+    "image":
+      "https://static1.millenium.org/articles/6/40/57/36/@/1712560-news-def-2-24-amp_main_media_schema-1.png",
+    "description": `Atlas Fallen, le nouvel aRPG de Deck13 : glissez, sautez, équipez-vous de vos plus belles armes et affrontez les ombres les plus coriaces c'est sur NextGen`,
+    "page": "pages/2023/Actus/6_Atlas_Fallen.html",
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/6_Atlas_Fallen.html"
+  },
+  {
     "id": 5,
     "name": "Lost Soul Aside",
     "author": "jRPGlibrary",
