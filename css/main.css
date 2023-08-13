@@ -188,7 +188,8 @@ blockquote {
     margin: 20px 0; /* Espacement autour du blockquote */
     font-size: 1.1em; /* Taille de police légèrement augmentée */
     position: relative;
-    padding-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 blockquote::before {
