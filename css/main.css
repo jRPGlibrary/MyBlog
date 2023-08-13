@@ -149,34 +149,43 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 85%;
+    height: 100%%;
     margin: 5px;
-    background-color: rgb(59, 60, 60);
+    background-color: rgb(59, 60, 60);  /* couleur par défaut */
+    border-radius: 5px;
 }
 
 .share-button i {
-    color: #000;
     font-size: 1.5em;
+    color: #000;  /* couleur de l'icône par défaut */
 }
 
+.share-button.facebook {
+    background-color: #4267B2;  /* Couleur d'arrière-plan Facebook */
+}
 .share-button.facebook i {
-    color: #4267B2;
-    /* Couleur Facebook */
+    color: #FFF;  /* Couleur d'icône blanche pour un meilleur contraste */
 }
 
+.share-button.twitter {
+    background-color: #1DA1F2;  /* Couleur d'arrière-plan Twitter */
+}
 .share-button.twitter i {
-    color: #1DA1F2;
-    /* Couleur Twitter */
+    color: #FFF;
 }
 
+.share-button.whatsapp {
+    background-color: #25D366;  /* Couleur d'arrière-plan WhatsApp */
+}
 .share-button.whatsapp i {
-    color: #25D366;
-    /* Couleur WhatsApp */
+    color: #FFF;
 }
 
+.share-button.discord {
+    background-color: #7289da;  /* Couleur d'arrière-plan Discord */
+}
 .share-button.discord i {
-    color: #7289da;
-    /* Couleur Discord */
+    color: #FFF;
 }
 
 
@@ -205,7 +214,7 @@ blockquote::after {
     content: "”";
     font-size: 2em;
     position: absolute;
-    right: 20px;
+    right: 25px;
     bottom: -10px;
     color: #c7800f;
 }
