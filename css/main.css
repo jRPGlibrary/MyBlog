@@ -193,21 +193,21 @@ blockquote {
 }
 
 blockquote::before {
-    content: "“"; /* Icône de citation ouverte */
-    font-size: 2em; /* Taille de l'icône */
+    content: "“";
+    font-size: 2em;
     position: absolute;
-    left: 10px; /* Positionnement de l'icône à gauche */
-    top: 0; /* Positionnement de l'icône en haut */
-    color: #f39c12; /* Couleur de l'icône */
+    left: 0px;
+    top: 0;
+    color: #c7800f;
 }
 
 blockquote::after {
-    content: "”"; /* Icône de citation fermée */
-    font-size: 2em; /* Taille de l'icône */
+    content: "”";
+    font-size: 2em;
     position: absolute;
-    right: 10px; /* Positionnement de l'icône à droite */
-    bottom: 0; /* Positionnement de l'icône en bas */
-    color: #f39c12; /* Couleur de l'icône */
+    right: 20px;
+    bottom: -10px;
+    color: #c7800f;
 }
 
 @media (max-width: 768px) {
