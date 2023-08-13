@@ -180,6 +180,34 @@ body {
 }
 
 
+blockquote {
+    background-color: #2a2a2a; /* Fond légèrement plus clair que le fond principal */
+    border-left: 4px solid darkred; /* Bordure gauche orange */
+    padding: 10px 20px; /* Espacement intérieur */
+    font-style: italic; /* Style de police en italique */
+    margin: 20px 0; /* Espacement autour du blockquote */
+    font-size: 1.1em; /* Taille de police légèrement augmentée */
+    position: relative;
+    padding-top: 20px;
+}
+
+blockquote::before {
+    content: "“"; /* Icône de citation ouverte */
+    font-size: 2em; /* Taille de l'icône */
+    position: absolute;
+    left: 10px; /* Positionnement de l'icône à gauche */
+    top: 0; /* Positionnement de l'icône en haut */
+    color: #f39c12; /* Couleur de l'icône */
+}
+
+blockquote::after {
+    content: "”"; /* Icône de citation fermée */
+    font-size: 2em; /* Taille de l'icône */
+    position: absolute;
+    right: 10px; /* Positionnement de l'icône à droite */
+    bottom: 0; /* Positionnement de l'icône en bas */
+    color: #f39c12; /* Couleur de l'icône */
+}
 
 @media (max-width: 768px) {
     #Header_Container {
