@@ -149,8 +149,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%%;
-    margin: 5px;
+    height: 100%;
+    margin: 10px;
     background-color: rgb(59, 60, 60);  /* couleur par défaut */
     border-radius: 5px;
 }
