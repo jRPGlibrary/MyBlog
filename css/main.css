@@ -136,7 +136,7 @@ body {
 
 .fa_icones{
     margin-top: 20px;
-    font-weight: 900;
+    font-weight: 500;
     display: flex;
     width: 100%;
     justify-content: end;
@@ -151,12 +151,14 @@ body {
     width: 100%;
     height: 100%;
     margin: 10px;
+
     background-color: rgb(59, 60, 60);  /* couleur par défaut */
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .share-button i {
-    font-size: 1.5em;
+    font-size: 1.8em;
+    margin: 2px;
     color: #000;  /* couleur de l'icône par défaut */
 }
 

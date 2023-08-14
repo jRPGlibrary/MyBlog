@@ -80,6 +80,7 @@
     padding-bottom: 56.25%;
     /* Ratio 16:9 (56.25%) */
     height: 0;
+    
 }
 
 .responsive-youtube iframe {
@@ -88,6 +89,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 }
