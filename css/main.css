@@ -192,33 +192,23 @@ body {
 
 
 blockquote {
-    background-color: #2a2a2a; /* Fond légèrement plus clair que le fond principal */
-    border-left: 4px solid darkred; /* Bordure gauche orange */
-    padding: 10px 20px; /* Espacement intérieur */
-    font-style: italic; /* Style de police en italique */
-    margin: 20px 0; /* Espacement autour du blockquote */
-    font-size: 1.1em; /* Taille de police légèrement augmentée */
-    position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  background-color: #2a2a2a; /* Fond légèrement plus clair que le fond principal */
+  border-left: 3px solid darkred; /* Bordure gauche orange */
+  padding: 50px 25px; /* Espacement intérieur */
+  font-style: italic; /* Style de police en italique */
+  margin: 20px 0; /* Espacement autour du blockquote */
+  font-size: 1.1em; /* Taille de police légèrement augmentée */
+  position: relative;
+  
 }
 
 blockquote::before {
-    content: "“";
-    font-size: 2em;
-    position: absolute;
-    left: 0px;
-    top: 0;
-    color: #c7800f;
-}
-
-blockquote::after {
-    content: "”";
-    font-size: 2em;
-    position: absolute;
-    right: 25px;
-    bottom: -10px;
-    color: #c7800f;
+  content: "“"; /* Icône de citation ouverte */
+  font-size: 2em; /* Taille de l'icône */
+  position: absolute;
+  left: 10px; /* Positionnement de l'icône à gauche */
+  top: 0; /* Positionnement de l'icône en haut */
+  color: #f39c12; /* Couleur de l'icône */
 }
 
 @media (max-width: 768px) {
