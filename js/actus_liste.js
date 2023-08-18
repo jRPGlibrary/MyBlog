@@ -2,7 +2,19 @@
 
 const actus_liste = [
   {
-    "id": 6,
+    "id": "Born_Of_Bread_Demo",
+    "name": "Born Of Bread Demo",
+    "author": "jRPGlibrary",
+    "date": new Date(2023, 7, 17, 22, 25),
+    "plateformes": ["Switch", "PS5","PC", "Xbox Series"],
+    "title": "Born Of Bread - La Démo sort du four sur NextGen",
+    "image":"https://i.ibb.co/J2g3JCT/18a083aee6234-screenshot-Url.jpg",
+    "description":'Notre petit lapin de farine débarque sur nos console avec ça demo.',
+    "page":"pages/2023/Actus/Born-Of-Bread-Demo.html",
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo.html" 
+  },
+  {
+    "id": "6",
     "name": "Atlas Fallen",
     "author": "jRPGlibrary",
     "date": new Date(2023, 7, 10, 19, 50),
