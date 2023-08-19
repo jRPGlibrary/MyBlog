@@ -10,7 +10,7 @@ const actus_liste = [
     "title": "Born Of Bread - La Démo sort du four sur NextGen",
     "image":"https://i.ibb.co/J2g3JCT/18a083aee6234-screenshot-Url.jpg",
     "description":'Notre petit lapin de farine débarque sur nos console avec ça demo.',
-    "page":"pages/2023/Actus/Born-Of-Bread-Demo-Releasd.html",
+    "page":"pages/2023/Actus/Born-Of-Bread-Demo-Release.html",
     "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo-Release" 
   },
   {
