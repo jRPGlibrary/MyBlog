@@ -26,7 +26,7 @@ const actus_liste = [
       "https://static1.millenium.org/articles/6/40/57/36/@/1712560-news-def-2-24-amp_main_media_schema-1.png",
     "description": `Atlas Fallen, le nouvel aRPG de Deck13 : glissez, sautez, équipez-vous de vos plus belles armes et affrontez les ombres les plus coriaces c'est sur NextGen`,
     "page": "pages/2023/Actus/6_Atlas_Fallen.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/6_Atlas_Fallen.html"
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/6_Atlas_Fallen"
   },
   {
     "id": 5,
