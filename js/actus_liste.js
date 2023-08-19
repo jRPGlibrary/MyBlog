@@ -11,8 +11,8 @@ const actus_liste = [
     image: "https://i.ibb.co/J2g3JCT/18a083aee6234-screenshot-Url.jpg",
     description:
       "Notre petit lapin de farine débarque sur nos console avec ça demo.",
-    page: "pages/2023/Actus/Born-Of-Bread-Demo-Release.html",
-    url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo-Release.html",
+    page: "pages/2023/Actus/Born-Of-Bread-Demo-Release",
+    url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo-Release",
   },
   {
     id: "6",
@@ -26,7 +26,7 @@ const actus_liste = [
     image:
       "https://static1.millenium.org/articles/6/40/57/36/@/1712560-news-def-2-24-amp_main_media_schema-1.png",
     description: `Atlas Fallen, le nouvel aRPG de Deck13 : glissez, sautez, équipez-vous de vos plus belles armes et affrontez les ombres les plus coriaces c'est sur NextGen`,
-    page: "pages/2023/Actus/6_Atlas_Fallen.html",
+    page: "pages/2023/Actus/6_Atlas_Fallen",
     url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/6_Atlas_Fallen",
   },
   {
@@ -43,8 +43,8 @@ const actus_liste = [
       "https://www.jvfrance.com/wp-content/uploads/2018/03/lost-soul-aside.jpg",
     description: `Tu as joué à Final Fantasy XVI de chez SquareEnix, comme beaucoup tu as été déçus? 
     Alors, viens explorer ce jeu qui fait partie d'un vaste projet et qui pourrait probablement rivaliser avec Final Fantasy XVI, initié par une seule personne.`,
-    page: "pages/2023/Actus/5_Lost_Soul_Aside.html",
-    url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/5_Lost_Soul_Aside.html",
+    page: "pages/2023/Actus/5_Lost_Soul_Aside",
+    url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/5_Lost_Soul_Aside",
   },
   {
     id: 4,
@@ -58,8 +58,8 @@ const actus_liste = [
     image:
       "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2020/03/sea-of-stars-keyart-w-logo.jpg",
     description: `Blablabla`,
-    page: "pages/2023/Actus/4_Sea_Of_Stars.html",
-    url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/4_Sea_Of_Stars.html",
+    page: "pages/2023/Actus/4_Sea_Of_Stars",
+    url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/4_Sea_Of_Stars",
   },
   {
     id: 3,
@@ -105,7 +105,7 @@ const actus_liste = [
     image:
       "http://res.cloudinary.com/dfy0zd3p6/image/upload/c_scale,w_3840/photo_42795009",
     description: `Blablabla`,
-    page: "pages/2023/Actus/1_Star_Ocean_Second_Story_R.html",
+    page: "pages/2023/Actus/1_Star_Ocean_Second_Story_R",
     url: "#",
   },
 ];
