@@ -2,7 +2,7 @@
 
 const actus_liste = [
   {
-    "id": "Born_Of_Bread_Demo",
+    "id": "Born-Of-Bread-Demo",
     "name": "Born Of Bread Demo",
     "author": "jRPGlibrary",
     "date": new Date(2023, 7, 17, 22, 25),
@@ -10,8 +10,8 @@ const actus_liste = [
     "title": "Born Of Bread - La Démo sort du four sur NextGen",
     "image":"https://i.ibb.co/J2g3JCT/18a083aee6234-screenshot-Url.jpg",
     "description":'Notre petit lapin de farine débarque sur nos console avec ça demo.',
-    "page":"pages/2023/Actus/Born-Of-Bread-Demo.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo.html" 
+    "page":"pages/2023/Actus/Born-Of-Bread-Demo-Releasd.html",
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo-Release.html" 
   },
   {
     "id": "6",
