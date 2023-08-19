@@ -61,37 +61,7 @@ const actus_liste = [
     page: "pages/2023/Actus/4_Sea_Of_Stars",
     url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/4_Sea_Of_Stars",
   },
-  {
-    id: 3,
-    name: "Born of Bread",
-    author: "jRPGlibrary",
-    date: new Date(2023, 6, 16, 22, 30),
-    plateformes: ["Switch", "PS5", "PC", "Xbox Series"],
-    title:
-      "BORN OF BREAD - Un voyage culinaire dans un monde rempli de saveur inspiré de MARIO RPG? !",
-    infos:
-      "Préparez-vous à entrer dans un monde où le pain règne en maître ! Born Of Bread, un nouveau RPG développé par WildArts, est prêt à faire son entrée sur la scène du jeu vidéo....",
-    image:
-      "https://cdn.cloudflare.steamstatic.com/steam/apps/1555140/header.jpg?t=1689001755",
-    description: `Blablabla`,
-    page: "#",
-    url: "#",
-  },
-  {
-    id: 2,
-    name: "Dragon Quest Treasures",
-    author: "jRPGlibrary",
-    date: new Date(2023, 6, 14, 20, 0),
-    plateformes: ["Switch", "PC"],
-    title: "DRAGON QUEST TREASURES sort de vos console pour rejoindre STEAM !",
-    infos:
-      "Dragon Quest Treasures, un action-RPG sorti précédemment sur Nintendo Switch en 2022, est un nouveau joyau qui s'ajoute au palmares de l'exellente saga qui est Dragon Quest. Pour rappel, cette série enchanteresse existe depuis 1986, et depuis lors, elle brille de tout son éclat du côté du Soleil Levant",
-    image:
-      "https://fyre.cdn.sewest.net/dq-treasures/63078c3a750476a5d87ff78f/bitmap-2x-prqmv3dOQ.jpg",
-    description: `Blablabla`,
-    page: "#",
-    url: "#",
-  },
+
   {
     id: 1,
     name: "STAR OCEAN : THE SECOND STORY R",
