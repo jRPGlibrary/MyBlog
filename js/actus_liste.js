@@ -12,7 +12,7 @@ const actus_liste = [
     description:
       "Notre petit lapin de farine débarque sur nos console avec ça demo.",
     page: "pages/2023/Actus/Born-Of-Bread-Demo-Release",
-    url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo-Release",
+    url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo-Release-for-ps5-xbox-switch-pc",
   },
   {
     id: "6",
