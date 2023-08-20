@@ -270,11 +270,12 @@ blockquote::before {
     }
     
     .socials {
+      
         width: 100%;
         display: flex;
         justify-content: center;
         margin: 10px 0;
-        font-size: 20px;
+        font-size: 2.5em;
 
     }
     
@@ -284,6 +285,7 @@ blockquote::before {
     }
     
     .twitch-player {
+     
         width: 80%;
         position: relative;
         padding-bottom: 56.25%; /* Ratio 16:9 */
