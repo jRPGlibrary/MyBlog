@@ -266,7 +266,7 @@ blockquote::before {
         align-items: center;
         justify-content: center;
         background-color: var(--footer-color);
-        margin: 100px 0 0 0;
+        margin-top: 0;
     }
     
     .socials {
@@ -276,7 +276,7 @@ blockquote::before {
         justify-content: center;
         margin: 10px 0;
         font-size: 2.5em;
-
+        
     }
     
     .socials img {
@@ -287,9 +287,10 @@ blockquote::before {
     .twitch-player {
      
         width: 80%;
+        margin: auto 0;
         position: relative;
         padding-bottom: 56.25%; /* Ratio 16:9 */
-        height: 0;
+        
     }
     
     .socials a {
