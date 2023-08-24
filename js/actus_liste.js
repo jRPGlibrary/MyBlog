@@ -2,7 +2,7 @@
 
 const actus_liste = [
   {
-    id: "Born-Of-Bread-Demo",
+    id: "5",
     name: "Born Of Bread Demo",
     author: "jRPGlibrary",
     date: new Date(2023, 7, 17, 22, 25),
@@ -15,7 +15,7 @@ const actus_liste = [
     url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo-Release-for-ps5-xbox-switch-pc",
   },
   {
-    id: "6",
+    id: "4",
     name: "Atlas Fallen",
     author: "jRPGlibrary",
     date: new Date(2023, 7, 10, 19, 50),
@@ -30,7 +30,7 @@ const actus_liste = [
     url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/6_Atlas_Fallen",
   },
   {
-    id: 5,
+    id: 3,
     name: "Lost Soul Aside",
     author: "jRPGlibrary",
     date: new Date(2023, 6, 31, 16, 0),
@@ -47,7 +47,7 @@ const actus_liste = [
     url: "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/5_Lost_Soul_Aside",
   },
   {
-    id: 4,
+    id: 2,
     name: "Sea Of Stars",
     author: "jRPGlibrary",
     date: new Date(2023, 6, 26, 22, 30),
