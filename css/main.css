@@ -203,6 +203,9 @@ blockquote {
   margin: 20px 0; /* Espacement autour du blockquote */
   font-size: 1.1em; /* Taille de police légèrement augmentée */
   position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;En cherchant bien , parle moi de la série des jeux " Neptunia " par Idea Factory 
+  
   
 }
 
@@ -260,7 +263,7 @@ blockquote::before {
 
     footer {
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -271,10 +274,11 @@ blockquote::before {
     
     .socials {
       
-        width: 100%;
+        width: 80%;
         display: flex;
+        margin: auto;
+
         justify-content: center;
-        margin: 10px 0;
         font-size: 2.5em;
         
     }
