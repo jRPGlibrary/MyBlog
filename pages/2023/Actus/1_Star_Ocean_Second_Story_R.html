@@ -65,7 +65,7 @@
 
     </header>
 
-    <section class="Article_Container" data-id=1>
+    <section class="Article_Container" data-index=0>
         <div class="Article_Infos">
             <div class="fa_icones">
                 <!-- Bouton de partage Facebook --> <a class="share-button facebook"
@@ -226,7 +226,7 @@
 <script src="../../../js/twitch.js"></script>
 <script>
     const article_plateformes = document.getElementsByClassName("Infos_Plateformes")[0];
-    article_plateformes.innerHTML = plateformes(actus_liste[actus_liste.length - parseInt(document.getElementsByClassName("Article_Container")[0].dataset.id)]["plateformes"]);
+    article_plateformes.innerHTML = plateformes(actus_liste[parseInt(document.getElementsByClassName("Article_Container")[0].dataset.index)]["plateformes"]);
 </script>
 
 </html>

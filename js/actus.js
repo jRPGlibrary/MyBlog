@@ -89,9 +89,9 @@ function add_actu(actu) {
     );
 }
 
-function page_actu(actus_liste,nb_actus_pages,index_page) {
-  const debut = index_page*nb_actus_page;
-  for (let i = debut; (i <= (debut + nb_actus_page - 1) & i <= actus_liste.length-1); i++) {
+function page_actu(actus_liste,nb_actus_page,index_page) {
+  const debut = actus_liste.length-1-index_page*nb_actus_page;
+  for (let i = debut; (i >= (debut - nb_actus_page + 1) & i >= 0); i--) {
     add_actu(actus_liste[i]);
   }
   pagination(Math.ceil(actus_liste.length / nb_actus_page)-1);

@@ -76,7 +76,7 @@
 
   <!-- Début de la section de l'article -->
 
-  <section class="Article_Container" data-id="6">
+  <section class="Article_Container" data-id="3">
     <div class="Article_Infos">
 
 
@@ -165,7 +165,7 @@
 <script src="../../../js/twitch.js"></script>
 <script>
   const article_plateformes = document.getElementsByClassName("Infos_Plateformes")[0];
-  article_plateformes.innerHTML = plateformes(actus_liste[actus_liste.length - parseInt(document.getElementsByClassName("Article_Container")[0].dataset.id)]["plateformes"]);
+  article_plateformes.innerHTML = plateformes(actus_liste[actus_liste.length - parseInt(document.getElementsByClassName("Article_Container")[0].dataset.index)]["plateformes"]);
 </script>
 
 </html>
