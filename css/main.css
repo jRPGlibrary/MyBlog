@@ -5,7 +5,7 @@
     --footer-color: #242526;
     --text-color: white;
     --header-footer-border: 0;
-    
+
     --opposite-mode: light;
     --opposite-background: #f0f0f0;
     --opposite-header-color: #f0f0f0;
@@ -99,7 +99,8 @@ body {
 
 #interrupteur {
     right: 10px;
-    width: 70px; /* Changement ici */
+    width: 70px;
+    /* Changement ici */
     height: 30px;
     position: absolute;
     display: block;
@@ -108,7 +109,7 @@ body {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    
+
 }
 
 #interrupteur:after {
@@ -125,26 +126,29 @@ body {
 }
 
 #mode_toggle:checked+#interrupteur {
-  
+
     background: #cdcdcd;
- 
+
 }
 
 #mode_toggle:checked+#interrupteur:after {
-    transform: translateX(42px); /* Changement ici */
+    transform: translateX(42px);
+    /* Changement ici */
     background-color: #fff;
-  
+
 }
 
 
 
-.fa_icones{
+.fa_icones {
+    margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: 500;
     display: flex;
-    width: 100%;
-    justify-content: end;
-    font-size: 13px;
+    width: 70%;
+    justify-content: space-between;
+    font-size: 15px;
 
 }
 
@@ -156,66 +160,88 @@ body {
     height: 100%;
     margin: 10px;
 
-    background-color: rgb(59, 60, 60);  /* couleur par défaut */
+    background-color: rgb(59, 60, 60);
+    /* couleur par défaut */
     border-radius: 8px;
 }
 
 .share-button i {
     font-size: 1.8em;
     margin: 2px;
-    color: #000;  /* couleur de l'icône par défaut */
+    color: #000;
+    /* couleur de l'icône par défaut */
 }
 
 .share-button.facebook {
-    background-color: #4267B2;  /* Couleur d'arrière-plan Facebook */
+    background-color: #4267B2;
+    /* Couleur d'arrière-plan Facebook */
 }
+
 .share-button.facebook i {
-    color: #FFF;  /* Couleur d'icône blanche pour un meilleur contraste */
+    color: #FFF;
+    /* Couleur d'icône blanche pour un meilleur contraste */
 }
 
 .share-button.twitter {
-    background-color: #1DA1F2;  /* Couleur d'arrière-plan Twitter */
+    background-color: #1DA1F2;
+    /* Couleur d'arrière-plan Twitter */
 }
+
 .share-button.twitter i {
     color: #FFF;
 }
 
 .share-button.whatsapp {
-    background-color: #25D366;  /* Couleur d'arrière-plan WhatsApp */
+    background-color: #25D366;
+    /* Couleur d'arrière-plan WhatsApp */
 }
+
 .share-button.whatsapp i {
     color: #FFF;
 }
 
 .share-button.discord {
-    background-color: #7289da;  /* Couleur d'arrière-plan Discord */
+    background-color: #7289da;
+    /* Couleur d'arrière-plan Discord */
 }
+
 .share-button.discord i {
     color: #FFF;
 }
 
 
 blockquote {
-  background-color: #2a2a2a; /* Fond légèrement plus clair que le fond principal */
-  border-left: 3px solid darkred; /* Bordure gauche orange */
-  padding: 50px 25px; /* Espacement intérieur */
-  font-style: italic; /* Style de police en italique */
-  margin: 20px 0; /* Espacement autour du blockquote */
-  font-size: 1.1em; /* Taille de police légèrement augmentée */
-  position: relative;
-  margin-top: 100px;
-  margin-bottom: 100px;En cherchant bien , parle moi de la série des jeux " Neptunia " par Idea Factory 
-  
-  
+    background-color: #2a2a2a;
+    /* Fond légèrement plus clair que le fond principal */
+    border-left: 3px solid darkred;
+    /* Bordure gauche orange */
+    padding: 50px 25px;
+    /* Espacement intérieur */
+    font-style: italic;
+    /* Style de police en italique */
+    margin: 20px 0;
+    /* Espacement autour du blockquote */
+    font-size: 1.1em;
+    /* Taille de police légèrement augmentée */
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    En cherchant bien,
+    parle moi de la série des jeux " Neptunia " par Idea Factory
 }
 
 blockquote::before {
-  content: "“"; /* Icône de citation ouverte */
-  font-size: 2em; /* Taille de l'icône */
-  position: absolute;
-  left: 10px; /* Positionnement de l'icône à gauche */
-  top: 0; /* Positionnement de l'icône en haut */
-  color: #f39c12; /* Couleur de l'icône */
+    content: "“";
+    /* Icône de citation ouverte */
+    font-size: 2em;
+    /* Taille de l'icône */
+    position: absolute;
+    left: 10px;
+    /* Positionnement de l'icône à gauche */
+    top: 0;
+    /* Positionnement de l'icône en haut */
+    color: #f39c12;
+    /* Couleur de l'icône */
 }
 
 @media (max-width: 768px) {
@@ -255,10 +281,10 @@ blockquote::before {
 
 @media screen and (min-width: 320px) {
 
-    #twitter-container{
+    #twitter-container {
         width: 100;
         margin-top: 50px;
-        
+
     }
 
     footer {
@@ -271,32 +297,33 @@ blockquote::before {
         background-color: var(--footer-color);
         margin-top: 0;
     }
-    
+
     .socials {
-      
+
         width: 80%;
         display: flex;
         margin: auto;
 
         justify-content: center;
         font-size: 2.5em;
-        
+
     }
-    
+
     .socials img {
         height: 30px;
         width: 30px;
     }
-    
+
     .twitch-player {
-     
+
         width: 80%;
         margin: auto 0;
         position: relative;
-        padding-bottom: 56.25%; /* Ratio 16:9 */
-        
+        padding-bottom: 56.25%;
+        /* Ratio 16:9 */
+
     }
-    
+
     .socials a {
         margin-right: 20px;
     }
@@ -305,11 +332,11 @@ blockquote::before {
     .socials a .fa-twitch {
         color: #9146FF;
     }
-    
+
     .socials a .fa-discord {
         color: #5865F2;
     }
-    
+
     .socials a .fa-twitter {
         color: #1DA1F2;
     }

@@ -54,7 +54,7 @@
     overflow: hidden;
 
     border: 1.15px solid grey;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
 
     margin: 20px 0 15px 0;
 }
@@ -93,4 +93,11 @@
     box-shadow: 0 3px 3px 0 darkred;
 }
 
+@media screen and (min-width: 600px) {
+.container_image .image_container {
+        max-width: 90%;
+
+    }
+
+}
 }
