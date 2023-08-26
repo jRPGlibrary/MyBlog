@@ -66,9 +66,9 @@ function article_infos (actus_liste) {
     const Infos_Plateformes = document.getElementsByClassName("Infos_Plateformes")[0];
     Infos_Plateformes.innerHTML = plateformes(actus_liste[index]["plateformes"]);
     const Infos_Date = document.getElementsByClassName("Infos_Date")[0];
-    Infos_Date.innerHTML = '<img alt="Date" src="../../../images/calendar.png"> '+affiche_date(actus_liste[index]["date"]);
+    Infos_Date.innerHTML = '<img class="Info_Icon" alt="Date" src="../../../images/calendar.png"> '+affiche_date(actus_liste[index]["date"]);
     const Infos_Temps = document.getElementsByClassName("Infos_Temps")[0];
-    Infos_Temps.innerHTML = '<img alt="Durée" src="../../../images/clock.png"> '+read_time();
+    Infos_Temps.innerHTML = '<img class="Info_Icon" alt="Durée" src="../../../images/clock.png"> '+read_time();
     const Infos_Auteur = document.getElementsByClassName("Infos_Auteur")[0];
-    Infos_Auteur.innerHTML = '<img alt="Auteur" src="../../../images/author.png"> '+actus_liste[index]["author"];
+    Infos_Auteur.innerHTML = '<img class="Info_Icon" alt="Auteur" src="../../../images/author.png"> '+actus_liste[index]["author"];
 }
