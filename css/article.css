@@ -70,9 +70,9 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.info {
-    display: flex;
-    flex-wrap: wrap;
+.Infos img {
+    height: 20px;
+    width: 20px;
 }
 
 .responsive-youtube {
