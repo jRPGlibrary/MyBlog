@@ -59,8 +59,6 @@ function read_time() {
     }
 }
 
-console.log(read_time())
-
 function article_infos (actus_liste) {
     const index = parseInt(document.getElementsByClassName("Article_Container")[0].dataset.index)
     const Infos_Plateformes = document.getElementsByClassName("Infos_Plateformes")[0];
