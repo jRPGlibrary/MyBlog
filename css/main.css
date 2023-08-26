@@ -5,6 +5,7 @@
     --footer-color: #242526;
     --text-color: white;
     --header-footer-border: 0;
+    --icon-color: 1;
 
     --opposite-mode: light;
     --opposite-background: #f0f0f0;
@@ -12,6 +13,7 @@
     --opposite-footer-color: #f0f0f0;
     --opposite-text-color: black;
     --opposite-header-footer-border: 3px;
+    --opposite-icon-color: 0;
 }
 
 /*MAIN*/
@@ -87,7 +89,7 @@ body {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--text-color);
     margin: 5px 0;
 }
 
@@ -126,9 +128,7 @@ body {
 }
 
 #mode_toggle:checked+#interrupteur {
-
     background: #cdcdcd;
-
 }
 
 #mode_toggle:checked+#interrupteur:after {
@@ -137,8 +137,6 @@ body {
     background-color: #fff;
 
 }
-
-
 
 .fa_icones {
     margin: auto;
@@ -226,8 +224,8 @@ blockquote {
     position: relative;
     margin-top: 100px;
     margin-bottom: 100px;
-    En cherchant bien,
-    parle moi de la série des jeux " Neptunia " par Idea Factory
+    /* En cherchant bien,
+    parle moi de la série des jeux " Neptunia " par Idea Factory */
 }
 
 blockquote::before {

@@ -36,12 +36,14 @@ function applyDarkMode() {
 	document.documentElement.style.setProperty("--footer-color", "#242526");
 	document.documentElement.style.setProperty("--text-color", "white");
 	document.documentElement.style.setProperty("--header-footer-border", "0");
-  document.documentElement.style.setProperty("--opposite-mode", "light");
+	document.documentElement.style.setProperty("--icon-color", "1");
+    document.documentElement.style.setProperty("--opposite-mode", "light");
 	document.documentElement.style.setProperty("--opposite-background", "#f0f0f0");
 	document.documentElement.style.setProperty("--opposite-header-color", "#f0f0f0");
 	document.documentElement.style.setProperty("--opposite-footer-color", "#f0f0f0");
 	document.documentElement.style.setProperty("--opposite-text-color", "black");
 	document.documentElement.style.setProperty("--opposite-header-footer-border", "3px");
+	document.documentElement.style.setProperty("--opposite-icon-color", "0");
 }
 
 function applyLightMode() {
@@ -51,12 +53,14 @@ function applyLightMode() {
 	document.documentElement.style.setProperty("--footer-color", "#f0f0f0");
 	document.documentElement.style.setProperty("--text-color", "black");
 	document.documentElement.style.setProperty("--header-footer-border", "3px");
-  document.documentElement.style.setProperty("--opposite-mode", "dark");
+	document.documentElement.style.setProperty("--icon-color", "0");
+    document.documentElement.style.setProperty("--opposite-mode", "dark");
 	document.documentElement.style.setProperty("--opposite-background", "#18191a");
 	document.documentElement.style.setProperty("--opposite-header-color", "#242526");
 	document.documentElement.style.setProperty("--opposite-footer-color", "#242526");
 	document.documentElement.style.setProperty("--opposite-text-color", "white");
 	document.documentElement.style.setProperty("--opposite-header-footer-border", "0");
+	document.documentElement.style.setProperty("--opposite-icon-color", "1");
 }
 
 const mode_toggle=document.getElementById("mode_toggle")
