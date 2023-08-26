@@ -76,6 +76,12 @@
     filter: invert(var(--icon-color));
 }
 
+.Infos_DTA {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% auto;
+}
+
 .responsive-youtube {
     position: relative;
     padding-bottom: 56.25%;
