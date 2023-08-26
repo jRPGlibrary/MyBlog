@@ -41,7 +41,7 @@ function affiche_date(date) {
     const zero=["0",""];
     const heure=date.getHours();
     const minute=date.getMinutes();
-    return ("Posté le "+date.getDate()+" "+mois[date.getMonth()]+" "+date.getFullYear()+" à "+zero[heure.toString().length-1]+heure+":"+zero[minute.toString().length-1]+minute);
+    return (date.getDate()+" "+mois[date.getMonth()]+" "+date.getFullYear()+" à "+zero[heure.toString().length-1]+heure+":"+zero[minute.toString().length-1]+minute);
 }
 
 function read_time() {
@@ -51,25 +51,24 @@ function read_time() {
         nb_mots=nb_mots+text[i].innerHTML.split(" ").length;
     }
     const temps_lecture=nb_mots/250;
-    if (temps_lecture<1) {
-        return "Moins d'une minute";
-    }
-    else if (Math.round(temps_lecture)==1) {
-        return "Une minute";
+    if (temps_lecture<0.8) {
+        return "Environ 1 mn";
     }
     else {
-        return Math.round(temps_lecture)+" minutes";
+        return Math.round(temps_lecture)+" mn";
     }
 }
 
 console.log(read_time())
 
-function article_widget () {
+function article_infos (actus_liste) {
     const index = parseInt(document.getElementsByClassName("Article_Container")[0].dataset.index)
     const Infos_Plateformes = document.getElementsByClassName("Infos_Plateformes")[0];
     Infos_Plateformes.innerHTML = plateformes(actus_liste[index]["plateformes"]);
     const Infos_Date = document.getElementsByClassName("Infos_Date")[0];
-    Infos_Date.innerHTML = affiche_date(actus_liste[index]["date"]);
+    Infos_Date.innerHTML = '<img alt="Date" src="../../../images/calendar.png"> '+affiche_date(actus_liste[index]["date"]);
     const Infos_Temps = document.getElementsByClassName("Infos_Temps")[0];
-    Infos_Temps.innerHTML = "Temps de lecture : "+read_time();
+    Infos_Temps.innerHTML = '<img alt="Durée" src="../../../images/clock.png"> '+read_time();
+    const Infos_Auteur = document.getElementsByClassName("Infos_Auteur")[0];
+    Infos_Auteur.innerHTML = '<img alt="Auteur" src="../../../images/author.png"> '+actus_liste[index]["author"];
 }
