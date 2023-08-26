@@ -99,7 +99,7 @@ function article_infos(actus_liste) {
   const Infos_Temps = document.getElementsByClassName("Infos_Temps")[0];
   Infos_Temps.innerHTML =
     '<img class="Info_Icon" alt="Durée" src="../../../images/clock.png"> ' +
-    " En ligne depuis " +
+    " Lecture " +
     read_time();
   const Infos_Auteur = document.getElementsByClassName("Infos_Auteur")[0];
   Infos_Auteur.innerHTML =
