@@ -226,6 +226,7 @@
 <script src="../../../js/twitch.js"></script>
 <script>
     const article_plateformes = document.getElementsByClassName("Infos_Plateformes")[0];
+    console.log(plateformes(actus_liste[parseInt(document.getElementsByClassName("Article_Container")[0].dataset.index)]))
     article_plateformes.innerHTML = plateformes(actus_liste[parseInt(document.getElementsByClassName("Article_Container")[0].dataset.index)]["plateformes"]);
 </script>
 

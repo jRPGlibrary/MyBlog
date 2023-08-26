@@ -34,3 +34,42 @@ function metadonnees (actu) {
         <!-- Meta Tags Generated via https://www.opengraph.xyz -->`
     )
 }
+
+function affiche_date(date) {
+    const mois=["janvier", "février", "mars", "avril", "mai", "juin",
+    "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+    const zero=["0",""];
+    const heure=date.getHours();
+    const minute=date.getMinutes();
+    return ("Posté le "+date.getDate()+" "+mois[date.getMonth()]+" "+date.getFullYear()+" à "+zero[heure.toString().length-1]+heure+":"+zero[minute.toString().length-1]+minute);
+}
+
+function read_time() {
+    const text=document.getElementsByTagName("p");
+    let nb_mots=0;
+    for (let i=0;i<text.length;i++) {
+        nb_mots=nb_mots+text[i].innerHTML.split(" ").length;
+    }
+    const temps_lecture=nb_mots/250;
+    if (temps_lecture<1) {
+        return "Moins d'une minute";
+    }
+    else if (Math.round(temps_lecture)==1) {
+        return "Une minute";
+    }
+    else {
+        return Math.round(temps_lecture)+" minutes";
+    }
+}
+
+console.log(read_time())
+
+function article_widget () {
+    const index = parseInt(document.getElementsByClassName("Article_Container")[0].dataset.index)
+    const Infos_Plateformes = document.getElementsByClassName("Infos_Plateformes")[0];
+    Infos_Plateformes.innerHTML = plateformes(actus_liste[index]["plateformes"]);
+    const Infos_Date = document.getElementsByClassName("Infos_Date")[0];
+    Infos_Date.innerHTML = affiche_date(actus_liste[index]["date"]);
+    const Infos_Temps = document.getElementsByClassName("Infos_Temps")[0];
+    Infos_Temps.innerHTML = "Temps de lecture : "+read_time();
+}

@@ -6,6 +6,15 @@ function getPageIndexFromURL() {
   return parseInt(urlParams.get('page')) || 0;
 }
 
+function affiche_date(date) {
+  const mois=["janvier", "février", "mars", "avril", "mai", "juin",
+  "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+  const zero=["0",""];
+  const heure=date.getHours();
+  const minute=date.getMinutes();
+  return ("Posté le "+date.getDate()+" "+mois[date.getMonth()]+" "+date.getFullYear()+" à "+zero[heure.toString().length-1]+heure+":"+zero[minute.toString().length-1]+minute);
+}
+
 function duree(date) {
   const now = new Date();
   const difference = now.getTime() - date.getTime();
@@ -149,3 +158,5 @@ function pagination (max_index_page) {
 window.addEventListener('popstate', function () {
   change_page(getPageIndexFromURL(),max_index_page,nb_actus_page,actus_liste);
 });
+
+console.log(affiche_date(new Date(2023,6,13,20,0)))

@@ -76,7 +76,7 @@
 
   <!-- Début de la section de l'article -->
 
-  <section class="Article_Container" data-id="3">
+  <section class="Article_Container" data-index=3>
     <div class="Article_Infos">
 
 
@@ -91,6 +91,8 @@
           <!-- Informations de l'article -->
           <div class="info">
             <ul class="Infos_Plateformes"></ul>
+            <ul class="Infos_Date"></ul>
+            <ul class="Infos_Temps"></ul>
           </div>
           <!-- Titre de l'article -->
           <h1>ATLAS FALLEN : Day-One , L'héritage de Deck13.</h1>
@@ -161,11 +163,11 @@
 </body>
 <script src="../../../js/actus_liste.js"></script>
 <script src="../../../js/actus.js"></script>
+<script src="../../../js/article.js"></script>
 <script src="../../../js/menu.js"></script>
 <script src="../../../js/twitch.js"></script>
 <script>
-  const article_plateformes = document.getElementsByClassName("Infos_Plateformes")[0];
-  article_plateformes.innerHTML = plateformes(actus_liste[actus_liste.length - parseInt(document.getElementsByClassName("Article_Container")[0].dataset.index)]["plateformes"]);
+  article_widget();
 </script>
 
 </html>
