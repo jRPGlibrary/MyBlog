@@ -65,7 +65,7 @@
     <!-- AFFICHE DU TITRE DE LA PAGE SOUS FORME DE BANNER -->
     <section id="Articles_Banner">
         <div id="Articles_BannerTitle">
-            <h2>News</h2>
+            <h2>Review</h2>
         </div>
     </section>
 
@@ -107,11 +107,11 @@
 <script src="./js/menu.js"></script>
 <script src="./js/footer.js"></script>
 <script src="./js/twitch.js"></script>
-<script src="./js/actus_liste.js"></script>
+<script src="./js/review_liste.js"></script>
 <script src="./js/articles.js"></script>
 <script>
-    const max_index_page = Math.ceil(actus_liste.length / nb_articles_page) - 1;
-	change_page(getPageIndexFromURL(),max_index_page,nb_articles_page,actus_liste);
+    const max_index_page = Math.ceil(review_liste.length / nb_articles_page) - 1;
+	change_page(getPageIndexFromURL(),max_index_page,nb_articles_page,review_liste);
 </script>
 
 </html>

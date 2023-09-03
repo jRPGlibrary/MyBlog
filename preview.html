@@ -50,8 +50,8 @@
             <ul class="menu-list">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="actus.html">News</a></li>
-                <li><a href="preview.html">Previews</a></li>
-                <li><a href="review.html">Reviews</a></li>
+                <li><a href="#Previews">Previews</a></li>
+                <li><a href="#Reviews">Reviews</a></li>
                 <li><a href="partenariats.html">Partenariats</a></li>
                 <li><a href="#Contacts">Contacts</a></li>
             </ul>
@@ -65,7 +65,7 @@
     <!-- AFFICHE DU TITRE DE LA PAGE SOUS FORME DE BANNER -->
     <section id="Articles_Banner">
         <div id="Articles_BannerTitle">
-            <h2>News</h2>
+            <h2>Previews</h2>
         </div>
     </section>
 
@@ -107,11 +107,11 @@
 <script src="./js/menu.js"></script>
 <script src="./js/footer.js"></script>
 <script src="./js/twitch.js"></script>
-<script src="./js/actus_liste.js"></script>
+<script src="./js/preview_liste.js"></script>
 <script src="./js/articles.js"></script>
 <script>
-    const max_index_page = Math.ceil(actus_liste.length / nb_articles_page) - 1;
-	change_page(getPageIndexFromURL(),max_index_page,nb_articles_page,actus_liste);
+    const max_index_page = Math.ceil(preview_liste.length / nb_articles_page) - 1;
+	change_page(getPageIndexFromURL(),max_index_page,nb_articles_page,preview_liste);
 </script>
 
 </html>
