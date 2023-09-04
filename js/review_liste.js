@@ -9,7 +9,7 @@ const review_liste = [
       "infos": "Valère Moine Lunaire, Zale Guerrier Solaire et Garl guerrier cuisinier partent à l'aventure dans un monde magique ou les compétences des enfants du soltices seront mis à rude éprouve pour pouvoir...",
       "image": "https://static.tvtropes.org/pmwiki/pub/images/babylon_5-show_2707.jpg",
       "description": "",
-      "page": "pages/2023/Reviews/Sea-Of-Stars-Review-Les-Enfants-Du-Solstices-PS5-Version.html",
-      "url": "pages/2023/Reviews/Sea-Of-Stars-Review-Les-Enfants-Du-Solstices-PS5-Version"
+      "page": "pages/2023/Reviews/Sea-Of-Stars-Mini-Review-Les-Enfants-Du-Solstices-PS5-Version.html",
+      "url": "pages/2023/Reviews/Sea-Of-Stars-Mini-Review-Les-Enfants-Du-Solstices-PS5-Version"
     },
 ]
