@@ -7,7 +7,7 @@ const review_liste = [
       "plateformes": ["Switch", "PS5", "PC", "Xbox Series"],
       "title": "Sea Of Stars: Les Enfants Du Solstices",
       "infos": "Valère Moine Lunaire, Zale Guerrier Solaire et Garl guerrier cuisinier partent à l'aventure dans un monde magique ou les compétences des enfants du soltices seront mis à rude éprouve pour pouvoir...",
-      "image": "https://i.ibb.co/71RMVwH/Miniature-Review-Sea-Of-Stars-1.png",
+      "image": "https://i.postimg.cc/j2fnFx2M/Miniature-Review-Sea-Of-Stars.png",
       "description": "",
       "page": "pages/2023/Reviews/Sea-Of-Stars-Mini-Review-Les-Enfants-Du-Solstices-PS5-Version.html",
       "url": "pages/2023/Reviews/Sea-Of-Stars-Mini-Review-Les-Enfants-Du-Solstices-PS5-Version"
