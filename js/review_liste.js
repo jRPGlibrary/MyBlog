@@ -1,15 +1,15 @@
 const review_liste = [
     {
-      "id": "review-id",
-      "name": "NAME",
+      "id": "Sea-Of-Stars-Review",
+      "name": "SEA OF STARS: LES ENFANTS DU SOLSTICES",
       "author": "jRPGlibrary",
-      "date": new Date(2023, 6, 13, 20, 0),
-      "plateformes": ["Une console exceptionnelle"],
-      "title": "TITRE",
-      "infos": "Blablabla",
+      "date": new Date(2023, 10, 4, 20, 0),
+      "plateformes": ["Switch", "PS5", "PC", "Xbox Series"],
+      "title": "Sea Of Stars: Les Enfants Du Solstices",
+      "infos": "Valère Moine Lunaire, Zale Guerrier Solaire et Garl guerrier cuisinier partent à l'aventure dans un monde magique ou les compétences des enfants du soltices seront mis à rude éprouve pour pouvoir...",
       "image": "https://static.tvtropes.org/pmwiki/pub/images/babylon_5-show_2707.jpg",
-      "description": `Blablabla`,
-      "page": "pages/2023/Review/example.html",
-      "url": "#"
+      "description": "",
+      "page": "pages/2023/Reviews/Sea-Of-Stars-Review-Les-Enfants-Du-Solstices-PS5-Version.html",
+      "url": "pages/2023/Reviews/Sea-Of-Stars-Review-Les-Enfants-Du-Solstices-PS5-Version"
     },
 ]
