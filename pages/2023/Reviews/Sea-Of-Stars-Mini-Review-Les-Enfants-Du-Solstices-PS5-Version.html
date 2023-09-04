@@ -14,7 +14,8 @@
 
  <!-- Open Graph Meta Tags ( Facebook / Discord ) -->
  <meta 
-  content="https://jrpglibrary.github.io/MyBlog/pages/2023/Reviews/Sea-Of-Stars-Mini-Review-Les-Enfants-Du-Solstices-PS5-Version" property="og:url">
+  content="https://jrpglibrary.github.io/MyBlog/pages/2023/Reviews/Sea-Of-Stars-Mini-Review-Les-Enfants-Du-Solstices-PS5-Version" 
+  property="og:url">
  <meta 
   content="jRPGLibrary" 
   property="og:site_name">
@@ -28,7 +29,7 @@
   content="Valère Moine Lunaire, Zale Guerrier Solaire et Garl guerrier cuisinier partent à l'aventure dans un monde magique ou les compétences des enfants du soltices seront mis à rude épreuve pour pouvoir..."
   property="og:description">
  <meta 
-  content="https://i.ibb.co/71RMVwH/Miniature-Review-Sea-Of-Stars-1.png""
+  content="https://i.ibb.co/71RMVwH/Miniature-Review-Sea-Of-Stars-1.png"
   property="og:image">
  <meta 
   content="Sea-Of-Stars" 
@@ -100,9 +101,82 @@ href="../../../images/Logo.png"
   type="image/x-icon">
 
 </head>
+  <!-- HEADER COMPORTE LA BAR NAVIGATION ET LE MENU SOCIAL -->
+  <header id="Header_Container">
+    <section>
+      <div id="social_menu">
+        <ul>
+          <li><a href="https://www.facebook.com/JrpgLibrary/"><img alt="Facebook"
+                src="../../../images/facebook-icone-copie.png"></a></li>
+          <li><a href="https://discord.gg/u8UcUSMj"><img alt="Discord"
+                src="../../../images/discord-icone-copie.png"></a>
+          </li>
+          <li><a href="https://www.twitch.tv/jrpg_library"><img alt="Twitch"
+                src="../../../images/twitch-icone-copie.png"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
+    <nav id="Header_Nav">
+      <div class="menu-burger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    <ul class="menu-list">
+        <li><a href="../../../index.html">Accueil</a></li>
+        <li><a href="../../../actus.html">News</a></li>
+        <li><a href="../../../preview.html">Previews</a></li>
+        <li><a href="../../../review.html">Reviews</a></li>
+        <li><a href="../../../partenariats.html">Partenariats</a></li>
+        <li><a href="#Contacts">Contacts</a></li>
+    </ul>
+    </nav> <input id="mode_toggle" type="checkbox"> <label for="mode_toggle" id="interrupteur"></label>
+  </header>
+
+  <!-- Fin de la section de l'article -->
+  <footer>
+    <h2>Suivez et Rejoignez mes réseaux sociaux pour toujours plus d'actualités RPG !</h2>
+    <div class="socials"> <a href="https://www.twitch.tv/jrpg_library"><i class="fab fa-twitch"></i></a> <a
+        href="https://discord.gg/Nhsnv9kz"><i class="fab fa-discord"></i></a> <a
+        href="https://twitter.com/jRPG_Library"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="twitch-player">
+      <div class="twitch-player">
+        <div id="twitch-embed"><iframe allow="autoplay; fullscreen" allowfullscreen="" frameborder="0" height="100%"
+            sandbox="allow-modals allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+            scrolling="no"
+            src="https://embed.twitch.tv?autoplay=true&amp;channel=jrpg_library&amp;height=100%25&amp;layout=video&amp;parent=streamerwebsite.com&amp;parent=127.0.0.1&amp;referrer=http%3A%2F%2F127.0.0.1%3A5500%2Fpages%2F2023%2FActus%2F5_Lost_Soul_Aside.html&amp;width=100%25"
+            title="Twitch" width="100%"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"> <a href="https://www.paypal.me/MatthieuMAUBERNARD">Dons</a> |
+      <span>Copyright 2023</span> |
+      <a href="mailto:contentcreator.jrpglibrary@gmail.com">Contact</a>
+    </div>
+  </footer>
 
 <body>
+  <script 
+    src="../../../js/actus_liste.js">
+  </script>
+  <script 
+    src="../../../js/articles.js">
+  </script>
+  <script 
+    src="../../../js/page_article.js">
+  </script>
+  <script  
+    src="../../../js/menu.js">
+  </script>
+  <script  
+    src="../../../js/twitch.js">
+  </script>
+  <script>
+    article_infos(actus_liste);
+  </script>
     
 </body>
 </html>
