@@ -78,7 +78,7 @@ function read_time() {
   }
   const temps_lecture = nb_mots / 250;
   if (temps_lecture < 0.8) {
-    return "Environ 1 mn";
+    return "environ 1 mn";
   } else {
     return Math.round(temps_lecture) + " mn";
   }
@@ -94,7 +94,7 @@ function article_infos(actus_liste) {
   const Infos_Date = document.getElementsByClassName("Infos_Date")[0];
   Infos_Date.innerHTML =
     '<img class="Info_Icon" alt="Date" src="../../../images/calendar.png"> ' +
-    " Crée le" +
+    " Publié le " +
     affiche_date(actus_liste[index]["date"]);
   const Infos_Temps = document.getElementsByClassName("Infos_Temps")[0];
   Infos_Temps.innerHTML =
@@ -106,4 +106,6 @@ function article_infos(actus_liste) {
     '<img class="Info_Icon" alt="Auteur" src="../../../images/author.png">' +
     " Par " +
     actus_liste[index]["author"];
+  const Title = document.getElementsByClassName("Title_Game")[0];
+  Title.innerHTML = actus_liste[index]["title"];
 }
