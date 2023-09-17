@@ -7,7 +7,7 @@ const preview_liste = [
       "plateformes": ["Une console exceptionnelle"],
       "title": "TITRE",
       "infos": "Blablabla",
-      "image": "https://static.tvtropes.org/pmwiki/pub/images/babylon_5-show_2707.jpg",
+      "image": "https://img.redbull.com/images/q_auto,f_auto/redbullcom/2017/02/05/1389b9b6-6e41-4b07-a28c-798292586e29/dragon-quest.jpg",
       "description": `Blablabla`,
       "page": "pages/2023/Preview/example.html",
       "url": "#"
