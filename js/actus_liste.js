@@ -77,7 +77,7 @@ const actus_liste = [
     "infos": "À l'occasion du Nintendo Direct du 14 septembre 2023, le successeur spirituel de Suikoden fait parler de lui avec une...",
     "image": "https://nintendoeverything.com/wp-content/uploads/Eiyuden-Chronicle-Hundred-Heroes-delayed.jpg",
     "description": "Le successeur de Suikoden annonce son date de sortie lors du Nintendo Direct. Faisons le point.",
-    "page": "pages/2023/Actus/Eiyuden_Chronicle_Date_Sortie.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Eiyuden_Chronicle_Date_Sortie.html"
+    "page": "pages/2023/Actus/Eiyuden-Chronicle-Date-Sortie.html",
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Eiyuden-Chronicle-Date-Sortie.html"
   }
 ];
