@@ -25,7 +25,7 @@ const actus_liste = [
     "image": "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2020/03/sea-of-stars-keyart-w-logo.jpg",
     "description": `Blablabla`,
     "page": "pages/2023/Actus/4_Sea_Of_Stars.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/4_Sea_Of_Stars"
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/4_Sea_Of_Stars.html"
   },
   {
     "id": "lost-soul-aside",
@@ -39,7 +39,7 @@ const actus_liste = [
     "description": `Tu as joué à Final Fantasy XVI de chez SquareEnix, comme beaucoup tu as été déçus? 
     Alors, viens explorer ce jeu qui fait partie d'un vaste projet et qui pourrait probablement rivaliser avec Final Fantasy XVI, initié par une seule personne.`,
     "page": "pages/2023/Actus/5_Lost_Soul_Aside.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/5_Lost_Soul_Aside"
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/5_Lost_Soul_Aside.html"
   },
   {
     "id": "atlas-fallen",
@@ -52,7 +52,7 @@ const actus_liste = [
     "image": "https://static1.millenium.org/articles/6/40/57/36/@/1712560-news-def-2-24-amp_main_media_schema-1.png",
     "description": `Atlas Fallen, le nouvel aRPG de Deck13 : glissez, sautez, équipez-vous de vos plus belles armes et affrontez les ombres les plus coriaces c'est sur NextGen`,
     "page": "pages/2023/Actus/6_Atlas_Fallen.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/6_Atlas_Fallen"
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/6_Atlas_Fallen.html"
   },
   {
     "id": "born-of-bread-demo",
@@ -61,9 +61,23 @@ const actus_liste = [
     "date": new Date(2023, 7, 17, 22, 25),
     "plateformes": ["Switch", "PS5", "PC", "Xbox Series"],
     "title": "Born Of Bread - La Démo sort du four sur NextGen",
+    "infos": "",
     "image": "https://i.ibb.co/J2g3JCT/18a083aee6234-screenshot-Url.jpg",
-    "description": "Notre petit lapin de farine débarque sur nos console avec ça demo.",
+    "description": "Notre petit lapin de farine débarque sur nos console avec sa demo.",
     "page": "pages/2023/Actus/Born-Of-Bread-Demo-Release-for-ps5-xbox-switch-pc.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo-Release-for-ps5-xbox-switch-pc"
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo-Release.html"
+  },
+  {
+    "id": "eiyuden-chronicle-date-sortie",
+    "name": "Eiyuden Chronicle: Hundred Heroes",
+    "author": "Patfine",
+    "date": new Date(2023, 8, 17, 15, 0),
+    "plateformes": ["Switch", "PS4", "PS5", "PC", "Xbox One", "Xbox Series"],
+    "title": "Eiyuden Chronicle: Hundred Heroes dévoile sa date de sortie",
+    "infos": "À l'occasion du Nintendo Direct du 14 septembre 2023, le successeur spirituel de Suikoden fait parler de lui avec une...",
+    "image": "https://nintendoeverything.com/wp-content/uploads/Eiyuden-Chronicle-Hundred-Heroes-delayed.jpg",
+    "description": "Le successeur de Suikoden annonce son date de sortie lors du Nintendo Direct. Faisons le point.",
+    "page": "pages/2023/Actus/Eiyuden_Chronicle_Date_Sortie.html",
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Eiyuden_Chronicle_Date_Sortie.html"
   }
 ];
