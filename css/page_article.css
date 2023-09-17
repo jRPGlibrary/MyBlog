@@ -78,17 +78,14 @@
         margin-top: 20px;
     }
 
-    .Infos img {
+    .Infos_DTA img {
         height: 20px;
         width: 20px;
         filter: invert(var(--icon-color));
     }
 
     .Infos_DTA {
-        display: flex;
-        flex-wrap: wrap;
         margin: 5% auto;
-        justify-content: space-evenly;
     }
 
     .responsive-youtube {
