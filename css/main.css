@@ -282,7 +282,6 @@ blockquote::before {
     #twitter-container {
         width: 100;
         margin-top: 50px;
-
     }
 
     footer {
@@ -313,7 +312,7 @@ blockquote::before {
     }
 
     .twitch-player {
-
+        display: none;
         width: 80%;
         margin: auto 0;
         position: relative;

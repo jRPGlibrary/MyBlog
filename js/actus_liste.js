@@ -11,8 +11,8 @@ const actus_liste = [
     "infos": "L'histoire suit les aventures de Claude C. Kenny, un officier de la Fédération Pangalactique, et Rena Lanford, une jeune femme de la planète Expel...",
     "image": "http://res.cloudinary.com/dfy0zd3p6/image/upload/c_scale,w_3840/photo_42795009",
     "description": `Blablabla`,
-    "page": "pages/2023/Actus/1_Star_Ocean_Second_Story_R.html",
-    "url": "#"
+    "page": "pages/2023/Actus/Star_Ocean_Second_Story_R.html",
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Star_Ocean_Second_Story_R.html"
   },
   {
     "id": "sea-of-stars",
@@ -24,8 +24,8 @@ const actus_liste = [
     "infos": "Sea of Stars nous plonge dans un univers riche et détaillé, où deux Enfants du Solstice, Valere et Zale, se lancent dans une quête épique....",
     "image": "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2020/03/sea-of-stars-keyart-w-logo.jpg",
     "description": `Blablabla`,
-    "page": "pages/2023/Actus/4_Sea_Of_Stars.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/4_Sea_Of_Stars.html"
+    "page": "pages/2023/Actus/Sea_Of_Stars.html",
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Sea_Of_Stars.html"
   },
   {
     "id": "lost-soul-aside",
@@ -38,8 +38,8 @@ const actus_liste = [
     "image": "https://www.jvfrance.com/wp-content/uploads/2018/03/lost-soul-aside.jpg",
     "description": `Tu as joué à Final Fantasy XVI de chez SquareEnix, comme beaucoup tu as été déçus? 
     Alors, viens explorer ce jeu qui fait partie d'un vaste projet et qui pourrait probablement rivaliser avec Final Fantasy XVI, initié par une seule personne.`,
-    "page": "pages/2023/Actus/5_Lost_Soul_Aside.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/5_Lost_Soul_Aside.html"
+    "page": "pages/2023/Actus/Lost_Soul_Aside.html",
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Lost_Soul_Aside.html"
   },
   {
     "id": "atlas-fallen",
@@ -51,8 +51,8 @@ const actus_liste = [
     "infos": "Développé par les maestros de Focus Entertainment et Deck 13, Atlas Fallen nous plonge dans un monde fantastique où des créatures légendaires nous...",
     "image": "https://static1.millenium.org/articles/6/40/57/36/@/1712560-news-def-2-24-amp_main_media_schema-1.png",
     "description": `Atlas Fallen, le nouvel aRPG de Deck13 : glissez, sautez, équipez-vous de vos plus belles armes et affrontez les ombres les plus coriaces c'est sur NextGen`,
-    "page": "pages/2023/Actus/6_Atlas_Fallen.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/6_Atlas_Fallen.html"
+    "page": "pages/2023/Actus/Atlas_Fallen.html",
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Atlas_Fallen.html"
   },
   {
     "id": "born-of-bread-demo",
