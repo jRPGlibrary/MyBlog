@@ -150,62 +150,98 @@ body {
 
 }
 
-.share-button {
-    display: inline-flex;
-    justify-content: center;
+.share-buttons {
+    position: fixed;
+    bottom: 50px;
+    right: 50%;
+    transform: translate(50%, 50%);
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end;
+    align-items: cenner;
+  }
+  
+  .share-buttons a {
+    display: flex;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    margin: 10px;
-
-    background-color: rgb(59, 60, 60);
-    /* couleur par défaut */
-    border-radius: 8px;
-}
-
-.share-button i {
-    font-size: 1.8em;
-    margin: 2px;
-    color: #000;
-    /* couleur de l'icône par défaut */
-}
-
-.share-button.facebook {
-    background-color: #4267B2;
-    /* Couleur d'arrière-plan Facebook */
-}
-
-.share-button.facebook i {
-    color: #FFF;
-    /* Couleur d'icône blanche pour un meilleur contraste */
-}
-
-.share-button.twitter {
-    background-color: #1DA1F2;
-    /* Couleur d'arrière-plan Twitter */
-}
-
-.share-button.twitter i {
-    color: #FFF;
-}
-
-.share-button.whatsapp {
-    background-color: #25D366;
-    /* Couleur d'arrière-plan WhatsApp */
-}
-
-.share-button.whatsapp i {
-    color: #FFF;
-}
-
-.share-button.discord {
-    background-color: #7289da;
-    /* Couleur d'arrière-plan Discord */
-}
-
-.share-button.discord i {
-    color: #FFF;
-}
+    justify-content: center;
+    margin-left: 15px;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .share-buttons a:hover {
+    cursor: pointer;
+  }
+  
+  .share-buttons a i {
+    font-size: 30px;
+  }
+  
+  .share-buttons .facebook {
+    background-color: #3b5998;
+  }
+  .share-buttons {
+    position: fixed;
+    bottom: 50px;
+    right: 50%;
+    transform: translate(50%, 50%);
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .share-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    border-radius: 5px;
+    width: 70px;
+    height: 25px;
+  }
+  
+  .share-buttons a:hover {
+    cursor: pointer;
+  }
+  
+  .share-buttons a i {
+    font-size: 30px;
+  }
+  
+  .share-buttons .facebook {
+    background-color: #3b5998;
+  }
+  
+  .share-buttons .messenger {
+    background-color: #0084ff;
+  }
+  
+  .share-buttons .x {
+    background-color: #000;
+  }
+  
+  .share-buttons .linkedin {
+    background-color: #0077b5;
+  }
+  
+  .share-buttons .whatsapp {
+    background-color: #25d366;
+  }
+  
+  .share-buttons .reddit {
+    background-color: #ff4500;
+  }
 
 
 blockquote {

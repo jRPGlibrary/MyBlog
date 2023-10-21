@@ -10,7 +10,7 @@ const actus_liste = [
     "title": "STAR OCEAN: THE SECOND STORY R - Le retour d'un classique du RPG en 2.5D, de retour sur NEXTGEN",
     "infos": "L'histoire suit les aventures de Claude C. Kenny, un officier de la Fédération Pangalactique, et Rena Lanford, une jeune femme de la planète Expel...",
     "image": "http://res.cloudinary.com/dfy0zd3p6/image/upload/c_scale,w_3840/photo_42795009",
-    "description": `Blablabla`,
+    "description": `L'histoire suit les aventures de Claude C. Kenny, un officier de la Fédération Pangalactique, et Rena Lanford, une jeune femme de la planète Expel...`,
     "page": "pages/2023/Actus/Star_Ocean_Second_Story_R.html",
     "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Star_Ocean_Second_Story_R.html"
   },
@@ -21,9 +21,9 @@ const actus_liste = [
     "date": new Date(2023, 6, 26, 22, 30),
     "plateformes": ["Switch", "PS5", "PC", "Xbox Series"],
     "title": "SEA OF STARS : Un voyage nostalgique dans l'âge d'or des RPG",
-    "infos": "Sea of Stars nous plonge dans un univers riche et détaillé, où deux Enfants du Solstice, Valere et Zale, se lancent dans une quête épique....",
+    "infos": "Sea of Stars nous plonge dans un univers riche et détaillé, où deux Enfants du Solstice, Valere et Zale, se lancent dans une quête épique...",
     "image": "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2020/03/sea-of-stars-keyart-w-logo.jpg",
-    "description": `Blablabla`,
+    "description": `Sea of Stars nous plonge dans un univers riche et détaillé, où deux Enfants du Solstice, Valere et Zale, se lancent dans une quête épique...`,
     "page": "pages/2023/Actus/Sea_Of_Stars.html",
     "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Sea_Of_Stars.html"
   },
@@ -55,19 +55,6 @@ const actus_liste = [
     "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Atlas_Fallen.html"
   },
   {
-    "id": "born-of-bread-demo",
-    "name": "Born Of Bread",
-    "author": "jRPGlibrary",
-    "date": new Date(2023, 7, 17, 22, 25),
-    "plateformes": ["Switch", "PS5", "PC", "Xbox Series"],
-    "title": "Born Of Bread - La Démo sort du four sur NextGen",
-    "infos": "",
-    "image": "https://i.ibb.co/J2g3JCT/18a083aee6234-screenshot-Url.jpg",
-    "description": "Notre petit lapin de farine débarque sur nos console avec sa demo.",
-    "page": "pages/2023/Actus/Born-Of-Bread-Demo-Release-for-ps5-xbox-switch-pc.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Born-Of-Bread-Demo-Release.html"
-  },
-  {
     "id": "eiyuden-chronicle-date-sortie",
     "name": "Eiyuden Chronicle: Hundred Heroes",
     "author": "Patfine",
@@ -77,7 +64,7 @@ const actus_liste = [
     "infos": "À l'occasion du Nintendo Direct du 14 septembre 2023, le successeur spirituel de Suikoden fait parler de lui avec une...",
     "image": "https://nintendoeverything.com/wp-content/uploads/Eiyuden-Chronicle-Hundred-Heroes-delayed.jpg",
     "description": "Le successeur de Suikoden annonce son date de sortie lors du Nintendo Direct. Faisons le point.",
-    "page": "pages/2023/Actus/Eiyuden-Chronicle-Date-Sortie.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Eiyuden-Chronicle-Date-Sortie.html"
+    "page": "pages/2023/Actus/Eiyuden_Chronicle_Date_Sortie.html",
+    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Eiyuden_Chronicle_Date_Sortie.html"
   }
 ];

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!--  HEADER ( REGROUPE TOUT LES CSS ) -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <link href="https://fonts.bunny.net" rel="preconnect">
+  <link href="https://fonts.bunny.net/css?family=inter:400,700" rel="stylesheet">
+  <link href="../../../css/reset.css" rel="stylesheet">
+  <link href="../../../css/main.css" rel="stylesheet">
+  <link href="../../../css/social_menu.css" rel="stylesheet">
+  <link href="../../../css/articles.css" rel="stylesheet">
+  <link href="../../../css/page_article.css" rel="stylesheet">
+  <link href="../../../css/twitch.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  <link href="../../../images/Logo.png" rel="shortcut icon" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- HEADER COMPORTE LA BAR NAVIGATION ET LE MENU SOCIAL -->
+  <header id="Header_Container">
+    <section>
+      <div id="social_menu">
+        <ul>
+          <li><a href="https://www.facebook.com/JrpgLibrary/"><img alt="Facebook"
+                src="../../../images/facebook-icone-copie.png"></a></li>
+          <li><a href="https://discord.gg/u8UcUSMj"><img alt="Discord"
+                src="../../../images/discord-icone-copie.png"></a>
+          </li>
+          <li><a href="https://www.twitch.tv/jrpg_library"><img alt="Twitch"
+                src="../../../images/twitch-icone-copie.png"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <nav id="Header_Nav">
+      <div class="menu-burger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    <ul class="menu-list">
+        <li><a href="../../../index.html">Accueil</a></li>
+        <li><a href="../../../actus.html">News</a></li>
+        <li><a href="../../../preview.html">Previews</a></li>
+        <li><a href="../../../review.html">Reviews</a></li>
+        <li><a href="../../../partenariats.html">Partenariats</a></li>
+        <li><a href="#Contacts">Contacts</a></li>
+    </ul>
+    </nav> <input id="mode_toggle" type="checkbox"> <label for="mode_toggle" id="interrupteur"></label>
+  </header>
+
+  <!-- Début de la section de l'article -->
+
+  <section class="Article_Container" data-index=2>
+    <div class="Article_Infos">
+        <!-- Image principale de l'article -->
+        <div class="container_image"><div class="image_container" id="main_image"></div></div>
+        <div><br>
+          <!-- Informations de l'article -->
+          <div class="Infos">
+            <div class="Infos_Plateformes"></div>
+            <div class="Infos_DTA">
+              <ul class="Infos_Date"></ul>
+              <ul class="Infos_Auteur"></ul>
+              <ul class="Infos_Temps"></ul>
+            </div>
+        </div>
+        <!-- Titre de l'article -->
+        <h1 class="Title_Game"></h1>
+    </div>
+  </section>
+  <!-- Fin de la section de l'article -->
+
+  <footer>
+    <h2>Suivez et Rejoignez mes réseaux sociaux pour toujours plus d'actualités RPG !</h2>
+    <div class="socials"> <a href="https://www.twitch.tv/jrpg_library"><i class="fab fa-twitch"></i></a> <a
+        href="https://discord.gg/Nhsnv9kz"><i class="fab fa-discord"></i></a> <a
+        href="https://twitter.com/jRPG_Library"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="twitch-player">
+      <div class="twitch-player">
+        <div id="twitch-embed"><iframe allow="autoplay; fullscreen" allowfullscreen="" frameborder="0" height="100%"
+            sandbox="allow-modals allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+            scrolling="no"
+            src="https://embed.twitch.tv?autoplay=true&amp;channel=jrpg_library&amp;height=100%25&amp;layout=video&amp;parent=streamerwebsite.com&amp;parent=127.0.0.1&amp;referrer=http%3A%2F%2F127.0.0.1%3A5500%2Fpages%2F2023%2FActus%2F5_Lost_Soul_Aside.html&amp;width=100%25"
+            title="Twitch" width="100%"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"> <a href="https://www.paypal.me/MatthieuMAUBERNARD">Dons</a> |
+      <span>Copyright 2023</span> |
+      <a href="mailto:contentcreator.jrpglibrary@gmail.com">Contact</a>
+    </div>
+  </footer>
+
+  <script src="../../../js/actus_liste.js"></script>
+  <script src="../../../js/articles.js"></script>
+  <script src="../../../js/page_article.js"></script>
+  <script src="../../../js/menu.js"></script>
+  <script src="../../../js/twitch.js"></script>
+  <script src="../../../js/contenu.js"></script>
+  <script src="../../../js/share_buttons.js"></script>
+  <script>
+    console.log(star_ocean)
+    article_infos(actus_liste);
+    const article=actus_liste[parseInt(document.getElementsByClassName("Article_Container")[0].dataset.index)];
+    contenu_article(lost_soul,article);
+    metadonnees(article);
+    download();
+  </script>
+
+</body></html>
