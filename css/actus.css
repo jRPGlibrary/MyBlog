@@ -116,9 +116,6 @@
     color: rgb(255, 83, 83);
 }
 
-
-/* La séparation entre chaques news */
-
 .Infos_Border {
     display: flex;
     justify-content: center;
@@ -230,36 +227,11 @@
         color: var(--opposite-text-color);
 	}
 
-}
-
-
-@media (min-width: 1400px) {
-    .Infos_ActusImage img {
-        width: 580px;
-        height: 350px;
-    }
-
-    .Infos_ActusTexte {
-        margin-left: 50px;
-    }
-
-    .Infos_Border {
-        width: 90%;
-    }
-
-    .Infos_Author {
-        font-size: 14px;
-    }
-
-    .Infos_Title {
-        font-size: 27px;
-    }
-
-    .Infos_Description {
-        font-size: 17px;
-    }
-
-    .Infos_ReadMore {
-        font-size: 18px;
+    @media screen and (min-width: 600px) {
+        html {
+            display: none;
+        }
     }
 }
+
+
