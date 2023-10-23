@@ -57,7 +57,7 @@
 
   <!-- Début de la section de l'article -->
 
-  <section class="Article_Container" data-index=2>
+  <section class="Article_Container" data-index=5>
     <div class="Article_Infos">
         <!-- Image principale de l'article -->
         <div class="container_image"><div class="image_container" id="main_image"></div></div>
@@ -106,11 +106,11 @@
   <script src="../../../js/twitch.js"></script>
   <script src="../../../js/contenu.js"></script>
   <script src="../../../js/share_buttons.js"></script>
+  
   <script>
-    console.log(star_ocean)
     article_infos(actus_liste);
     const article=actus_liste[parseInt(document.getElementsByClassName("Article_Container")[0].dataset.index)];
-    contenu_article(lost_soul,article);
+    contenu_article(test,article);
     metadonnees(article);
     download();
   </script>

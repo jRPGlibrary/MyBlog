@@ -101,7 +101,7 @@ const eiyuden= [
       Dark Souls...). L'éditeur, 505 Games, se déclare honoré de travailler avec ce nouveau studio. Une équipe 
       de rêve pour ce vibrant hommage aux JRPG de l'ère 32 bits.`]],
       ["br",1],
-      ["h3",`Voici le trailer du Nintendo Direct :`]
+      ["h3",`Voici le trailer du Nintendo Direct :`],
       ["br",2],
       ["vid","https://www.youtube.com/embed/uOb8B1c-BcI?si=WXoAekViKsImPxrW"],
       ["br",1],
@@ -130,7 +130,7 @@ const atlas= [
       `En matière de graphisme, "Atlas Fallen" ne déçoit pas. Deck13 et Focus Entertainment nous ont éblouis avec
       des bandes-annonces visuellement époustouflantes.`]],
       ["br",1],
-      ["h3",`Voici le dernier trailer en date :`]
+      ["h3",`Voici le dernier trailer en date :`],
       ["br",2],
       ["vid","https://www.youtube.com/embed/MHVTQbptAgA"],
 ];
@@ -265,6 +265,50 @@ const lost_soul = [
       ["Image de Lost Soul Aside","https://d3kjluh73b9h9o.cloudfront.net/original/3X/a/d/ad718032bb100cb9fcea68918407b0cfabf9c0cb.jpeg"],
       ["Image de Lost Soul Aside","https://www.destructoid.com/wp-content/uploads/2021/05/627343-LostSoulAside_Lead_042721.jpg"],
       ["Image de Lost Soul Aside","https://www.gaming.net/wp-content/uploads/2023/04/Lost-Soul-Aside_2021_04-26-21_003.jpg"]]]
+];
+
+const test= [
+    ["p",[`À l'occasion du Nintendo Direct du 14 septembre 2023, Eiyuden Chronicle: Hundred Heroes dévoile enfin 
+    sa date de sortie, plus tardive qu'initialement prévue. Le successeur spirituel de la célèbre série Suikoden
+    arrivera sur nos écrans le 23 avril 2024. Un léger délai alors que le jeu était prévu pour 2023 mais qui
+    ne diminue pas l'attente des fans de JRPG.`]],
+    ["br",1],
+    ["h3",`Ce que nous savons du jeu:`],
+    ["p",[`Annoncé en 2020, le projet Eiyuden Chronicle est porté par une campagne de financement participatif sur 
+    Kickstarter et devient le plus gros succès de la plateforme de l'année. Eiyuden Chronicle est en fait une 
+    série de 2 jeux avec Eiyuden Chronicle: Rising, une préquelle sous forme d'Action-RPG à Eiyuden Chronicle: 
+    Hundred Heroes, le jeu principal. Cette préquelle présenté comme une introduction à l'univers est sortie 
+    en mai 2022, il donc est encore temps de le découvrir avant la sortie d'Hundred Heroes.`,
+    `Le succès du Kickstarter d'Eiyuden Chronicle: Hundred Heroes auprès des fans de JRPG s'explique par 
+    l'héritage qu'il revendique : Suikoden. Cette série de RPG culte de Konami, réputé en particulier pour 
+    ses deux premiers épisodes sur la première Playstation, librement adapté du roman chinois du XIVe siècle
+    "Au bord de l'eau", se démarque par sa mécanique de recrutement de personnages et de quartier général. 
+    Dans chaque jeu de la série, il possible de rassembler jusqu'à 108 personnages, qui feront évoluer le 
+    quartier général en offrant de nouvelles fonctionnalités (des mini-jeux, des boutiques...), et qui pour
+    la plupart sont jouables en combat.`,
+    `Eiyuden Chronicle: Hundred Heroes revendique cet héritage en reprenant cette mécanique unique, à laquelle 
+    le titre fait directement écho, ainsi qu'un système de combat au tour par tour similaire avec 6 personnages
+    sur le terrain répartis sur deux niveaux, une direction artistique évoquant les opus PS1 et un scénario avec
+    une structure proche et des thématiques communes comme la politique, la corruption ou la révolution. Effectivement,
+    une histoire de guerres et d'alliances façonnent les terres d'Allraan où deux amis, Seign Kesling, un jeune 
+    et talentueux officier impérial, et Nowa, un garçon d’un village isolé, vont être confronté à la guerre et 
+    remettre en question ceux en quoi ils croyaient.`,
+    `En plus de cette parenté de gameplay, d'histoire et de visuels, le studio de développement à l'origine du titre, 
+    Rabbit and Bear Studios, est constitué d'anciens membres de l'équipe des Suikoden notamment la game designer 
+    Junko Kawano et le réalisateur Yoshitaka Murayama. À la musique on retrouve en collaboration Michiko Naruke 
+    (Super Smash Bros, Wild Arms...) et Motoi Sakuraba (Tales of, Golden Sun, Star Ocean, Valkyrie Profile, 
+    Dark Souls...). L'éditeur, 505 Games, se déclare honoré de travailler avec ce nouveau studio. Une équipe 
+    de rêve pour ce vibrant hommage aux JRPG de l'ère 32 bits.`]],
+    ["br",1],
+    ["h3",`Voici le trailer du Nintendo Direct :`],
+    ["br",2],
+    ["vid","https://www.youtube.com/embed/uOb8B1c-BcI?si=WXoAekViKsImPxrW"],
+    ["br",1],
+    ["p",[`Ce n'est pas le seul JRPG qui aura fait l'objet d'une annonce lors de ce Nintendo Direct, puisqu'on
+    y retrouve le Tactical-RPG Unicorn Overlord et surtout le remaster de Paper Mario: La porte millénaire
+    qui accompagne le remake de Super Mario RPG. Par ailleurs les fans de Suikoden devront également prendre
+    leur mal en patience pour la compilation remasterisé de Suikoden 1 et 2 initialemement prévu pour fin août 
+    de cette année qui a été repoussée à l'année prochaine. `]]
 ];
 
 function download () {
