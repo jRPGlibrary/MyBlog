@@ -322,13 +322,30 @@ blockquote::before {
 
     footer {
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: var(--footer-color);
         margin-top: 0;
+    }
+
+    .footer-bottom {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .footer-bottom a {
+        margin: 0 10px 0 10px;
+    }
+
+    .footer-bottom span {
+        margin: 0 10px 0 10px;
     }
 
     .socials {
@@ -342,9 +359,12 @@ blockquote::before {
 
     }
 
-    .socials img {
-        height: 30px;
-        width: 30px;
+    .twitch-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .twitch-player {
@@ -355,47 +375,5 @@ blockquote::before {
         padding-bottom: 56.25%;
         /* Ratio 16:9 */
 
-    }
-
-    .socials a {
-        margin-right: 20px;
-    }
-
-
-    .socials a .fa-twitch {
-        color: #9146FF;
-    }
-
-    .socials a .fa-discord {
-        color: #5865F2;
-    }
-
-    .socials a .fa-twitter {
-        color: #1DA1F2;
-    }
-
-    .twitch-player iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .footer-bottom {
-        width: 100%;
-
-        display: flex;
-        justify-content: center;
-
-        margin-top: 20px;
-    }
-
-    .footer-bottom a {
-        margin: 0 10px 0 10px;
-    }
-
-    .footer-bottom span {
-        margin: 0 10px 0 10px;
     }
 }
