@@ -68,17 +68,4 @@ const actus_liste = [
     "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Eiyuden_Chronicle_Date_Sortie.html"
   },
 
-  {
-    "id": "test",
-    "name": "Eiyuden Chronicle: Hundred Heroes",
-    "author": "Patfine",
-    "date": new Date(2023, 8, 17, 15, 0),
-    "plateformes": ["Switch", "PS4", "PS5", "PC", "Xbox One", "Xbox Series"],
-    "title": "Eiyuden Chronicle: Hundred Heroes dévoile sa date de sortie",
-    "infos": "À l'occasion du Nintendo Direct du 14 septembre 2023, le successeur spirituel de Suikoden fait parler de lui avec une...",
-    "image": "https://nintendoeverything.com/wp-content/uploads/Eiyuden-Chronicle-Hundred-Heroes-delayed.jpg",
-    "description": "Le successeur de Suikoden annonce son date de sortie lors du Nintendo Direct. Faisons le point.",
-    "page": "pages/2023/Actus/Eiyuden_Chronicle_Date_Sortie.html",
-    "url": "https://jrpglibrary.github.io/MyBlog/pages/2023/Actus/Eiyuden_Chronicle_Date_Sortie.html"
-  }
 ];
