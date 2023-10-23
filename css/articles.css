@@ -187,10 +187,13 @@
         background-color: var(--opposite-background);
         color: var(--opposite-text-color);
     }
+}
+
+
 
     @media screen and (min-width: 600px) {
         html {
             display: none;
-        }
     }
-}
+ }
+            

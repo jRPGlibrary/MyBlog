@@ -298,23 +298,6 @@ blockquote::before {
         margin-top: 0;
     }
 
-    .footer-bottom {
-        width: 100%;
-
-        display: flex;
-        justify-content: center;
-
-
-    }
-
-    .footer-bottom a {
-        margin: 0 10px 0 10px;
-    }
-
-    .footer-bottom span {
-        margin: 0 10px 0 10px;
-    }
-
     .socials {
 
         width: 80%;
