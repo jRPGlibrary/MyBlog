@@ -151,15 +151,13 @@ body {
 }
 
 .share-buttons {
-    max-width: 100%;
     position: fixed;
-    bottom: 50px;
-    right: 50%;
-    transform: translate(50%, 50%);
+    bottom: 12px;
     z-index: 9999;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .share-buttons a {
@@ -167,7 +165,6 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: 15px;
-    padding: 5px;
     color: #fff;
     text-decoration: none;
     background-color: #333;
@@ -178,7 +175,6 @@ body {
 
 .share-buttons a:hover {
     cursor: pointer;
-    opacity: 0.8;
 
 }
 
