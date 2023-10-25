@@ -44,14 +44,13 @@
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        margin-bottom: 0;
         text-transform: uppercase;
-        font-weight: 700
+        font-weight: 700;
+        width: 80%;
     }
 
     .Infos_Plateformes li {
         font-size: .75rem;
-        text-align: center;
         margin-right: 8px;
         margin-bottom: 8px;
         padding: 5px 15px;
