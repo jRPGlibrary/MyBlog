@@ -42,6 +42,14 @@
 </head>
 
 <body>
+      <div class="share-buttons">
+        <a class="facebook" onclick="shareFacebook(url)"><i class="fab fa-facebook-f"></i></a>
+        <a class="messenger" onclick="shareMessenger(url)"><i class="fab fa-facebook-messenger"></i></a>
+        <a class="x" onclick="shareX(url)"><i class="fas fa-times"></i></a>
+        <a class="linkedin" onclick="shareLinkedIn(url)"><i class="fab fa-linkedin-in"></i></a>
+        <a class="whatsapp" onclick="shareWhatsApp(url)"><i class="fab fa-whatsapp"></i></a>
+        <a class="reddit" onclick="shareReddit(url)"><i class="fab fa-reddit"></i></a>
+      </div>
   <!-- HEADER COMPORTE LA BAR NAVIGATION ET LE MENU SOCIAL -->
   <header id="Header_Container">
     <section>
@@ -96,14 +104,6 @@
       Chaque nouvel article du site est une quête secondaire qui enrichit notre aventure principale. Ne manquez
       pas ces missions bonus, suivez l'actualités jRPGlibrary !
       </blockquote>
-    <div class="share-buttons">
-      <a class="facebook" onclick="shareFacebook(url)"><i class="fab fa-facebook-f"></i></a>
-      <a class="messenger" onclick="shareMessenger(url)"><i class="fab fa-facebook-messenger"></i></a>
-      <a class="x" onclick="shareX(url)"><i class="fas fa-times"></i></a>
-      <a class="linkedin" onclick="shareLinkedIn(url)"><i class="fab fa-linkedin-in"></i></a>
-      <a class="whatsapp" onclick="shareWhatsApp(url)"><i class="fab fa-whatsapp"></i></a>
-      <a class="reddit" onclick="shareReddit(url)"><i class="fab fa-reddit"></i></a>
-    </div>
     </div></section>
   <!-- Fin de la section de l'article -->
 
@@ -119,10 +119,5 @@
   <script src="../../../js/contenu.js"></script>
   <script src="../../../js/share_buttons.js"></script>
   
-  <script>
-    article_infos(actus_liste);
-    const article=actus_liste[parseInt(document.getElementsByClassName("Article_Container")[0].dataset.index)];
-    contenu_article(star_ocean_flashback,article);
-    metadonnees(article);
-    download();
-  </script></body></html>
+  </body>
+</html>
