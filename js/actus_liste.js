@@ -84,7 +84,7 @@ const actus_liste = [
     id: "star-ocean-retour-aux-sources",
     name: "Star Ocean : The Second Story ( un rpg innoubliable dont il faut avoir connaissance ) :",
     author: "jRPGlibrary",
-    date: new Date(2023, 9, 26, 18, 0),
+    date: new Date(2023, 9, 25, 18, 0),
     plateformes: ["Switch", "PS4", "PS5", "PC", "Xbox One", "Xbox Series"],
     title:
       "Star Ocean: The Second Story Petit, retour dans les années 90' naissance d'une licence",
